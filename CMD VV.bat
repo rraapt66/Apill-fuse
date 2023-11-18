@@ -3031,7 +3031,8 @@ goto menu
 
 :cpu
 git clone https://github.com/rraapt66/cout.git
-pause
-cd C:\Program Files\CoutX
+cd cout
+cd Cout X
 satrt CoutX-Setup.exe
+
 
