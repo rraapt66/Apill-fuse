@@ -44,6 +44,7 @@ echo 9 COMPUTER Check
 echo 10 delete Roblox
 echo 11 BACKUP
 echo 12 Full clean
+echo 13 edit power plan
 echo ══════════════════════════════════════════════════════════════════════════════════
 ping -n 2 127.0.0.1>nul
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
@@ -59,6 +60,7 @@ if %choix%== 9 goto :cpt
 if %choix%== 10 goto :delete
 if %choix%== 11 goto :BACKUP
 if %choix%== 12 goto :fullclean
+if %choix%== 13 goto :power
 :clean
 title Defrag Driv c
 cls
@@ -2915,3 +2917,91 @@ cls
 echo shutdown
 pause
 shutdown -s -t 3 -c "shutdown ."
+
+
+:power
+chcp 65001
+title setting power plan
+cls
+echo 1 balanced
+echo 2 High
+echo 3 ultimate
+SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
+if %choix%== 1 Goto :balanced
+if %choix%== 2 Goto :High
+if %choix%== 3 Goto :ultimate
+
+:balanced
+goto ld1
+
+:High
+goto ld2
+
+:ultimate
+goto ld3
+
+:ld1
+title setting powerplan
+color 7
+echo  (═══                                          )
+cls
+echo  (═════                                        )
+cls
+echo  (══════════                                   )
+cls
+echo  (════════════════                             )
+cls
+echo  (══════════════════════════                   )
+echo  (════════════════════════════════════         )
+cls
+echo  (══════════════════════════════════════════   )
+echo  (═════════════════════════════════════════════)
+powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a
+cls
+echo succeed
+ping -n 2 127.0.0.1>nul
+goto menu
+
+:ld2
+title setting powerplan
+color 7
+echo  (═══                                          )
+cls
+echo  (═════                                        )
+cls
+echo  (══════════                                   )
+cls
+echo  (════════════════                             )
+cls
+echo  (══════════════════════════                   )
+echo  (════════════════════════════════════         )
+cls
+echo  (══════════════════════════════════════════   )
+echo  (═════════════════════════════════════════════)
+powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+cls
+echo succeed
+ping -n 2 127.0.0.1>nul
+goto menu
+
+:ld3
+title setting powerplan
+color 7
+echo  (═══                                          )
+cls
+echo  (═════                                        )
+cls
+echo  (══════════                                   )
+cls
+echo  (════════════════                             )
+cls
+echo  (══════════════════════════                   )
+echo  (════════════════════════════════════         )
+cls
+echo  (══════════════════════════════════════════   )
+echo  (═════════════════════════════════════════════)
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+cls
+echo succeed
+ping -n 2 127.0.0.1>nul
+goto menu
