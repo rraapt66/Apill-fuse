@@ -19,6 +19,12 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 :--------------------------------------
+(noadmin
+goto Fg
+:fg
+curl ascii.live/rick
+)
+
 Mode 109 19
 title cmd VV Bysiwat
 @echo off
