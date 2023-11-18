@@ -43,7 +43,7 @@ echo 8 Check ping
 echo 9 COMPUTER Check
 echo 10 delete Roblox
 echo 11 BACKUP
-echo 12 full clean
+echo 12 Full clean
 echo ══════════════════════════════════════════════════════════════════════════════════
 ping -n 2 127.0.0.1>nul
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
@@ -184,7 +184,7 @@ cls
 title scan
 ping -n 2 127.0.0.1>nul
 sfc /scannow
-goto H
+goto menu
 :remoteZ
 cls
 chcp 65001
