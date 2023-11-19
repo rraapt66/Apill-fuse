@@ -3042,3 +3042,4 @@ cd cout
 cd Cout X
 ping -n 2 127.0.0.1>nul
 satrt CoutX-Setup.exe
+goto menu
