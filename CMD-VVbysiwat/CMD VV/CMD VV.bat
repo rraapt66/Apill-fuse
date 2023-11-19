@@ -47,7 +47,6 @@ echo 11 BACKUP
 echo 12 Full clean
 echo 13 edit power plan
 echo 14 Boost cpu
-echo 15 update
 echo ══════════════════════════════════════════════════════════════════════════════════
 ping -n 2 127.0.0.1>nul
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
@@ -3044,13 +3043,3 @@ ping -n 2 127.0.0.1>nul
 satrt CoutX-Setup.exe
 goto menu
 
-:update
-cd CMD-VVbysiwat
-git init
-git clone https://github.com/rraapt66/CMD-UPDATE.git
-cd CMD-UPDATE
-del CMD VV.bat
-ping -n 2 127.0.0.1>nul
-echo update Successful
-ping -n 2 127.0.0.1>nul
-goto menu
