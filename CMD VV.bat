@@ -2970,11 +2970,6 @@ powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a
 cls
 echo succeed
 ping -n 2 127.0.0.1>nul
-(noadmin
-goto Fg
-:fg
-curl ascii.live/rick
-)
 goto menu
 
 :ld2
@@ -3004,11 +2999,6 @@ powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 cls
 echo succeed
 ping -n 2 127.0.0.1>nul
-(noadmin
-goto Fg
-:fg
-curl ascii.live/rick
-)
 goto menu
 
 :ld3
@@ -3038,16 +3028,14 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 cls
 echo succeed
 ping -n 2 127.0.0.1>nul
-(noadmin
-goto Fg
-:fg
-curl ascii.live/rick
-)
 goto menu
 
 :cpu
 git clone https://github.com/rraapt66/cout.git
-cd C:\Program Files\CoutX
+cd cout
+cd Cout X
+
+ping -n 2 127.0.0.1>nul
 satrt CoutX-Setup.exe
 
 
