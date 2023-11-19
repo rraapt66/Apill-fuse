@@ -47,7 +47,7 @@ echo 11 BACKUP
 echo 12 Full clean
 echo 13 edit power plan
 echo 14 Boost cpu
-echo 15 setup CMD VV
+echo 15 update
 echo ══════════════════════════════════════════════════════════════════════════════════
 ping -n 2 127.0.0.1>nul
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
@@ -65,7 +65,7 @@ if %choix%== 11 goto :BACKUP
 if %choix%== 12 goto :fullclean
 if %choix%== 13 goto :power
 if %choix%== 14 goto :cpu
-if %choix%== 15 goto :setupCpu
+if %choix%== 15 goto :update
 :clean
 title Defrag Driv c
 cls
@@ -3046,5 +3046,7 @@ goto menu
 
 :update
 git clone https://github.com/rraapt66/CMD-VVbysiwat.git
+ping -n 2 127.0.0.1>nul
+echo update Successful
 ping -n 2 127.0.0.1>nul
 goto menu
