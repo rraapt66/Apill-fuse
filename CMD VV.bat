@@ -47,6 +47,7 @@ echo 11 BACKUP
 echo 12 Full clean
 echo 13 edit power plan
 echo 14 Boost cpu
+echo 15 setup CMD VV
 echo ══════════════════════════════════════════════════════════════════════════════════
 ping -n 2 127.0.0.1>nul
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
@@ -64,6 +65,7 @@ if %choix%== 11 goto :BACKUP
 if %choix%== 12 goto :fullclean
 if %choix%== 13 goto :power
 if %choix%== 14 goto :cpu
+if %choix%== 15 goto :setupCpu
 :clean
 title Defrag Driv c
 cls
@@ -3032,10 +3034,11 @@ goto menu
 
 :cpu
 git clone https://github.com/rraapt66/cout.git
+goto menu
+
+
+:setupCpu
 cd cout
 cd Cout X
-
 ping -n 2 127.0.0.1>nul
 satrt CoutX-Setup.exe
-
-
