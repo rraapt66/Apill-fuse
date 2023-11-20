@@ -3033,7 +3033,7 @@ goto menu
 
 :cpu
 git clone https://github.com/rraapt66/cout.git
-goto menu
+goto setupCpu
 
 
 :setupCpu
