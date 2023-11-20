@@ -2951,21 +2951,21 @@ echo  (═══                                          )
 ping -n 1 127.0.0.1>nul
 cls
 echo  (═════                                        )
-ping -n 2 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (══════════                                   )
-ping -n 4 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (════════════════                             )
-ping -n 5 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (══════════════════════════                   )
-ping -n 6 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 echo  (════════════════════════════════════         )
-ping -n 7 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (══════════════════════════════════════════   )
-ping -n 8 127.0.0.1>nul
+ping -n 3 127.0.0.1>nul
 echo  (═════════════════════════════════════════════)
 powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a
 cls
@@ -2980,21 +2980,21 @@ echo  (═══                                          )
 ping -n 1 127.0.0.1>nul
 cls
 echo  (═════                                        )
-ping -n 2 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (══════════                                   )
-ping -n 4 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (════════════════                             )
-ping -n 5 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (══════════════════════════                   )
-ping -n 6 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 echo  (════════════════════════════════════         )
-ping -n 7 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (══════════════════════════════════════════   )
-ping -n 8 127.0.0.1>nul
+ping -n 3 127.0.0.1>nul
 echo  (═════════════════════════════════════════════)
 powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 cls
@@ -3009,21 +3009,21 @@ echo  (═══                                          )
 ping -n 1 127.0.0.1>nul
 cls
 echo  (═════                                        )
-ping -n 2 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (══════════                                   )
-ping -n 4 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (════════════════                             )
-ping -n 5 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (══════════════════════════                   )
-ping -n 6 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 echo  (════════════════════════════════════         )
-ping -n 7 127.0.0.1>nul
+ping -n 1 127.0.0.1>nul
 cls
 echo  (══════════════════════════════════════════   )
-ping -n 8 127.0.0.1>nul
+ping -n 3 127.0.0.1>nul
 echo  (═════════════════════════════════════════════)
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 cls
