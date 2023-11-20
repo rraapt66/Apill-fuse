@@ -39,10 +39,8 @@ echo                              XXXX X.`v'.X XXXX
 echo                              XP^X'`b   d'`X^XX
 echo                              X. 9  `   '  P )X
 echo                              `b  `       '  d'
-echo                               `             '
-
-                               
-echo                      > Press Enter
+echo                               `             '                               
+echo Press Enter
 pause
 goto backup
 :backup
