@@ -19,7 +19,30 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 :--------------------------------------
+          .                                                      .
+echo        .n                   .                 .                  n.
+echo  .   .dP                  dP                   9b                 9b.    .
+echo 4    qXb         .       dX                     Xb       .        dXp     t
+echo dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
+echo 9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP
+echo 9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP
+echo  `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'
+echo    `9XXXXXXXXXXXP' `9XX'  ATOMIC  `98v8P'  NUKER    `XXP' `9XXXXXXXXXXXP'
+echo        ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~
+echo                       )b.  .dbo.dP'`v'`9b.odb.  .dX(
+echo                      ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.
+echo                     dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb
+echo                    dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb
+echo                    9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP
+echo                     `'      9XXXXXX(   )XXXXXXP      `'
+echo                              XXXX X.`v'.X XXXX
+echo                              XP^X'`b   d'`X^XX
+echo                              X. 9  `   '  P )X
+echo                              `b  `       '  d'
+echo                               `             '
 
+                               
+echo                      > Press Enter
 Mode 109 19
 title cmd VV Bysiwat
 @echo off
