@@ -43,6 +43,9 @@ echo                               `             '
 
                                
 echo                      > Press Enter
+pause
+goto backup
+:backup
 Mode 109 19
 title cmd VV Bysiwat
 @echo off
