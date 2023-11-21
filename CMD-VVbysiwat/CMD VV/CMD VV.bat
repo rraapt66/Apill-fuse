@@ -1,25 +1,6 @@
-:: make sure to get admin
-:-------------------------------------
-:: Check for permissions
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-:: If error flag set, we do not have admin.
-:: If no admin, reqeust admin via VBS script
-if '%errorlevel%' NEQ '0' (
-    echo Requesting administrative privileges...
-    goto UACPrompt
-) else ( goto gotAdmin )
-:UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
-    "%temp%\getadmin.vbs"
-    exit /B
-:gotAdmin
-:: delete script after getting admin
-    if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
-    pushd "%CD%"
-    CD /D "%~dp0"
-:--------------------------------------
-
+:admin
+echo run admin only
+pause
 goto backup
 :backup
 Mode 109 19
@@ -323,7 +304,6 @@ goto menu
 title Gamemode on
 cls
 ping -n 4 127.0.0.1>nul
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "ConvertibleSlateMode" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "22" /f
 ping -n 2 127.0.0.1>nul
 del "%HOMEPATH%\Desktop\Discord.ink" /F /Q
