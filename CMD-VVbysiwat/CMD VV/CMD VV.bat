@@ -84,7 +84,6 @@ deltree /y c:\windows\cookies
 deltree /y c:\windows\recent
 deltree /y c:\windows\spool\printers
 @echo off
-title Cop's Tweaks Pack /\ Clear Cache
 cd/
 @echo
 del *.log /a /s /q /f
