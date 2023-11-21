@@ -752,8 +752,8 @@ title ปรับค่าคย์บอร์ด
 git clone https://github.com/rraapt66/Keybord.git
 goto kb
 :kb
-cd CMD-VV-main\CMD VV Install\CMD-UPDATEf\CMD-UPDATE\CMD-VVbysiwat\CMD-VVbysiwat\CMD VV\Keybord\2-kbd Data Queue Size
-start Keyboard-Reg-Key.bat
+REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters /f
+START regedit
 goto menu
 
 :mouse
@@ -761,6 +761,6 @@ title ปรับค่าเมาส์
 git clone https://github.com/rraapt66/mouse.git
 goto Mu
 :Mu
-cd CMD-VV-main\CMD VV Install\CMD-UPDATEf\CMD-UPDATE\CMD-VVbysiwat\CMD-VVbysiwat\CMD VV\mouse\1-mouse Data Queue Size
-Start Mouse-Reg-Key.bat
+REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters /f
+START regedit
 goto menu
