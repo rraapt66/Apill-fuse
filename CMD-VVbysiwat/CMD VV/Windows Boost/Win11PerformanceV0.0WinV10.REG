@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"AlpcWakePolicy"=dword:00000001
+;"AlpcMessageLog"=dword:00000000
+
+; DPC Threading (MultiThreaded)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+;"ThreadDpcEnable"=dword:00000001
+"SplitLargeCaches"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"SimulateCommitSavings"=dword:00000000
+"TrackLockedPages"=dword:00000000
+"TrackPtes"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"DeepIoCoalescingEnabled"=dword:00000000
