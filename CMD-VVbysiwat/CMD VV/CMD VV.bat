@@ -752,6 +752,7 @@ title ปรับค่าคย์บอร์ด
 git clone https://github.com/rraapt66/Keybord.git
 goto kb
 :kb
+cd Keybord
 cd 2-kbd Data Queue Size
 start Keyboard Reg Key.bat
 goto menu
@@ -761,6 +762,7 @@ title ปรับค่าเมาส์
 git clone https://github.com/rraapt66/mouse.git
 goto Mu
 :Mu
+cd mouse
 cd 1-mouse Data Queue Size
 Start Mouse Reg Key.bat
 goto menu
