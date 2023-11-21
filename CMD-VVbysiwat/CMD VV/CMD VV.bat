@@ -605,7 +605,9 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32Pri
 >> %RegFile% Echo   31,00,31,00,31,00,31,00,31,00,00,00,00,00
 >> %RegFile% Echo "System Root"=dword:ffffffff
 >> %RegFile% Echo "root"=hex(2):64,00,65,00,6c,00,20,00,74,00,65,00,6d,00,70,00,00,00
-
+goto LL2
+:LL2
+goto menu
 :LL
 echo succeed
 pause
