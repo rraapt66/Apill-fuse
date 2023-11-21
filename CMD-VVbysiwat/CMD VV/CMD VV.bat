@@ -51,6 +51,8 @@ echo 11 BACKUP
 echo 12 Fullclean
 echo 13 edit power plan
 echo 14 Boost cpu
+echo 15 mouse
+echo 16 Keyboard
 echo ══════════════════════════════════════════════════════════════════════════════════
 ping -n 2 127.0.0.1>nul
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
@@ -68,6 +70,8 @@ if %choix%== 11 goto :BACKUP
 if %choix%== 12 goto :fullclean
 if %choix%== 13 goto :power
 if %choix%== 14 goto :cpu
+if %choix%== 15 goto :mouse
+if %choix%== 16 goto :Keyboard
 :fullclean
 echo Successful
 cleanmgr
@@ -743,4 +747,14 @@ cd Cout X
 ping -n 2 127.0.0.1>nul
 satrt CoutX-Setup.exe
 goto menu
+:Keyboard
+title ปรับค่าคย์บอร์ด
+cd 2-kbd Data Queue Size
+start Keyboard Reg Key.bat
+goto menu
 
+:mouse
+title ปรับค่าเมาส์
+cd 1-mouse Data Queue Size
+Start Mouse Reg Key.bat
+goto menu
