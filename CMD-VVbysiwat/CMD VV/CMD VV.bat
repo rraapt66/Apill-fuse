@@ -753,6 +753,7 @@ git clone https://github.com/rraapt66/Keybord.git
 goto kb
 :kb
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters /f
+cd CMD-VV-main\CMD VV Install\CMD-UPDATEf\CMD-UPDATE\CMD-VVbysiwat\CMD-VVbysiwat\CMD VV\Keybord\2-kbd Data Queue Size
 START kbd Data Queue Size 30 (Dec).reg
 goto menu
 
@@ -762,5 +763,6 @@ git clone https://github.com/rraapt66/mouse.git
 goto Mu
 :Mu
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters /f
+cd CMD-VV-main\CMD VV Install\CMD-UPDATEf\CMD-UPDATE\CMD-VVbysiwat\CMD-VVbysiwat\CMD VV\mouse\1-mouse Data Queue Size
 start mou Data Queue Size 30 (Dec).reg
 goto menu
