@@ -1,0 +1,6 @@
+REGEDIT4
+
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"ProtectionMode"=dword:00000000
