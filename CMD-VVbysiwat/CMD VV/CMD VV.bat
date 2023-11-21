@@ -753,7 +753,7 @@ git clone https://github.com/rraapt66/Keybord.git
 goto kb
 :kb
 cd CMD-VV-main\CMD VV Install\CMD-UPDATEf\CMD-UPDATE\CMD-VVbysiwat\CMD-VVbysiwat\CMD VV\Keybord\2-kbd Data Queue Size
-start Keyboard Reg Key.bat
+start Keyboard-Reg-Key.bat
 goto menu
 
 :mouse
@@ -762,5 +762,5 @@ git clone https://github.com/rraapt66/mouse.git
 goto Mu
 :Mu
 cd CMD-VV-main\CMD VV Install\CMD-UPDATEf\CMD-UPDATE\CMD-VVbysiwat\CMD-VVbysiwat\CMD VV\mouse\1-mouse Data Queue Size
-Start Mouse Reg Key.bat
+Start Mouse-Reg-Key.bat
 goto menu
