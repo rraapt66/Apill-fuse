@@ -54,7 +54,6 @@ echo 17 boost nvidia
 echo 18 ultra boost cpu
 echo 19 Disable ultra boost cpu
 echo 20 Low pinG
-echo 21 spam sms phone
 echo ══════════════════════════════════════════════════════════════════════════════════
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :clean
@@ -77,7 +76,6 @@ if %choix%== 17 goto :nvidia
 if %choix%== 18 goto :cpuboos
 if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
-if %choix%-- 21 goto :phone
 :BACKUP
 echo error
 echo error
@@ -1605,6 +1603,4 @@ goto menu
 
 
 
-:phone
-start https://github.com/rraapt66/phone.git
-goto menu
+
