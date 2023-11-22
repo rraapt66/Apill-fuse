@@ -55,7 +55,6 @@ echo 19 Disable ultra boost cpu
 echo 20 Low pinG
 echo ══════════════════════════════════════════════════════════════════════════════════
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
-goto menu
 if %choix%== 1 Goto :clean
 if %choix%== 2 Goto :remoteZ
 if %choix%== 3 Goto :roblox1
