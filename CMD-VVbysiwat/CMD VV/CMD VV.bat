@@ -21,23 +21,17 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 :--------------------------------------
-pause
-goto backup
-:backup
 Mode 109 19
 title cmd VV Bysiwat
 @echo off
 cls
 color a
 chcp 65001
-echo Backup ???
-SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m yes or No  >  "
-if %choix%== yes Goto :BACKUP
-if %choix%== no Goto :menu
 :menu
 chcp 65001
 title menu
 cls
+chcp 65001
 echo ══════════════════════════════════════════════════════════════════════════════════ 
 echo 1 clean file
 echo 2 remote
@@ -60,7 +54,6 @@ echo 18 ultra boost cpu
 echo 19 Disable ultra boost cpu
 echo 20 Low pinG
 echo ══════════════════════════════════════════════════════════════════════════════════
-ping -n 2 127.0.0.1>nul
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
 goto menu
 if %choix%== 1 Goto :clean
@@ -83,6 +76,189 @@ if %choix%== 17 goto :nvidia
 if %choix%== 18 goto :cpu
 if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
+:BACKUP
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo errorecho error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+echo error
+goto menu
+
 :lowp
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB1" /t REG_DWORD /d "0" /f
 ping -n 1 127.0.0.1>nul
