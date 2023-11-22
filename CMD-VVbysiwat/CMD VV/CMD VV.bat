@@ -751,6 +751,7 @@ goto menu
 :Keyboard
 title ปรับค่าคย์บอร์ด
 git clone https://github.com/rraapt66/Keybord.git
+start Keybord
 goto kb
 :kb
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters /f
@@ -759,6 +760,7 @@ goto menu
 :mouse
 title ปรับค่าเมาส์
 git clone https://github.com/rraapt66/mouse.git
+start mouse
 goto Mu
 :Mu
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters /f
