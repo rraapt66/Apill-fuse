@@ -442,12 +442,6 @@ ping -n 4 127.0.0.1>nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "22" /f
 Reg.exe add "HKCU\Control Panel\PowerCfg\GlobalPowerPolicy" /v "Policies" /t REG_BINARY /d "01000000020000000100000000000000020000000000000000000000000000002c0100003232030304000000040000000000000000000000840300002c01000000000000840300000001646464640000" /f
 ping -n 2 127.0.0.1>nul
-: ---------------------------------------------------  !!! Incorrect Data Found !!!  -------------------------------------------------------------
-:: HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response --> “AutoRepeatDelay”=”500”
-:: HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response --> “AutoRepeatRate”=”20”
-:: HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response --> “DelayBeforeAcceptance”=”0”
-:: HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response --> “Flags”=”27”
-:: ------------------------------------------------------------------------------------------------------------------------------------------------
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\GpuEnergyDrv" /v "Start" /t REG_DWORD /d "4" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "DisablePageCombining" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v "DisableExternalDMAUnderLock" /t REG_DWORD /d "0" /f
