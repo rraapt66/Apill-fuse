@@ -84,8 +84,11 @@ if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
 :lowp
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB1" /t REG_DWORD /d "0" /f
+ping -n 1 127.0.0.1>nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB2" /t REG_DWORD /d "0" /f
+ping -n 1 127.0.0.1>nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB3" /t REG_DWORD /d "1" /f
+ping -n 1 127.0.0.1>nul
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "NetworkThrottlingIndex" /t REG_DWORD /d "5" /f
 goto menu
 :cup
