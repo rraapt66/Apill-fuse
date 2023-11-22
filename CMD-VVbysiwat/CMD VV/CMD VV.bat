@@ -531,102 +531,13 @@ cls
 @echo off
 echo Notebook onlY
 pause
-:RegExport
-Set RegFile="%Temp%\~nwsorud.tmp"
-
-If Exist %RegFile% (
- Attrib -R -S -H %RegFile% &  Del /F /Q %RegFile%
- If Exist %RegFile% cls & Echo Could not delete file %RegFile% & Pause
-)
-> %RegFile% Echo Windows Registry Editor Version 5.00
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software]
->> %RegFile% Echo "boostsetting"=hex(b):b8,01,00,00,00,00,00,00
->> %RegFile% Echo.
-echo Successful
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft]
->> %RegFile% Echo "BuildLab"=hex(1):31,00,39,00,30,00,34,00,31,00,2e,00,76,00,62,00,5f,00,72,00,\
->> %RegFile% Echo   65,00,6c,00,65,00,61,00,73,00,65,00,2e,00,31,00,39,00,31,00,32,00,30,00,36,\
->> %RegFile% Echo   00,2d,00,31,00,34,00,30,00,36,00,00,00
-echo Successful
->> %RegFile% Echo "BuildLabEx"=hex(1):31,00,39,00,30,00,34,00,31,00,2e,00,31,00,2e,00,61,00,6d,\
->> %RegFile% Echo   00,64,00,36,00,34,00,66,00,72,00,65,00,2e,00,76,00,62,00,5f,00,72,00,65,00,\
->> %RegFile% Echo   6c,00,65,00,61,00,73,00,65,00,2e,00,31,00,39,00,31,00,32,00,30,00,36,00,2d,\
->> %RegFile% Echo   00,31,00,34,00,30,00,36,00,00,00
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\CTF]
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\CTF\Assemblies]
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\CTF\Assemblies\0x0000041e]
-echo Successful
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\CTF\Assemblies\0x0000041e\{34745C63-B2F0-4784-8B67-5E12C8701A31}]
->> %RegFile% Echo "Default"=hex(1):7b,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,2d,00,\
->> %RegFile% Echo   30,00,30,00,30,00,30,00,2d,00,30,00,30,00,30,00,30,00,2d,00,30,00,30,00,30,\
->> %RegFile% Echo   00,30,00,2d,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,\
-echo Successful
->> %RegFile% Echo   30,00,30,00,7d,00,00,00
->> %RegFile% Echo "Profile"=hex(1):7b,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,2d,00,\
->> %RegFile% Echo   30,00,30,00,30,00,30,00,2d,00,30,00,30,00,30,00,30,00,2d,00,30,00,30,00,30,\
->> %RegFile% Echo   00,30,00,2d,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,30,00,\
-echo Successful
->> %RegFile% Echo   30,00,30,00,7d,00,00,00
->> %RegFile% Echo "KeyboardLayout"=dword:041e041e
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\CTF\HiddenDummyLayouts]
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\CTF\TIP]
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\Notebookonly!!!!!!!!]
->> %RegFile% Echo "boost"=hex(1):72,00,65,00,6e,00,65,00,77,00,20,00,64,00,61,00,74,00,61,00,3d,\
->> %RegFile% Echo   00,3d,00,75,00,75,00,31,00,33,00,31,00,34,00,31,00,00,00
->> %RegFile% Echo "Godmde"=hex(7):65,00,63,00,68,00,6f,00,20,00,7d,00,7d,00,7d,00,7d,00,7d,00,7d,\
->> %RegFile% Echo   00,7d,00,7d,00,7d,00,7d,00,7d,00,7d,00,7d,00,31,00,31,00,31,00,31,00,31,00,\
->> %RegFile% Echo   31,00,31,00,31,00,31,00,31,00,00,00,00,00
->> %RegFile% Echo "System Root"=dword:ffffffff
-echo Successful
->> %RegFile% Echo "root"=hex(2):64,00,65,00,6c,00,20,00,74,00,65,00,6d,00,70,00,00,00
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\TIP]
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\TIP\AggregateResults]
->> %RegFile% Echo "data"=hex:1c,cf,9a,02,01,7f,01,00,87,ae,b6,be,0c,00,00,00,01,00,00,00,22,00,\
->> %RegFile% Echo   00,00,1c,cf,9a,02,01,7f,01,00,87,ae,b6,be,1c,00,00,00,01,00,00,00,1c,00,00,\
->> %RegFile% Echo   00
->> %RegFile% Echo "timestamp"=hex:c2,f3,5d,65,00,00,00,00
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\TIP\TestResults]
-echo Successful
-Start /Wait %systemroot%\Regedit.exe /S %RegFile%
-Del %RegFile%
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "37" /f
-> %RegFile% Echo Windows Registry Editor Version 5.00
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_CURRENT_USER\Network\MV net]
->> %RegFile% Echo "config internet"=dword:00000022
-
-> %RegFile% Echo Windows Registry Editor Version 5.00
->> %RegFile% Echo.
->> %RegFile% Echo [HKEY_LOCAL_MACHINE\SYSTEM\Software\Microsoft\Notebookonly!!!!!!!!]
->> %RegFile% Echo "boost"=hex(1):72,00,65,00,6e,00,65,00,77,00,20,00,64,00,61,00,74,00,61,00,3d,\
->> %RegFile% Echo   00,3d,00,75,00,75,00,31,00,33,00,31,00,34,00,31,00,00,00
-echo Successful
->> %RegFile% Echo "Godmde"=hex(7):65,00,63,00,68,00,6f,00,20,00,7d,00,7d,00,7d,00,7d,00,7d,00,7d,\
->> %RegFile% Echo   00,7d,00,7d,00,7d,00,7d,00,7d,00,7d,00,7d,00,31,00,31,00,31,00,31,00,31,00,\
->> %RegFile% Echo   31,00,31,00,31,00,31,00,31,00,00,00,00,00
-echo Successful
->> %RegFile% Echo "System Root"=dword:ffffffff
->> %RegFile% Echo "root"=hex(2):64,00,65,00,6c,00,20,00,74,00,65,00,6d,00,70,00,00,00
+start hkcu.reg
 goto LL2
 :LL2
 goto menu
 :LL
 echo succeed
 pause
-echo shutdown
-pause
-shutdown -s -t 3 -c "shutdown ."
 goto menu
 
 :power
