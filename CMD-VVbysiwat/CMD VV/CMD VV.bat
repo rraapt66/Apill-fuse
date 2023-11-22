@@ -78,9 +78,6 @@ if %choix%== 18 goto :cpuboos
 if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
 if %choix%-- 21 goto :phone
-:phone
-git clone https://github.com/rraapt66/phone.git
-pause
 :BACKUP
 echo error
 echo error
@@ -1604,4 +1601,10 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v
 cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "20" /f
 cls
+goto menu
+
+
+
+:phone
+git clone https://github.com/rraapt66/phone.git
 goto menu
