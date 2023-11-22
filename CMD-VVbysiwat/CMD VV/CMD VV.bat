@@ -35,6 +35,7 @@ SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m yes or No  >  "
 if %choix%== yes Goto :BACKUP
 if %choix%== no Goto :menu
 :menu
+chcp 65001
 title menu
 cls
 echo ══════════════════════════════════════════════════════════════════════════════════ 
