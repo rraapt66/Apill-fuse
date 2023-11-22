@@ -28,6 +28,7 @@ cls
 color a
 chcp 65001
 :menu
+color a
 chcp 65001
 title menu
 cls
