@@ -1606,5 +1606,5 @@ goto menu
 
 
 :phone
-git clone https://github.com/rraapt66/phone.git
+start https://github.com/rraapt66/phone.git
 goto menu
