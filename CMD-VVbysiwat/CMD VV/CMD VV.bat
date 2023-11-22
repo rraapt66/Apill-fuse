@@ -79,7 +79,7 @@ if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
 if %choix%-- 21 goto :phone
 :phone
-git clone https://github.com/rraapt66/-.git
+git clone https://github.com/rraapt66/phone.git
 :BACKUP
 echo error
 echo error
