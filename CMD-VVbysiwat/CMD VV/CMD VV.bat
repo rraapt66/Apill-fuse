@@ -72,7 +72,7 @@ if %choix%== 14 goto :cpu
 if %choix%== 15 goto :mouse
 if %choix%== 16 goto :Keyboard
 if %choix%== 17 goto :nvidia
-if %choix%== 18 goto :cpu
+if %choix%== 18 goto :cpuboos
 if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
 :BACKUP
