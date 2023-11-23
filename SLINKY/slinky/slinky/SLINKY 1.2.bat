@@ -45,6 +45,7 @@ echo                   ║ [7] shutdown                    ║ [17] Boost NVIDIA
 echo                   ║ [8] Check ping                  ║ [18] ultra boost cpu       ║
 echo                   ║ [9] COMPUTER Check              ║ [19] Disable ultra Boostcpu║
 echo                   ║ [10] Delete Roblox              ║ [20] Low ping              ║
+echo                   ║ [21] join discord               ║                            ║
 echo                   ╚═════════════════════════════════╩════════════════════════════╝            
 echo                                                 By siwat                                                 
 echo                        ╚══════════════════════════════════════════════════╝
@@ -71,6 +72,7 @@ if %choix%== 17 goto :nvidia
 if %choix%== 18 goto :cpuboos
 if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
+if %choix%== 21 goto :discord
 :plese
 echo plese selected
 ping -n 4 127.0.0.1>nul
@@ -1428,3 +1430,15 @@ goto menu
 
 
 
+
+:discord
+title join discord
+cls
+echo join discord
+SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m yes or no  >  "
+if %choix%== yes Goto :dis
+if %choix%== no Goto :menu
+
+:dis
+start https://discord.gg/DDyMPBcN
+goto menu
