@@ -34,27 +34,28 @@ title menu
 cls
 chcp 65001
 echo ══════════════════════════════════════════════════════════════════════════════════ 
-echo 1 clean file
-echo 2 remote
-echo 3 roblox
-echo 4 GameModeoff
-echo 5 Gamemodeon
-echo 6 recover Backup Notebook only
-echo 7 shutdown
-echo 8 Check ping
-echo 9 COMPUTER Check
-echo 10 delete Roblox
-echo 11 BACKUP
-echo 12 Fullclean
-echo 13 edit power plan
-echo 14 Boost cpu
-echo 15 mouse
-echo 16 Keyboard
-echo 17 boost nvidia
-echo 18 ultra boost cpu
-echo 19 Disable ultra boost cpu
-echo 20 Low pinG
-echo ══════════════════════════════════════════════════════════════════════════════════
+echo"░                    ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗"
+echo"                    ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝"
+echo"                    ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░"
+echo"░                   ╚═══██╗ ██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░"
+echo"                    ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░"
+echo"                      ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░"
+echo                   ╔═════════════════════════════════╦════════════════════════════╗ 
+echo                   ║ [1] clean file                  ║ [11] Backup                ║
+echo                   ║ [2] Remote                      ║ [12] FULL CLEAN            ║
+echo                   ║ [3] roblox                      ║ [13] edit power plan       ║
+echo                   ║ [4] GameModeoff                 ║ [14] Boost cpu             ║
+echo                   ║ [5] Gamemodeon                  ║ [15] mouse                 ║
+echo                   ║ [6] recover Backup Notebook only║ [16] Keyboard              ║
+echo                   ║ [7] shutdown                    ║ [17] Boost NVIDIA          ║
+echo                   ║ [8] Check ping                  ║ [18] ultra boost cpu       ║
+echo                   ║ [9] COMPUTER Check              ║ [19] Disable ultra Boostcpu║
+echo                   ║ [10] Delete Roblox              ║ [20] Low ping              ║
+echo                   ╚═════════════════════════════════╩════════════════════════════╝            
+echo                                                 By siwat                                                 
+echo                        ╚══════════════════════════════════════════════════╝
+echo                                          Current Version: 1.2
+echo ══════════════════════════════════════════════════════════════════════════════════ 
 SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :clean
 if %choix%== 2 Goto :remoteZ
