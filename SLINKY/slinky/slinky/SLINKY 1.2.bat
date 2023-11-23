@@ -71,6 +71,10 @@ if %choix%== 17 goto :nvidia
 if %choix%== 18 goto :cpuboos
 if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
+:plese
+echo plese selected
+ping -n 4 127.0.0.1>nul
+goto menu
 :BACKUP
 goto commingsoon
 
