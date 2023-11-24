@@ -84,7 +84,7 @@ echo plese selected
 ping -n 4 127.0.0.1>nul
 goto menu
 :BACKUP
-goto commingsoon
+goto backup
 
 
 :commingsoon
@@ -1447,4 +1447,12 @@ if %choix%== no Goto :menu
 
 :dis
 start https://discord.gg/DDyMPBcN
+goto menu
+
+:backup
+reg export HKEY_CLASSES_ROOT C:\RegBackups\HKLM.Reg
+reg export HKEY_CURRENT_USER C:\RegBackups\HKCU.Reg
+reg export HKEY_LOCAL_MACHINE C:\RegBackups\HKCR.Reg
+reg export HKEY_USERS C:\RegBackups\HKU.Reg
+reg export HKEY_CURRENT_CONFIG C:\RegBackups\HKCC.Reg
 goto menu
