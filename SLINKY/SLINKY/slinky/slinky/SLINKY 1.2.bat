@@ -1456,10 +1456,10 @@ reg export HKCU HKEY_CURRENT_USER.reg
 reg export HKCR HKEY_CLASSES_ROOT.reg
 reg export HKU HKEY_USERS.reg
 reg export HKCC HK_CURRENT_CONFIG.reg
-goto menu
-
-
-:startbk
+cls
+echo start resotore regedit
+SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m yes or no  >  "
+if %choix%== no Goto :menu
 title       
 echo recover files Backup
 ping -n 3 127.0.0.1>nul
