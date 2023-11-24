@@ -1451,6 +1451,7 @@ start https://discord.gg/DDyMPBcN
 goto menu
 
 :backup
+cd c:
 reg export HKEY_CLASSES_ROOT C:\RegBackups\HKLM.Reg
 reg export HKEY_CURRENT_USER C:\RegBackups\HKCU.Reg
 reg export HKEY_LOCAL_MACHINE C:\RegBackups\HKCR.Reg
