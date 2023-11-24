@@ -51,7 +51,7 @@ echo                   ║ [7] shutdown                    ║ [17] Boost NVIDIA
 echo                   ║ [8] Check ping                  ║ [18] ultra boost cpu       ║
 echo                   ║ [9] COMPUTER Check              ║ [19] Disable ultra Boostcpu║
 echo                   ║ [10] Delete Roblox              ║ [20] Low ping              ║
-echo                   ║ [21] join discord               ║                            ║
+echo                   ║ [21] join discord               ║ [22]recover files Backup   ║
 echo                   ╚═════════════════════════════════╩════════════════════════════╝            
 echo                                                 By siwat                                                 
 echo                        ╚══════════════════════════════════════════════════╝
@@ -79,6 +79,7 @@ if %choix%== 18 goto :cpuboos
 if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
 if %choix%== 21 goto :discord
+if %choix%== 22 goto :startbk
 :plese
 echo plese selected
 ping -n 4 127.0.0.1>nul
@@ -1455,4 +1456,17 @@ reg export HKEY_CURRENT_USER C:\RegBackups\HKCU.Reg
 reg export HKEY_LOCAL_MACHINE C:\RegBackups\HKCR.Reg
 reg export HKEY_USERS C:\RegBackups\HKU.Reg
 reg export HKEY_CURRENT_CONFIG C:\RegBackups\HKCC.Reg
+goto menu
+
+
+:startbk
+title       
+echo recover files Backup
+ping -n 3 127.0.0.1>nul
+cd C:\RegBackups
+start HKCC.Reg
+start HKCR.Reg
+start HKCU.Reg
+start HKLM.Reg
+start HKU.Reg
 goto menu
