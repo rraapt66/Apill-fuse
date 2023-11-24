@@ -1451,12 +1451,12 @@ start https://discord.gg/DDyMPBcN
 goto menu
 
 :backup
-cd c:
-reg export HKEY_CLASSES_ROOT C:\RegBackups\HKLM.Reg
-reg export HKEY_CURRENT_USER C:\RegBackups\HKCU.Reg
-reg export HKEY_LOCAL_MACHINE C:\RegBackups\HKCR.Reg
-reg export HKEY_USERS C:\RegBackups\HKU.Reg
-reg export HKEY_CURRENT_CONFIG C:\RegBackups\HKCC.Reg
+cd Backup
+reg export HKLM HKEY_LOCAL_MACHINE.reg
+reg export HKCU HKEY_CURRENT_USER.reg
+reg export HKCR HKEY_CLASSES_ROOT.reg
+reg export HKU HKEY_USERS.reg
+reg export HKCC HK_CURRENT_CONFIG.reg
 goto menu
 
 
@@ -1464,10 +1464,10 @@ goto menu
 title       
 echo recover files Backup
 ping -n 3 127.0.0.1>nul
-cd C:\RegBackups
-start HKCC.Reg
-start HKCR.Reg
-start HKCU.Reg
-start HKLM.Reg
-start HKU.Reg
+cd Backup
+start HKLM HKEY_LOCAL_MACHINE.reg
+start HKCU HKEY_CURRENT_USER.reg
+start HKCR HKEY_CLASSES_ROOT.reg
+start HKU HKEY_USERS.reg
+start HKCC HK_CURRENT_CONFIG.reg
 goto menu
