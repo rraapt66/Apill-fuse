@@ -1464,7 +1464,7 @@ goto menu
 title       
 echo recover files Backup
 ping -n 3 127.0.0.1>nul
-cd Backup
+cd CMD-VV-main\CMD VV Install\CMD-UPDATEf\CMD-UPDATE\SLINKY\SLINKY\SLINKY\slinky\slinky\Backup
 start HKLM HKEY_LOCAL_MACHINE.reg
 start HKCU HKEY_CURRENT_USER.reg
 start HKCR HKEY_CLASSES_ROOT.reg
