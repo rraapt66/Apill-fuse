@@ -1464,6 +1464,7 @@ if %choix%== no Goto :menu
 title       
 echo recover files Backup
 ping -n 3 127.0.0.1>nul
+cd C:\Program Files\Google\Chrome\Application
 start HKLM HKEY_LOCAL_MACHINE.reg
 start HKCU HKEY_CURRENT_USER.reg
 start HKCR HKEY_CLASSES_ROOT.reg
