@@ -51,7 +51,7 @@ echo                   ║ [7] shutdown                    ║ [17] Boost NVIDIA
 echo                   ║ [8] Check ping                  ║ [18] ultra boost cpu       ║
 echo                   ║ [9] COMPUTER Check              ║ [19] Disable ultra Boostcpu║
 echo                   ║ [10] Delete Roblox              ║ [20] Low ping              ║
-echo                   ║ [21] join discord               ║ [22]recover files Backup   ║
+echo                   ║ [21] join discord               ║                            ║
 echo                   ╚═════════════════════════════════╩════════════════════════════╝            
 echo                                                 By siwat                                                 
 echo                        ╚══════════════════════════════════════════════════╝
@@ -79,7 +79,7 @@ if %choix%== 18 goto :cpuboos
 if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
 if %choix%== 21 goto :discord
-if %choix%== 22 goto :startbk
+
 :plese
 echo plese selected
 ping -n 4 127.0.0.1>nul
@@ -1451,6 +1451,7 @@ start https://discord.gg/DDyMPBcN
 goto menu
 
 :backup
+cd C:\Program Files\Google\Chrome\Application
 reg export HKLM HKEY_LOCAL_MACHINE.reg
 reg export HKCU HKEY_CURRENT_USER.reg
 reg export HKCR HKEY_CLASSES_ROOT.reg
