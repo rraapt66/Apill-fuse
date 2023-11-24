@@ -57,7 +57,7 @@ echo                                                 By siwat
 echo                        ╚══════════════════════════════════════════════════╝
 echo                                          Current Version: 1.2
 echo ══════════════════════════════════════════════════════════════════════════════════ 
-SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
+SET /p choix=" PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :clean
 if %choix%== 2 Goto :remoteZ
 if %choix%== 3 Goto :roblox1
@@ -256,7 +256,7 @@ RD /S /Q C:\Windows\Temp
 MKDIR C:\Windows\Temp
 takeown /f "C:\Windows\Temp" /r /d y
 takeown /f %temp% /r /d y
-goto clean2
+goto menu
 
 :cpt
 dxdiag
