@@ -1041,7 +1041,7 @@ cls
 echo 1 balanced
 echo 2 High
 echo 3 ultimate
-SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
+SET /p choix=" PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :balanced
 if %choix%== 2 Goto :High
 if %choix%== 3 Goto :ultimate
@@ -1398,7 +1398,7 @@ echo 1 boost 10%
 echo 2 boost 45%
 echo 3 boost 100%
 echo ══════════════════════════════════════════════════════════════════════════════════
-SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m PRESS NUMBER USE  >  "
+SET /p choix="%%b[ PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :1
 if %choix%== 2 Goto :g
 if %choix%== 3 Goto :v
