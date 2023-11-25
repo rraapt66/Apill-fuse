@@ -34,10 +34,10 @@ title menu
 cls
 chcp 65001
 echo ══════════════════════════════════════════════════════════════════════════════════
-echo                             ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
 echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
 echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
-echo                             ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
 echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo                   ╔═══════════════════════════════════════════════════════════════╗ 
@@ -835,7 +835,6 @@ echo                            ╚█████╗░██║░░░░░
 echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
 echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
-cls
 title Gamemode off
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "SystemCacheDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
@@ -856,7 +855,6 @@ echo                            ╚█████╗░██║░░░░░
 echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
 echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
-cls
 echo shutdown
 SET /p choix=" PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :shd
@@ -1733,7 +1731,7 @@ goto menu
 
 :backup
 mkdir BACKUP
-echo backup Successful > BACKUP\backup.txt >nul
+echo backup Successful > BACKUP\backup.txt
 cd BACKUP
 reg export HKLM HKEY_LOCAL_MACHINE.reg
 cls
@@ -1751,5 +1749,9 @@ reg export HKCC HK_CURRENT_CONFIG.reg
 cls
 echo Successful(Dont close)
 cls
-echo Successful(Dont close)
-goto menu
+goto pause
+
+
+:pause
+pause
+goto menu >nul
