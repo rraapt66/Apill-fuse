@@ -1451,6 +1451,8 @@ start https://discord.gg/DDyMPBcN
 goto menu
 
 :backup
+echo off
+mkdir BACKUP
 cd BACKUP
 reg export HKLM HKEY_LOCAL_MACHINE.reg
 reg export HKCU HKEY_CURRENT_USER.reg
@@ -1459,4 +1461,5 @@ reg export HKU HKEY_USERS.reg
 reg export HKCC HK_CURRENT_CONFIG.reg
 cls
 del none.txt
+echo BACK UP Successful > README\README.txt
 goto menu
