@@ -1460,6 +1460,5 @@ reg export HKCR HKEY_CLASSES_ROOT.reg
 reg export HKU HKEY_USERS.reg
 reg export HKCC HK_CURRENT_CONFIG.reg
 cls
-del none.txt
 echo BACK UP Successful > README\README.txt
 goto menu
