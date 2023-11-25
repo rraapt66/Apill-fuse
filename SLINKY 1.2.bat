@@ -34,16 +34,15 @@ title menu
 cls
 chcp 65001
 echo ══════════════════════════════════════════════════════════════════════════════════
-
-echo                      ░██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
-echo                      ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
-echo                      ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
-echo ░                     ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
-echo                      ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
-echo                      ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo                   ╔═══════════════════════════════════════════════════════════════╗ 
 echo                   ║ [1] clean file                   ║ [11] Backup                ║
-echo                   ║ [2] Remote                       ║[12] FULL CLEAN             ║
+echo                   ║ [2] Remote                       ║ [12] FULL CLEAN            ║
 echo                   ║ [3] roblox                       ║ [13] edit power plan       ║
 echo                   ║ [4] GameModeoff                  ║ [14] Boost cpu             ║
 echo                   ║ [5] Gamemodeon                   ║ [15] mouse                 ║
@@ -52,7 +51,7 @@ echo                   ║ [7] shutdown                     ║ [17] Boost NVIDI
 echo                   ║ [8] Check ping                   ║ [18] ultra boost cpu       ║
 echo                   ║ [9] COMPUTER Check               ║ [19] Disable ultra Boostcpu║
 echo                   ║ [10] Delete Roblox               ║ [20] Low ping              ║
-echo                   ║ [21] join discord                                             ║
+echo                   ║ [21] join discord                ║                            ║
 echo                   ╚═══════════════════════════════════════════════════════════════╝            
 echo                                                 By siwat                                                 
 echo                                       ╔══════════════════════════╗
@@ -379,9 +378,16 @@ goto ALL
 
 :ALL
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 title select
 echo select 
 ping -n 2 127.0.0.1>nul
+cls
 title Question
 echo remote Shell type z          newtabcmd  type x         mspaint type c   4goto menu type v             
 chcp 65001
@@ -412,6 +418,12 @@ goto menu
 :roblox1
 chcp 65001
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo dowload roblox????
 if %choix%== yes Goto :next
 if %choix%== no Goto :roblox3
@@ -450,6 +462,12 @@ goto menu
 title SHell
 chcp 65001
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 if %choix%== o Goto :Shell
 if %choix%== m Goto :remotet
 if %choix%== f Goto :Checkip
@@ -498,6 +516,13 @@ goto menu
 :Gamemodeon
 @echo off
 title Gamemode on
+cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 cls
 ping -n 4 127.0.0.1>nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "22" /f
@@ -714,6 +739,13 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling" /v "Po
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\usbflags" /v "fid_D1Latency" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\usbflags" /v "fid_D2Latency" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\usbflags" /v "fid_D3Latency" /t REG_DWORD /d "0" /f
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Class\USB\0000" /v "IdleEnable" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Class\USB\0001" /v "IdleEnable" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Class\USB\0002" /v "IdleEnable" /t REG_DWORD /d "0" /f
@@ -751,6 +783,13 @@ Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\System
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "SystemResponsiveness" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "NoLazyMode" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "LazyModeTimeout" /t REG_DWORD /d "10000" /f
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+cls
 pause
 ping -n 2 127.0.0.1>nul
 taskkill /f /im explorer.exe
@@ -759,6 +798,13 @@ start explorer.exe
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "22" /f
 echo shutdown ??
 ping -n 2 127.0.0.1>nul
+cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 cls
 echo 1 shutdown
 echo 2 NO shutdown
@@ -783,6 +829,13 @@ goto win11
 
 :GameModeoff
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+cls
 title Gamemode off
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "SystemCacheDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
@@ -796,6 +849,13 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32Pri
 start BACKUP
 ping -n 2 127.0.0.1>nul
 echo Disable Gamemode
+cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 cls
 echo shutdown
 SET /p choix=" PRESS NUMBER USE  >  "
@@ -825,6 +885,13 @@ goto Question
 chcp 65001
 cls
 title win11 Boost
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+cls
 echo only windows 11
 SET /p choix=" yes or No  >  "
 if %choix%== yes Goto :Family
@@ -848,7 +915,14 @@ start C:\Users\siwat\AppData\Local\Roblox\Versions\version-3aba366803e44f0e\Robl
 cls
 @echo off
 echo Disable Boost all
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 pause
+cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "DisableTaskOffload" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "enableTaskOffload" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "EnableOplocks" /t REG_DWORD /d "1" /f
@@ -1042,6 +1116,12 @@ goto LL2
 :LL2
 goto menu
 :LL
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo succeed
 pause
 goto menu
@@ -1049,6 +1129,13 @@ goto menu
 :power
 chcp 65001
 title setting power plan
+cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 cls
 echo 1 balanced
 echo 2 High
@@ -1070,20 +1157,50 @@ goto ld3
 :ld1
 title setting powerplan
 color 7
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (═══════                                      )
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (══════════════                               )
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (═══════════════════════════════════          )
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (═════════════════════════════════════════════)
 ping -n 1 127.0.0.1>nul
 cls
 powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo succeed
 ping -n 2 127.0.0.1>nul
 goto menu
@@ -1091,20 +1208,56 @@ goto menu
 :ld2
 title setting powerplan
 color 7
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (═══════                                      )
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (══════════════                               )
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (═══════════════════════════════════          )
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (═════════════════════════════════════════════)
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo succeed
 ping -n 2 127.0.0.1>nul
 goto menu
@@ -1112,25 +1265,67 @@ goto menu
 :ld3
 title setting powerplan
 color 7
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (═══════                                      )
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (══════════════                               )
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (═══════════════════════════════════          )
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo  (═════════════════════════════════════════════)
 ping -n 1 127.0.0.1>nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo succeed
 ping -n 2 127.0.0.1>nul
 goto menu
 
 :cpu
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 git clone https://github.com/rraapt66/cout.git
 goto setupCpu
 
@@ -1147,6 +1342,13 @@ git clone https://github.com/rraapt66/Keybord.git
 start Keybord
 goto kb
 :kb
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+pause
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters /f
 goto menu
 
@@ -1156,11 +1358,25 @@ git clone https://github.com/rraapt66/mouse.git
 start mouse
 goto Mu
 :Mu
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+pause
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters /f
 goto menu
 
 :nvidia
 title nvidia boost
+cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 :: ---------------------------------------------------  !!! Incorrect Data Found !!!  -------------------------------------------------------------
 :: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm --> [Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
 :: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm --> [Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
@@ -1256,6 +1472,13 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "TrackResetEngine" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "UseBestResolution" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "ValidateBlitSubRects" /t REG_DWORD /d "0" /f
+cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "RMPcieLinkSpeed" /t REG_DWORD /d "4" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "EnablePreemption" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "GPUPreemptionLevel" /t REG_DWORD /d "0" /f
@@ -1327,6 +1550,13 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "LogEventEntrie
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "LogErrorEntries" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "ComputePreemption" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\nvlddmkm" /v "EnableBugcheckDisplay" /t REG_DWORD /d "0" /f
+cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS" /v "EnableRID61684" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\0000" /v "RMHdcpKeyglobZero" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global\NVTweak" /v "NvCplExposeWin2kDualView" /t REG_DWORD /d "1" /f
@@ -1364,14 +1594,21 @@ Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global\NVTweak" /v "PowermizerPref
 Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global\NVTweak" /v "QTwkEnableModeChangeWarning" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "SimulateSecureBoot" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\nvlddmkm" /v "DisableMshybridNvsrSwitch" /t REG_DWORD /d "1" /f
+cls
 goto menu
 
 
 :cpuboos
 title Boost
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo Boost 
-chcp 65001
+chcp 65001 >nul
 SET /p choix=" yes or No  >  "
 if %choix%== yes Goto :bof
 if %choix%== no Goto :menu
@@ -1379,8 +1616,14 @@ if %choix%== no Goto :menu
 :bof
 title Boost
 cls
-chcp 65001
+chcp 65001 >nul
 cls
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo ══════════════════════════════════════════════════════════════════════════════════════════════════ 
 echo 1 boost 10%
 echo 2 boost 45%
