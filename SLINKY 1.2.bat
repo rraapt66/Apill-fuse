@@ -500,6 +500,15 @@ ping -n 2 127.0.0.1>nul
 REM ~ Reg.exe add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome" /v "Users" /t REG_QWORD /d "0x0300000000000000" /f
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
 Reg.exe add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions" /f
+:: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
+REM ~ Reg.exe add "HKLM\SOFTWARE\Google" /v "taskkillGoogle" /t REG_QWORD /d "0x0100000000000000" /f
+REM ~ Reg.exe add "HKLM\SOFTWARE\Google" /v "enableGoogle" /t REG_QWORD /d "0x0000000000000000" /f
+:: ------------------------------------------------------------------------------------------------------------------------------------------------
+
+Reg.exe add "HKLM\SOFTWARE\Google" /v "start" /t REG_SZ /d "" /f
+Reg.exe add "HKLM\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.microsoft.browsercore" /ve /t REG_SZ /d "C:\Program Files\Windows Security\BrowserCore\manifest.json" /f
+Reg.exe add "HKLM\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.microsoft.defender.browser_extension.native_message_host" /ve /t REG_SZ /d "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.23100.2009-0\com.microsoft.defender.be.chrome.json" /f
+Reg.exe add "HKLM\SOFTWARE\Google\Chrome\NativeMessagingHosts\mbambgnativemsg.exe" /ve /t REG_SZ /d "C:\Program Files\Malwarebytes\Anti-Malware\mbam.manifest.json" /f
 Reg.exe add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\NativeMessagingHosts\mbambgnativemsg.exe" /ve /t REG_SZ /d "C:\Program Files\Malwarebytes\Anti-Malware\mbam.manifest.json" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\GpuEnergyDrv" /v "Start" /t REG_DWORD /d "4" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "DisablePageCombining" /t REG_DWORD /d "1" /f
@@ -768,13 +777,16 @@ goto win11
 :GameModeoff
 cls
 title Gamemode off
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "SystemCacheDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcTotalDirtyPages" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageTarget" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnablePrefetcher" /t REG_DWORD /d "3" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnableSuperfetch" /t REG_DWORD /d "0" /f >nul
 pause
 cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "38" /f
-cd C:\Program Files\Google
-start hkcr.reg
-start hkcu.reg
-start hkcm.reg
+start BACKUP
 ping -n 2 127.0.0.1>nul
 echo Disable Gamemode
 cls
@@ -1387,9 +1399,15 @@ cls
 echo  (═════════════════════════════════════════════)
 ping -n 1 127.0.0.1>nul
 cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "SystemCacheDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageThreshold" /t REG_DWORD /d "2" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcTotalDirtyPages" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageTarget" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnablePrefetcher" /t REG_DWORD /d "3" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnableSuperfetch" /t REG_DWORD /d "0" /f >nul
 cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "8" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "8" /f >nul
 cls
 goto menu
 
@@ -1409,8 +1427,14 @@ echo  (════════════════════════�
 ping -n 1 127.0.0.1>nul
 cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "12" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "SystemCacheDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageThreshold" /t REG_DWORD /d "100" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcTotalDirtyPages" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageTarget" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnablePrefetcher" /t REG_DWORD /d "3" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnableSuperfetch" /t REG_DWORD /d "0" /f >nul
 cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "12" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "12" /f >nul
 cls
 goto menu
 
@@ -1429,9 +1453,15 @@ cls
 echo  (═════════════════════════════════════════════)
 ping -n 1 127.0.0.1>nul
 cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "20" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "20" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "SystemCacheDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageThreshold" /t REG_DWORD /d "500" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcTotalDirtyPages" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageTarget" /t REG_DWORD /d "0" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnablePrefetcher" /t REG_DWORD /d "3" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnableSuperfetch" /t REG_DWORD /d "0" /f >nul
 cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "20" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "20" /f >nul
 cls
 goto menu
 
