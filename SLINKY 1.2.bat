@@ -51,7 +51,8 @@ echo                   ║ [7] shutdown                     ║ [17] Boost NVIDI
 echo                   ║ [8] Check ping                   ║ [18] ultra boost cpu       ║
 echo                   ║ [9] COMPUTER Check               ║ [19] Disable ultra Boostcpu║
 echo                   ║ [10] Delete Roblox               ║ [20] Low ping              ║
-echo                   ║ [21] join discord                ║                            ║
+echo                   ║ [21] join discord                ║ [22] intel boost           ║
+echo                   ║ [23] AMD boost                   ║ [24] cpu low runnig%       ║                                                                    
 echo                   ╚═══════════════════════════════════════════════════════════════╝            
 echo                                                 By siwat                                                 
 echo                                       ╔══════════════════════════╗
@@ -79,7 +80,10 @@ if %choix%== 18 goto :cpuboos
 if %choix%== 19 goto :discup
 if %choix%== 20 goto :lowp
 if %choix%== 21 goto :discord
-(if not /%input% ==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+if %choix%== 22 goto :intel
+if %choix%== 23 goto :AMD
+if %choix%== 24 goto :lowcpu
+(if not /%input% ==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
 goto plese)
 :plese
 cls
@@ -903,6 +907,123 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Manage
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "TrackPtes" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "DeepIoCoalescingEnabled" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "132" /f
+@echo off
+setlocal enabledelayedexpansion
+cls
+title Windows 11 Basic Optimizer by Melody version 6
+echo.
+echo Automatic Optimizer to restore proper framerate in your Windows 11 PC after Windows 10 Upgrade
+echo.
+echo Make SURE you run this script as Administrator
+echo If you did, press any key to continue, else, close the script and run it again as Administrator
+echo.
+pause > nul
+
+REM Process Mitigations
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "MitigationOptions" /t REG_BINARY /d 222222222222222222222222222222222222222222222222 /f
+
+REM Per-process Process Mitigations
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Acrobat.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcrobatInfo.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroCEF.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroRd32.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroServicesUpdater.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ExtExport.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ie4uinit.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ieinstal.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ielowutil.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ieUnatt.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\iexplore.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mscorsvw.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msfeedssync.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mshta.exe" /v "MitigationOptions" /f
+REM keep MsSense alone because it causes problems
+REM reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MsSense.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ngen.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ngentask.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PresentationHost.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PrintDialog.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PrintIsolationHost.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\runtimebroker.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\splwow64.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\spoolsv.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SystemSettings.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SystemSettings.exe" /v "MitigationOptions" /f
+
+REM Other Mitigation stuff
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "EnableCfg" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "MoveImages" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettings" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverride" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverrideMask" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "DisableExceptionChainValidation" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "KernelSEHOPEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE" /v "DisableExternalDMAUnderLock" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "HVCIMATRequired" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main" /v "DEPOff" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "NoDataExecutionPrevention" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /v "DisableHHDEP" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager" /v "ProtectionMode" /t REG_DWORD /d 0 /f
+bcdedit /set isolatedcontext No
+bcdedit /set allowedinmemorysettings 0x0
+bcdedit /set disableelamdrivers Yes
+bcdedit /set vsmlaunchtype Off
+bcdedit /set bootmenupolicy Legacy
+
+REM Telemetry
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\AppV\CEIP" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+REM the one below is actually 0 to disable customer improvement program, idk why
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\SQM" /v "DisableCustomerImprovementProgram" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client" /v "CEIP" /t REG_DWORD /d 2 /f
+REM same thing, 1 to disable
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MSDeploy\3" /v "EnableTelemetry" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "AITEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "DisableInventory" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" /v "Disabled" /t REG_DWORD /d 1 /f
+
+REM Defender and SmartScreen
+REM we cannot disable Defender in Win11 but at least make it slimmer and stop it from taking actions on its own
+REM new - manually decrease Defender priority (since the Policy does not work anymore and is completely ignored)
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /v "EnableSmartScreen" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter" /v "EnabledV9" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableRoutinelyTakingAction" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "ServiceKeepAlive" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableRealtimeMonitoring" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" /v "DisableEnhancedNotifications" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" /v "ConfigureAppInstallControlEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Threats" /v "Threats_ThreatSeverityDefaultAction" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Threats\ThreatSeverityDefaultAction" /v "1" /t REG_SZ /d "6" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Threats\ThreatSeverityDefaultAction" /v "2" /t REG_SZ /d "6" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Threats\ThreatSeverityDefaultAction" /v "4" /t REG_SZ /d "6" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Threats\ThreatSeverityDefaultAction" /v "5" /t REG_SZ /d "6" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\UX Configuration" /v "Notification_Suppress" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MsMpEng.exe\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MsMpEngCP.exe\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d 1 /f
+
+REM Hardware accelerated scheduling
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "HwSchMode" /t REG_DWORD /d 2 /f
+
+REM use bbr2 (BBR V2) as a congestion control provider
+netsh int tcp set supplemental internet congestionprovider=bbr2
+
+REM use the weak host model by default (same as Linux)
+powershell "Get-NetAdapter -IncludeHidden | Set-NetIPInterface -WeakHostSend Enabled -WeakHostReceive Enabled -ErrorAction SilentlyContinue"
+
+REM Disabled features
+REM Get Insider Updates without joining the Insider Program and without having Telemetry enabled
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "BranchReadinessLevel" /t REG_DWORD /d 2 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuilds" /t REG_DWORD /d 1 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuildsPolicyValue" /t REG_DWORD /d 2 /f
+
+echo.
+echo Done, make sure you reboot your system
+echo Run this script every time you upgrade to a new build
+echo.
+pause
+endlocal
 goto menu
 
 :roblox
@@ -1380,7 +1501,43 @@ echo                            ╚═════╝░╚══════╝
 :: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm --> [Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
 :: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NvTelemetryContainer --> [Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
+D3PCLatency -> 1
 
+F1TransitionLatency -> 1
+
+LOWLATENCY -> 1
+
+Node3DLowLatency -> 1
+
+PciLatencyTimerControl -> 32 decimal
+
+RMDeepL1EntryLatencyUsec -> 1
+
+RmGspcMaxFtuS -> 1
+
+RmGspcMinFtuS -> 1
+
+RmGspcPerioduS -> 1
+
+RMLpwrEiIdleThresholdUs -> 1
+
+RMLpwrGrIdleThresholdUs -> 1
+
+RMLpwrGrRgIdleThresholdUs -> 1
+
+RMLpwrMsIdleThresholdUs -> 1
+
+VRDirectFlipDPCDelayUs -> 1
+
+VRDirectFlipTimingMarginUs -> 1
+
+VRDirectJITFlipMsHybridFlipDelayUs -> 1
+
+vrrCursorMarginUs -> 1
+
+vrrDeflickerMarginUs -> 1
+
+vrrDeflickerMaxUs -> 1
 Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global\NVTweak" /v "NvCplExposeWin2kDualView" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global\NVTweak" /v "NvCplTvLocaleAutoDetect" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global\NVTweak" /v "NvCplAllowForceTVDetection" /t REG_DWORD /d "1" /f
@@ -1755,3 +1912,143 @@ goto pause
 :pause
 pause
 goto menu >nul
+
+
+:intel
+cls
+title boost cpu intel
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+echo Boost 
+
+bcdedit /set firstmegabytepolicy UseAll >nul
+echo loadding
+ping -n 2 127.0.0.1>nul
+bcdedit /set avoidlowmemory 0x8000000 >nul
+echo Successful
+ping -n 1 127.0.0.1>nul
+bcdedit /set nolowmem Yes >nul
+ping -n 1 127.0.0.1>nul
+goto menu
+
+
+:AMD
+cls
+title AMD Boost
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+echo Boost 
+LTRSnoopL1Latency -> 1
+LTRSnoopL0Latency -> 1
+LTRNoSnoopL1Latency -> 1
+LTRMaxNoSnoopLatency -> 1
+KMD_RpmComputeLatency -> 1
+DalUrgentLatencyNs -> 1
+memClockSwitchLatency -> 1
+PP_RTPMComputeF1Latency -> 1
+PP_DGBMMMaxTransitionLatencyUvd -> 1
+PP_DGBPMMaxTransitionLatencyGfx -> 1
+DalNBLatencyForUnderFlow -> 1
+DalDramClockChangeLatencyNs -> 1 (WARNING: This dword caused massive screen flickering for some people, use it at your own risk. If you're already using it and you have problems, simply delete the dword and reboot the system)
+BGM_LTRSnoopL1Latency -> 1
+BGM_LTRSnoopL0Latency -> 1
+BGM_LTRNoSnoopL1Latency -> 1
+BGM_LTRNoSnoopL0Latency -> 1
+BGM_LTRMaxSnoopLatencyValue -> 1
+BGM_LTRMaxNoSnoopLatencyValue -> 1
+goto menu
+
+
+
+
+
+:lowcpu
+title cpu runnig low %
+echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
+echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
+echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
+echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
+echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+echo Boost ???(press key to continue)
+pause 
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power
+
+ExitLatency -> 1
+
+ExitLatencyCheckEnabled -> 1
+
+Latency -> 1
+
+LatencyToleranceDefault -> 1
+
+LatencyToleranceFSVP -> 1
+
+LatencyTolerancePerfOverride -> 1
+
+LatencyToleranceScreenOffIR -> 1
+
+LatencyToleranceVSyncEnabled -> 1
+
+RtlCapabilityCheckLatency -> 1
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power
+
+DefaultD3TransitionLatencyActivelyUsed -> 1
+
+DefaultD3TransitionLatencyIdleLongTime -> 1
+
+DefaultD3TransitionLatencyIdleMonitorOff -> 1
+
+DefaultD3TransitionLatencyIdleNoContext -> 1
+
+DefaultD3TransitionLatencyIdleShortTime -> 1
+
+DefaultD3TransitionLatencyIdleVeryLongTime -> 1
+
+DefaultLatencyToleranceIdle0 -> 1
+
+DefaultLatencyToleranceIdle0MonitorOff -> 1
+
+DefaultLatencyToleranceIdle1 -> 1
+
+DefaultLatencyToleranceIdle1MonitorOff -> 1
+
+DefaultLatencyToleranceMemory -> 1
+
+DefaultLatencyToleranceNoContext -> 1
+
+DefaultLatencyToleranceNoContextMonitorOff -> 1
+
+DefaultLatencyToleranceOther -> 1
+
+DefaultLatencyToleranceTimerPeriod -> 1
+
+DefaultMemoryRefreshLatencyToleranceActivelyUsed -> 1
+
+DefaultMemoryRefreshLatencyToleranceMonitorOff -> 1
+
+DefaultMemoryRefreshLatencyToleranceNoContext -> 1
+
+Latency -> 1
+
+MaxIAverageGraphicsLatencyInOneBucket -> 1
+
+MiracastPerfTrackGraphicsLatency -> 1
+
+MonitorLatencyTolerance -> 1
+
+MonitorRefreshLatencyTolerance -> 1
+
+TransitionLatency -> 1
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000
+goto menu
