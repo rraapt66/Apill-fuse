@@ -1453,6 +1453,7 @@ goto menu
 :backup
 echo off
 mkdir BACKUP
+echo BACK UP Successful > README\README.txt
 cd BACKUP
 reg export HKLM HKEY_LOCAL_MACHINE.reg
 reg export HKCU HKEY_CURRENT_USER.reg
@@ -1460,5 +1461,4 @@ reg export HKCR HKEY_CLASSES_ROOT.reg
 reg export HKU HKEY_USERS.reg
 reg export HKCC HK_CURRENT_CONFIG.reg
 cls
-echo BACK UP Successful > README\README.txt
 goto menu
