@@ -1451,14 +1451,24 @@ start https://discord.gg/DDyMPBcN
 goto menu
 
 :backup
-echo off
 mkdir BACKUP
+echo backup Successful > BACKUP\backup.txt >nul
 cd BACKUP
-echo BACK UP Successful > BACKUP\README.txt
 reg export HKLM HKEY_LOCAL_MACHINE.reg
+cls
+echo Successful(Dont close)
 reg export HKCU HKEY_CURRENT_USER.reg
+cls
+echo Successful(Dont close)
 reg export HKCR HKEY_CLASSES_ROOT.reg
+cls
+echo Successful(Dont close)
 reg export HKU HKEY_USERS.reg
+cls
+echo Successful(Dont close)
 reg export HKCC HK_CURRENT_CONFIG.reg
 cls
+echo Successful(Dont close)
+cls
+echo Successful(Dont close)
 goto menu
