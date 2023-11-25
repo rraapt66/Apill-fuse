@@ -1503,3 +1503,4 @@ echo Successful(Dont close)
 cls
 echo Successful(Dont close)
 goto menu
+del BACKUP
