@@ -807,7 +807,7 @@ chcp 65001
 cls
 title win11 Boost
 echo only windows 11
-SET /p choix="%%b[31m[%%b[33mWPARK%%b[31m]%%b[33m yes or No  >  "
+SET /p choix=" yes or No  >  "
 if %choix%== yes Goto :Family
 if %choix%== no Goto :menu
 :Family
