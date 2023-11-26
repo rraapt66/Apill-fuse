@@ -39,20 +39,21 @@ echo                            ██╔════╝██║░░░░░
 echo                            ╚█████╗░██║░░░░░██║██╔██╗██║█████═╝░░╚████╔╝░
 echo                             ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
 echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
-echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░ 
-echo                    [1] clean file                    [11] Backup                
-echo                    [2] Remote                       [12] FULL CLEAN            
-echo                    [3] roblox                       [13] edit power plan       
-echo                    [4] GameModeoff                  [14] Boost cpu             
-echo                    [5] Gamemodeon                   [15] mouse                 
-echo                    [6] recover Backup Notebook only [16] Keyboard              
-echo                    [7] shutdown                     [17] Boost NVIDIA          
-echo                    [8] Check ping                   [18] ultra boost cpu       
-echo                    [9] COMPUTER Check               [19] Disable ultra Boostcpu
-echo                    [10] Delete Roblox               [20] Low ping              
-echo                    [21] join discord                [22] intel boost           
-echo                    [23] AMD boost                   [24] cpu low runnig%                                                                           
-
+echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
+echo                   ╔═══════════════════════════════════════════════════════════════╗ 
+echo                   ║ [1] clean file                   ║ [11] Backup                ║
+echo                   ║ [2] Remote                       ║ [12] FULL CLEAN            ║
+echo                   ║ [3] roblox                       ║ [13] edit power plan       ║
+echo                   ║ [4] GameModeoff                  ║ [14] Boost cpu             ║
+echo                   ║ [5] Gamemodeon                   ║ [15] mouse                 ║
+echo                   ║ [6] recover Backup Notebook only ║ [16] Keyboard              ║
+echo                   ║ [7] shutdown                     ║ [17] Boost NVIDIA          ║
+echo                   ║ [8] Check ping                   ║ [18] ultra boost cpu       ║
+echo                   ║ [9] COMPUTER Check               ║ [19] Disable ultra Boostcpu║
+echo                   ║ [10] Delete Roblox               ║ [20] Low ping              ║
+echo                   ║ [21] join discord                ║ [22] intel boost           ║
+echo                   ║ [23] AMD boost                   ║ [24] cpu low runnig%       ║                                                                    
+echo                   ╚═══════════════════════════════════════════════════════════════╝            
 echo                                                 By siwat                                                 
 echo                                       ╔══════════════════════════╗
 echo                                          Current Version: 1.2  
@@ -865,7 +866,10 @@ ping -n 4 127.0.0.1>nul
 echo Disabling Sticky Keys
 reg add "HKCU\Control Panel\Accessibility\StickyKeys" /v "Flags" /t REG_SZ /d "506" /f >> APB_Log.txt
 timeout /t 1 /nobreak > NUL
-
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PerfLevelSrc" /t REG_DWORD /d "2222" /f >> APB_Log.txt
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerEnable" /t REG_DWORD /d "0" /f >> APB_Log.txt
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerLevel" /t REG_DWORD /d "0" /f >> APB_Log.txt
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerLevelAC" /t REG_DWORD /d "0" /f >> APB_Log.txt
 :: Disable Filter Keys
 echo Disabling Filter Keys
 reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "Flags" /t REG_SZ /d "122" /f >> APB_Log.txt
@@ -2017,6 +2021,10 @@ echo                            ██████╔╝███████╗
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 pause
 title Gamemode off
+reg delete "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PerfLevelSrc" /f >> APB_Log.txt
+reg delete "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerEnable" /f >> APB_Log.txt
+reg delete "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerLevel" /f >> APB_Log.txt
+reg delete "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerLevelAC" /f >> APB_Log.txt
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "SystemCacheDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcTotalDirtyPages" /t REG_DWORD /d "0" /f >nul
