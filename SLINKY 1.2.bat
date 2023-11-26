@@ -1,9 +1,3 @@
-the operation completed successfully.
-
-The operation completed successfully.
-
-The operation completed successfully.
-
 :admin
 echo run admin only
 :: make sure to get admin
@@ -466,7 +460,7 @@ timeout /t 1 /nobreak > NUL
 :: Disable Interrupt Moderation
 echo Disabling Interrupt Moderation
 reg add "%%n" /v "*InterruptModeration" /t REG_SZ /d "0" /f >> APB_Log.txt
-) pause
+pause
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB1" /t REG_DWORD /d "0" /f >> APB_Log.txt
 ping -n 1 127.0.0.1>nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB2" /t REG_DWORD /d "0" /f >> APB_Log.txt
