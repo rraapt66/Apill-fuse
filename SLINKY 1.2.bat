@@ -40,18 +40,18 @@ echo                            ╚█████╗░██║░░░░░
 echo                             ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
 echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
-echo                   ║ [1] clean file                   ║ [11] Backup                ║
-echo                   ║ [2] Remote                       ║ [12] FULL CLEAN            ║
-echo                   ║ [3] roblox                       ║ [13] edit power plan       ║
-echo                   ║ [4] GameModeoff                  ║ [14] Boost cpu             ║
-echo                   ║ [5] Gamemodeon                   ║ [15] mouse                 ║
-echo                   ║ [6] recover Backup Notebook only ║ [16] Keyboard              ║
-echo                   ║ [7] shutdown                     ║ [17] Boost NVIDIA          ║
-echo                   ║ [8] Check ping                   ║ [18] ultra boost cpu       ║
-echo                   ║ [9] COMPUTER Check               ║ [19] Disable ultra Boostcpu║
-echo                   ║ [10] Delete Roblox               ║ [20] Low ping              ║
-echo                   ║ [21] join discord                ║ [22] intel boost           ║
-echo                   ║ [23] AMD boost                   ║ [24] cpu low runnig%       ║                                                                                
+echo                    [1] clean file                   ║ [11] Backup               
+echo                    [2] Remote                       ║ [12] FULL CLEAN            
+echo                    [3] roblox                       ║ [13] edit power plan       
+echo                    [4] GameModeoff                  ║ [14] Boost cpu            
+echo                    [5] Gamemodeon                   ║ [15] mouse                 
+echo                    [6] recover Backup Notebook only ║ [16] Keyboard              
+echo                    [7] shutdown                     ║ [17] Boost NVIDIA         
+echo                    [8] Check ping                   ║ [18] ultra boost cpu       
+echo                    [9] COMPUTER Check               ║ [19] Disable ultra Boostcpu
+echo                    [10] Delete Roblox               ║ [20] Low ping              
+echo                    [21] join discord                ║ [22] intel boost           
+echo                    [23] AMD boost                   ║ [24] cpu low runnig%                                                                                      
 echo                                                 By siwat                                                 
 echo                                          Current Version: 1.2  
 echo ══════════════════════════════════════════════════════════════════════════════════
