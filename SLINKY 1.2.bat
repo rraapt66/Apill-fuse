@@ -1138,19 +1138,13 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32Pri
 Reg.exe add "HKCU\Control Panel\PowerCfg\GlobalPowerPolicy" /v "Policies" /t REG_BINARY /d "01000000020000000100000000000000020000000000000000000000000000002c0100003232030304000000040000000000000000000000840300002c01000000000000840300000001646464640000" /f
 ping -n 2 127.0.0.1>nul
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
-REM ~ Reg.exe add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome" /v "Users" /t REG_QWORD /d "0x0300000000000000" /f
-:: ------------------------------------------------------------------------------------------------------------------------------------------------
-Reg.exe add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions" /f
-:: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
 REM ~ Reg.exe add "HKLM\SOFTWARE\Google" /v "taskkillGoogle" /t REG_QWORD /d "0x0100000000000000" /f
 REM ~ Reg.exe add "HKLM\SOFTWARE\Google" /v "enableGoogle" /t REG_QWORD /d "0x0000000000000000" /f
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
 
-Reg.exe add "HKLM\SOFTWARE\Google" /v "start" /t REG_SZ /d "" /f
+Reg.exe add "HKLM\SOFTWARE\Google" /v "start" /t REG_SZ /d "0" /f
 Reg.exe add "HKLM\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.microsoft.browsercore" /ve /t REG_SZ /d "C:\Program Files\Windows Security\BrowserCore\manifest.json" /f
 Reg.exe add "HKLM\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.microsoft.defender.browser_extension.native_message_host" /ve /t REG_SZ /d "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.23100.2009-0\com.microsoft.defender.be.chrome.json" /f
-Reg.exe add "HKLM\SOFTWARE\Google\Chrome\NativeMessagingHosts\mbambgnativemsg.exe" /ve /t REG_SZ /d "C:\Program Files\Malwarebytes\Anti-Malware\mbam.manifest.json" /f
-Reg.exe add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\NativeMessagingHosts\mbambgnativemsg.exe" /ve /t REG_SZ /d "C:\Program Files\Malwarebytes\Anti-Malware\mbam.manifest.json" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\GpuEnergyDrv" /v "Start" /t REG_DWORD /d "4" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "DisablePageCombining" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v "DisableExternalDMAUnderLock" /t REG_DWORD /d "0" /f
