@@ -3277,7 +3277,7 @@ echo Boost
 pause
 :: Dedicated Segment Size
 echo Setting Dedicated Segment Size
-reg add "HKLM\SOFTWARE\Intel\GMM" /v "DedicatedSegmentSize" /t REG_DWORD /d "512" /f >> APB_Log.txt          (
+reg add "HKLM\SOFTWARE\Intel\GMM" /v "DedicatedSegmentSize" /t REG_DWORD /d "512" /f >> APB_Log.txt
 timeout /t 5 /nobreak > NUL
 bcdedit /set firstmegabytepolicy UseAll >nul
 echo loadding
@@ -3286,7 +3286,6 @@ bcdedit /set avoidlowmemory 0x8000000 >nul
 echo Successful
 ping -n 1 127.0.0.1>nul
 bcdedit /set nolowmem Yes >nul
->> APB_Log.txt)
 ping -n 1 127.0.0.1>nul
 goto menu
 
