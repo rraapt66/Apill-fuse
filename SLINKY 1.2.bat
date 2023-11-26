@@ -173,7 +173,7 @@ cls
 
 :: Reset Internet
 echo Resetting Internet
-ipconfig /release          (
+ipconfig /release          
 ipconfig /renew
 ipconfig /flushdns
 netsh int ip reset
@@ -185,7 +185,7 @@ netsh advfirewall reset
 netsh branchcache reset
 netsh http flush logbuffer
 timeout /t 3 /nobreak > NUL
-ipconfg /release >> APB_Log.txt)
+ipconfg /release 
 
 :: Disable Network Throttling
 echo Disabling Network Throttling
@@ -2502,7 +2502,7 @@ echo                            ╚═════╝░╚══════╝
 echo  (═════════════════════════════════════════════)
 ping -n 1 127.0.0.1>nul
 cls
-powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a >> APB_Log.txt
+powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a #balanced#>> APB_Log.txt
 cls
 echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
 echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
@@ -2559,7 +2559,7 @@ echo                            ╚█████╗░██║░░░░░
 echo ░                           ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
 echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
-powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c >> APB_Log.txt
+powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c #High#>> APB_Log.txt
 cls
 echo                      ░      ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
 echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
@@ -2616,7 +2616,7 @@ echo                            ╚█████╗░██║░░░░░
 echo                             ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
 echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
-powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 >> APB_Log.txt >> APB_Log.txt
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 #ultimate#>> APB_Log.txt >> APB_Log.txt
 cls
 echo                             ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
 echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
