@@ -850,7 +850,7 @@ goto menu
 
 :Gamemodeon
 @echo off
-title Gamemode on(
+title Gamemode on
 cls
 echo                             ██████╗██╗░░░░░██╗███╗░░██╗██╗░░██╗██╗░░░██╗
 echo                            ██╔════╝██║░░░░░██║████╗░██║██║░██╔╝╚██╗░██╔╝
@@ -863,6 +863,7 @@ ping -n 4 127.0.0.1>nul
 echo Disabling Sticky Keys
 reg add "HKCU\Control Panel\Accessibility\StickyKeys" /v "Flags" /t REG_SZ /d "506" /f >> APB_Log.txt
 timeout /t 1 /nobreak > NUL
+(
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PerfLevelSrc" /t REG_DWORD /d "2222" /f >> APB_Log.txt
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerEnable" /t REG_DWORD /d "0" /f >> APB_Log.txt
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerLevel" /t REG_DWORD /d "0" /f >> APB_Log.txt
