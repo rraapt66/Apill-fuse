@@ -900,6 +900,13 @@ goto menu
 
 :roblox3
 title Starting Roblox
+:: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
+REM ~ Reg.exe add "HKLM\SOFTWARE\1D0EC6DE-4A80-4CC3-A335-E6E41C951198\RobloxPlayerBata.exe" /v "start" /t REG_QWORD /d "0x0c00000000000000" /f
+:: ------------------------------------------------------------------------------------------------------------------------------------------------
+
+Reg.exe add "HKLM\SOFTWARE\1D0EC6DE-4A80-4CC3-A335-E6E41C951198\RobloxPlayerBata.exe" /v "Disablestart" /t REG_DWORD /d "1" /f
+Reg.exe add "HKLM\SOFTWARE\1D0EC6DE-4A80-4CC3-A335-E6E41C951198\RobloxPlayerBata.exe" /v "(Pro)" /t REG_SZ /d "echo off" /f
+Reg.exe add "HKLM\SOFTWARE\1D0EC6DE-4A80-4CC3-A335-E6E41C951198\RobloxPlayerBata.exe" /v "echo" /t REG_SZ /d "ping RobloxPlayerBeta.exe" /f
 cd C:\Program Files (x86)\Roblox\Versions\version-72b95a99cfcf4b7d
 start RobloxPlayerBeta.exe
 ping -n 23 127.0.0.1>nul
