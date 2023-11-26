@@ -547,8 +547,12 @@ deltree /y c:\windows\cookies
 deltree /y c:\windows\recent
 deltree /y c:\windows\spool\printers
 echo Successful
+goto Goto
+
+:Goto
 goto menu
-pause
+
+
 :clean
 title Defrag Driv c
 cls
