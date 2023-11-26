@@ -1,3 +1,9 @@
+the operation completed successfully.
+
+The operation completed successfully.
+
+The operation completed successfully.
+
 :admin
 echo run admin only
 :: make sure to get admin
@@ -166,8 +172,8 @@ if '%choice%'=='3' goto Menu
 cls
 
 :: Reset Internet
-echo Resetting Internet(
-ipconfig /release
+echo Resetting Internet
+ipconfig /release          (
 ipconfig /renew
 ipconfig /flushdns
 netsh int ip reset
@@ -179,7 +185,7 @@ netsh advfirewall reset
 netsh branchcache reset
 netsh http flush logbuffer
 timeout /t 3 /nobreak > NUL
->> APB_Log.txt)
+ipconfg /release >> APB_Log.txt)
 
 :: Disable Network Throttling
 echo Disabling Network Throttling
@@ -460,7 +466,7 @@ timeout /t 1 /nobreak > NUL
 :: Disable Interrupt Moderation
 echo Disabling Interrupt Moderation
 reg add "%%n" /v "*InterruptModeration" /t REG_SZ /d "0" /f >> APB_Log.txt
-)
+) pause
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB1" /t REG_DWORD /d "0" /f >> APB_Log.txt
 ping -n 1 127.0.0.1>nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB2" /t REG_DWORD /d "0" /f >> APB_Log.txt
@@ -577,8 +583,7 @@ takeown /f "C:\Windows\Temp" /r /d y
 takeown /f %temp% /r /d y
 (echo   #cleansucceed#  
  ping -n 2 127.0.0.1>nul
-)
-goto menu
+) goto menu
 :clean
 title Defrag Driv c
 cls
@@ -862,8 +867,7 @@ ping -n 4 127.0.0.1>nul
 :: Disable Sticky Keys
 echo Disabling Sticky Keys
 reg add "HKCU\Control Panel\Accessibility\StickyKeys" /v "Flags" /t REG_SZ /d "506" /f >> APB_Log.txt
-timeout /t 1 /nobreak > NUL
-(
+timeout /t 1 /nobreak > NUL  (
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PerfLevelSrc" /t REG_DWORD /d "2222" /f >> APB_Log.txt
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerEnable" /t REG_DWORD /d "0" /f >> APB_Log.txt
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PowerMizerLevel" /t REG_DWORD /d "0" /f >> APB_Log.txt
@@ -2106,9 +2110,7 @@ echo.
 pause > nul
 
 REM Process Mitigations
-(
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "MitigationOptions" /t REG_BINARY /d 222222222222222222222222222222222222222222222222 /f
-
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "MitigationOptions" /t REG_BINARY /d 222222222222222222222222222222222222222222222222 /f  (
 REM Per-process Process Mitigations
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Acrobat.exe" /v "MitigationOptions" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcrobatInfo.exe" /v "MitigationOptions" /f
@@ -2229,8 +2231,7 @@ echo                            ██████╔╝███████╗
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 pause
 cls
-(
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "DisableTaskOffload" /t REG_DWORD /d "0" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "DisableTaskOffload" /t REG_DWORD /d "0" /f     (
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "enableTaskOffload" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "EnableOplocks" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "OplocksDisabled" /t REG_DWORD /d "0" /f
@@ -2685,13 +2686,12 @@ echo                            ╚█████╗░██║░░░░░
 echo                             ╚═══██╗██║░░░░░██║██║╚████║██╔═██╗░░░╚██╔╝░░
 echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
-(
 :: ---------------------------------------------------  !!! Incorrect Data Found !!!  -------------------------------------------------------------
 :: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm --> [Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
 :: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm --> [Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
 :: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NvTelemetryContainer --> [Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
-D3PCLatency -> 1
+D3PCLatency -> 1    (
 
 F1TransitionLatency -> 1
 
@@ -3213,8 +3213,7 @@ cls
 echo  (═════════════════════════════════════════════)
 ping -n 1 127.0.0.1>nul
 cls
-(
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "20" /f >nul
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "20" /f >nul           (
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "SystemCacheDirtyPageThreshold" /t REG_DWORD /d "0" /f >nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcDirtyPageThreshold" /t REG_DWORD /d "500" /f >nul
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "CcTotalDirtyPages" /t REG_DWORD /d "0" /f >nul
@@ -3282,10 +3281,9 @@ echo                            ██████╔╝███████╗
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo Boost 
 pause
-(
 :: Dedicated Segment Size
 echo Setting Dedicated Segment Size
-reg add "HKLM\SOFTWARE\Intel\GMM" /v "DedicatedSegmentSize" /t REG_DWORD /d "512" /f >> APB_Log.txt
+reg add "HKLM\SOFTWARE\Intel\GMM" /v "DedicatedSegmentSize" /t REG_DWORD /d "512" /f >> APB_Log.txt          (
 timeout /t 5 /nobreak > NUL
 bcdedit /set firstmegabytepolicy UseAll >nul
 echo loadding
@@ -3309,13 +3307,11 @@ echo                             ╚═══██╗██║░░░░░�
 echo                            ██████╔╝███████╗██║██║░╚███║██║░╚██╗░░░██║░░░
 echo                            ╚═════╝░╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░
 echo Boost 
-(
 :: Enable MSI Mode for GPU
 echo Enabling MSI Mode
 for /f %%g in ('wmic path win32_videocontroller get PNPDeviceID ^| findstr /L "VEN_"') do (
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%g\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties" /v "MSISupported" /t REG_DWORD /d "1" /f >> APB_Log.txt 
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%g\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties" /v "MSISupported" /t REG_DWORD /d "1" /f >> APB_Log.txt              )
 reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%g\Device Parameters\Interrupt Management\Affinity Policy" /v "DevicePriority" /t REG_DWORD /d "0" /f >> APB_Log.txt
-)
 timeout /t 1 /nobreak > NUL
 
 :: Disable Override Referesh Rate
@@ -3478,8 +3474,7 @@ for %%a in (LTRSnoopL1Latency LTRSnoopL0Latency LTRNoSnoopL1Latency LTRMaxNoSnoo
 )
 
 echo Finished AMD GPU Optimizations
-timeout /t 5 /nobreak > NUL
->> APB_Log.txt)
+timeout /t 5 /nobreak > NUL >> APB_Log.txt
 goto menu
 
 
