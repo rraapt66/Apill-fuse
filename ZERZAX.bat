@@ -517,41 +517,7 @@ deltree /y c:\windows\recent >> APB_Log.txt
 deltree /y c:\windows\spool\printers >> APB_Log.txt
 cls
 echo Successful
-cleanmgr
-echo Successful
-cls
-rd /s /q %temp%
-ping -n 2 127.0.0.1>nul
-cls
-del /q/f/s %TEMP%\*
-ping -n 2 127.0.0.1>nul
-cls
-md %temp%
-ping -n 2 127.0.0.1>nul
-cls
-ping -n 2 127.0.0.1>nul
-color c
-/s /f /q c:\windows\temp\*.*
-rd /s /q c:\windows\temp
-md c:\windows\temp
-del /s /f /q C:\WINDOWS\Prefetch
-del /s /f /q %temp%\*.*
-rd /s /q %temp%
-md %temp%
-deltree /y c:\windows\tempor~1
-deltree /y c:\windows\temp
-deltree /y c:\windows\tmp
-deltree /y c:\windows\ff*.tmp
-deltree /y c:\windows\history
-deltree /y c:\windows\cookies
-deltree /y c:\windows\recent
-deltree /y c:\windows\spool\printers
-echo Successful
-goto Goto
-
-:Goto
 goto menu
-
 
 :clean
 title Defrag Driv c
