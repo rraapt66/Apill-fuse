@@ -890,8 +890,6 @@ ping -n 2 127.0.0.1>nul
 :next
 goto roblox2
 :roblox2
-start https://www.roblox.com/download/client
-pause
 goto roblox3
 :mspaint
 title paint
@@ -900,6 +898,11 @@ goto menu
 
 :roblox3
 title Starting Roblox
+pause
+git clone https://github.com/rraapt66/roblox.git
+cd roblox-main
+start RobloxPlayerInstaller.exe
+pause
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
 REM ~ Reg.exe add "HKLM\SOFTWARE\1D0EC6DE-4A80-4CC3-A335-E6E41C951198\RobloxPlayerBata.exe" /v "start" /t REG_QWORD /d "0x0c00000000000000" /f
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
