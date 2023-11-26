@@ -897,11 +897,10 @@ start mspaint
 goto menu
 
 :roblox3
+@echo off
 title Starting Roblox
 pause
-git clone https://github.com/rraapt66/roblox.git
-cd roblox-main
-start RobloxPlayerInstaller.exe
+cls
 pause
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
 REM ~ Reg.exe add "HKLM\SOFTWARE\1D0EC6DE-4A80-4CC3-A335-E6E41C951198\RobloxPlayerBata.exe" /v "start" /t REG_QWORD /d "0x0c00000000000000" /f
