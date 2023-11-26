@@ -577,7 +577,8 @@ takeown /f "C:\Windows\Temp" /r /d y
 takeown /f %temp% /r /d y
 (echo   #cleansucceed#  
  ping -n 2 127.0.0.1>nul
-) goto menu
+goto menu
+pause
 :clean
 title Defrag Driv c
 cls
