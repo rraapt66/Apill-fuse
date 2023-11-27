@@ -29,6 +29,7 @@ cls
 color a
 chcp 65001
 :menu
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST https://discord.com/api/webhooks/1178639134928162857/DrNtCiZmqwQ2z791GjNCO0xudRuWoOOADP52qR210PxsKdG65H1qyUvHS2mK4cpLs8JI --data "{\"content\": \"มีคนเปิดโปรเเกรม\"}" discord-webhook-link >nul
 color D
 chcp 65001
 title menu
