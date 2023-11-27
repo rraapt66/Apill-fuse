@@ -897,112 +897,6 @@ title Starting Roblox
 pause
 cls
 pause
-Reg.exe add "HKCU\Control Panel\Desktop" /v "ActiveWndTrackTimeout" /t REG_DWORD /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "BlockSendInputResets" /t REG_SZ /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "CaretTimeout" /t REG_DWORD /d "5000" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "CaretWidth" /t REG_DWORD /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "ClickLockTime" /t REG_DWORD /d "1200" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "CoolSwitchColumns" /t REG_SZ /d "7" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "CoolSwitchRows" /t REG_SZ /d "3" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "CursorBlinkRate" /t REG_SZ /d "530" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "DockMoving" /t REG_SZ /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "DragFromMaximize" /t REG_SZ /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "DragFullWindows" /t REG_SZ /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "DragHeight" /t REG_SZ /d "4" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "DragWidth" /t REG_SZ /d "4" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "FocusBorderHeight" /t REG_DWORD /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "FocusBorderWidth" /t REG_DWORD /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "FontSmoothing" /t REG_SZ /d "2" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "FontSmoothingGamma" /t REG_DWORD /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "FontSmoothingOrientation" /t REG_DWORD /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "FontSmoothingType" /t REG_DWORD /d "2" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "ForegroundFlashCount" /t REG_DWORD /d "7" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "LeftOverlapChars" /t REG_SZ /d "3" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "MouseWheelRouting" /t REG_DWORD /d "2" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "PaintDesktopVersion" /t REG_DWORD /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "Pattern" /t REG_DWORD /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "RightOverlapChars" /t REG_SZ /d "3" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "ScreenSaveActive" /t REG_SZ /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "SnapSizing" /t REG_SZ /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "TileWallpaper" /t REG_SZ /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "WallpaperStyle" /t REG_SZ /d "10" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "WheelScrollChars" /t REG_SZ /d "3" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "WheelScrollLines" /t REG_SZ /d "3" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "WindowArrangementActive" /t REG_SZ /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "MenuShowDelay" /t REG_DWORD /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "WallPaper" /t REG_SZ /d "C:\Users\siwat\Downloads\ztweaks-main\assets\zenox_bg.jpg" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "Win8DpiScaling" /t REG_DWORD /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "DpiScalingVer" /t REG_DWORD /d "4096" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "UserPreferencesMask" /t REG_BINARY /d "9012078012000000" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "MaxVirtualDesktopDimension" /t REG_DWORD /d "1366" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "MaxMonitorDimension" /t REG_DWORD /d "1366" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "TranscodedImageCount" /t REG_DWORD /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "LastUpdated" /t REG_DWORD /d "4294967295" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "TranscodedImageCache" /t REG_BINARY /d "7ac30100bbe50300b80b0000d007000080054c696713da0143003a005c00550073006500720073005c00730069007700610074005c0044006f0077006e006c006f006100640073005c007a0074007700650061006b0073002d006d00610069006e005c006100730073006500740073005c007a0065006e006f0078005f00620067002e006a00700067000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "PreviousPreferredUILanguages" /t REG_MULTI_SZ /d "th" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "PreferredUILanguages" /t REG_MULTI_SZ /d "th-TH" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "AutoColorization" /t REG_DWORD /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "ImageColor" /t REG_DWORD /d "2259145279" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "JPEGImportQuality" /t REG_DWORD /d "100" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "ForegroundLockTimeout" /t REG_SZ /d "150000" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "AutoEndTasks" /t REG_SZ /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "HungAppTimeout" /t REG_SZ /d "4000" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "WaitToKillAppTimeout" /t REG_SZ /d "5000" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "WaitToKillServiceTimeout" /t REG_SZ /d "1000" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "LowLevelHooksTimeout" /t REG_SZ /d "1000" /f
-Reg.exe add "HKCU\Control Panel\Desktop" /v "Desktoplow" /t REG_SZ /d "[shell Classinfo] LocalizedResourceName=@%%SystemRoot%%\system32\shell32.dll,-21734" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ActiveBorder" /t REG_SZ /d "212 208 200" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ActiveTitle" /t REG_SZ /d "10 36 106" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "AppWorkSpace" /t REG_SZ /d "128 128 128" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonAlternateFace" /t REG_SZ /d "181 181 181" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonDkShadow" /t REG_SZ /d "64 64 64" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonFace" /t REG_SZ /d "212 208 200" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonHiLight" /t REG_SZ /d "255 255 255" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonLight" /t REG_SZ /d "212 208 200" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonShadow" /t REG_SZ /d "128 128 128" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonText" /t REG_SZ /d "0 0 0" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "GradientActiveTitle" /t REG_SZ /d "166 202 240" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "GradientInactiveTitle" /t REG_SZ /d "192 192 192" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "GrayText" /t REG_SZ /d "128 128 128" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "Hilight" /t REG_SZ /d "10 36 106" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "HilightText" /t REG_SZ /d "255 255 255" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "HotTrackingColor" /t REG_SZ /d "0 0 128" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InactiveBorder" /t REG_SZ /d "212 208 200" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InactiveTitle" /t REG_SZ /d "128 128 128" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InactiveTitleText" /t REG_SZ /d "212 208 200" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InfoText" /t REG_SZ /d "0 0 0" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InfoWindow" /t REG_SZ /d "255 255 255" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "Menu" /t REG_SZ /d "212 208 200" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "MenuText" /t REG_SZ /d "0 0 0" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "Scrollbar" /t REG_SZ /d "212 208 200" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "TitleText" /t REG_SZ /d "255 255 255" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "Window" /t REG_SZ /d "255 255 255" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "WindowFrame" /t REG_SZ /d "0 0 0" /f
-Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "WindowText" /t REG_SZ /d "0 0 0" /f
-Reg.exe add "HKCU\Control Panel\Desktop\LanguageConfiguration" /v "th-TH" /t REG_MULTI_SZ /d "en-US" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconTitleWrap" /t REG_SZ /d "1" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "Shell Icon Size" /t REG_SZ /d "32" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "BorderWidth" /t REG_SZ /d "-15" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "CaptionFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "CaptionHeight" /t REG_SZ /d "-330" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "CaptionWidth" /t REG_SZ /d "-330" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MenuFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MenuHeight" /t REG_SZ /d "-285" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MenuWidth" /t REG_SZ /d "-285" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MessageFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "ScrollHeight" /t REG_SZ /d "-255" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "ScrollWidth" /t REG_SZ /d "-255" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "SmCaptionFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "SmCaptionHeight" /t REG_SZ /d "-330" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "SmCaptionWidth" /t REG_SZ /d "-330" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "StatusFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "PaddedBorderWidth" /t REG_SZ /d "-60" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "AppliedDPI" /t REG_DWORD /d "96" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconSpacing" /t REG_SZ /d "-1125" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconVerticalSpacing" /t REG_SZ /d "-1125" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MinAnimate" /t REG_SZ /d "0" /f
-Reg.exe add "HKCU\Control Panel\Desktop\MuiCached" /v "MachinePreferredUILanguages" /t REG_MULTI_SZ /d "th-TH" /f
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
 REM ~ Reg.exe add "HKLM\SOFTWARE\1D0EC6DE-4A80-4CC3-A335-E6E41C951198\RobloxPlayerBata.exe" /v "start" /t REG_QWORD /d "0x0c00000000000000" /f
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1452,7 +1346,112 @@ ping -n 2 127.0.0.1>nul
 REM ~ Reg.exe add "HKLM\SOFTWARE\Google" /v "taskkillGoogle" /t REG_QWORD /d "0x0100000000000000" /f
 REM ~ Reg.exe add "HKLM\SOFTWARE\Google" /v "enableGoogle" /t REG_QWORD /d "0x0000000000000000" /f
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
-
+Reg.exe add "HKCU\Control Panel\Desktop" /v "ActiveWndTrackTimeout" /t REG_DWORD /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "BlockSendInputResets" /t REG_SZ /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "CaretTimeout" /t REG_DWORD /d "5000" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "CaretWidth" /t REG_DWORD /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "ClickLockTime" /t REG_DWORD /d "1200" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "CoolSwitchColumns" /t REG_SZ /d "7" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "CoolSwitchRows" /t REG_SZ /d "3" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "CursorBlinkRate" /t REG_SZ /d "530" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "DockMoving" /t REG_SZ /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "DragFromMaximize" /t REG_SZ /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "DragFullWindows" /t REG_SZ /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "DragHeight" /t REG_SZ /d "4" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "DragWidth" /t REG_SZ /d "4" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "FocusBorderHeight" /t REG_DWORD /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "FocusBorderWidth" /t REG_DWORD /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "FontSmoothing" /t REG_SZ /d "2" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "FontSmoothingGamma" /t REG_DWORD /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "FontSmoothingOrientation" /t REG_DWORD /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "FontSmoothingType" /t REG_DWORD /d "2" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "ForegroundFlashCount" /t REG_DWORD /d "7" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "LeftOverlapChars" /t REG_SZ /d "3" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "MouseWheelRouting" /t REG_DWORD /d "2" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "PaintDesktopVersion" /t REG_DWORD /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "Pattern" /t REG_DWORD /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "RightOverlapChars" /t REG_SZ /d "3" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "ScreenSaveActive" /t REG_SZ /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "SnapSizing" /t REG_SZ /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "TileWallpaper" /t REG_SZ /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "WallpaperStyle" /t REG_SZ /d "10" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "WheelScrollChars" /t REG_SZ /d "3" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "WheelScrollLines" /t REG_SZ /d "3" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "WindowArrangementActive" /t REG_SZ /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "MenuShowDelay" /t REG_DWORD /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "WallPaper" /t REG_SZ /d "C:\Users\siwat\Downloads\ztweaks-main\assets\zenox_bg.jpg" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "Win8DpiScaling" /t REG_DWORD /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "DpiScalingVer" /t REG_DWORD /d "4096" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "UserPreferencesMask" /t REG_BINARY /d "9012078012000000" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "MaxVirtualDesktopDimension" /t REG_DWORD /d "1366" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "MaxMonitorDimension" /t REG_DWORD /d "1366" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "TranscodedImageCount" /t REG_DWORD /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "LastUpdated" /t REG_DWORD /d "4294967295" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "TranscodedImageCache" /t REG_BINARY /d "7ac30100bbe50300b80b0000d007000080054c696713da0143003a005c00550073006500720073005c00730069007700610074005c0044006f0077006e006c006f006100640073005c007a0074007700650061006b0073002d006d00610069006e005c006100730073006500740073005c007a0065006e006f0078005f00620067002e006a00700067000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "PreviousPreferredUILanguages" /t REG_MULTI_SZ /d "th" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "PreferredUILanguages" /t REG_MULTI_SZ /d "th-TH" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "AutoColorization" /t REG_DWORD /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "ImageColor" /t REG_DWORD /d "2259145279" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "JPEGImportQuality" /t REG_DWORD /d "100" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "ForegroundLockTimeout" /t REG_SZ /d "150000" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "AutoEndTasks" /t REG_SZ /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "HungAppTimeout" /t REG_SZ /d "4000" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "WaitToKillAppTimeout" /t REG_SZ /d "5000" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "WaitToKillServiceTimeout" /t REG_SZ /d "1000" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "LowLevelHooksTimeout" /t REG_SZ /d "1000" /f
+Reg.exe add "HKCU\Control Panel\Desktop" /v "Desktoplow" /t REG_SZ /d "[shell Classinfo] LocalizedResourceName=@%%SystemRoot%%\system32\shell32.dll,-21734" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ActiveBorder" /t REG_SZ /d "212 208 200" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ActiveTitle" /t REG_SZ /d "10 36 106" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "AppWorkSpace" /t REG_SZ /d "128 128 128" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonAlternateFace" /t REG_SZ /d "181 181 181" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonDkShadow" /t REG_SZ /d "64 64 64" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonFace" /t REG_SZ /d "212 208 200" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonHiLight" /t REG_SZ /d "255 255 255" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonLight" /t REG_SZ /d "212 208 200" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonShadow" /t REG_SZ /d "128 128 128" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "ButtonText" /t REG_SZ /d "0 0 0" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "GradientActiveTitle" /t REG_SZ /d "166 202 240" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "GradientInactiveTitle" /t REG_SZ /d "192 192 192" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "GrayText" /t REG_SZ /d "128 128 128" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "Hilight" /t REG_SZ /d "10 36 106" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "HilightText" /t REG_SZ /d "255 255 255" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "HotTrackingColor" /t REG_SZ /d "0 0 128" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InactiveBorder" /t REG_SZ /d "212 208 200" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InactiveTitle" /t REG_SZ /d "128 128 128" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InactiveTitleText" /t REG_SZ /d "212 208 200" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InfoText" /t REG_SZ /d "0 0 0" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "InfoWindow" /t REG_SZ /d "255 255 255" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "Menu" /t REG_SZ /d "212 208 200" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "MenuText" /t REG_SZ /d "0 0 0" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "Scrollbar" /t REG_SZ /d "212 208 200" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "TitleText" /t REG_SZ /d "255 255 255" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "Window" /t REG_SZ /d "255 255 255" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "WindowFrame" /t REG_SZ /d "0 0 0" /f
+Reg.exe add "HKCU\Control Panel\Desktop\Colors" /v "WindowText" /t REG_SZ /d "0 0 0" /f
+Reg.exe add "HKCU\Control Panel\Desktop\LanguageConfiguration" /v "th-TH" /t REG_MULTI_SZ /d "en-US" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconTitleWrap" /t REG_SZ /d "1" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "Shell Icon Size" /t REG_SZ /d "32" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "BorderWidth" /t REG_SZ /d "-15" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "CaptionFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "CaptionHeight" /t REG_SZ /d "-330" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "CaptionWidth" /t REG_SZ /d "-330" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MenuFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MenuHeight" /t REG_SZ /d "-285" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MenuWidth" /t REG_SZ /d "-285" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MessageFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "ScrollHeight" /t REG_SZ /d "-255" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "ScrollWidth" /t REG_SZ /d "-255" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "SmCaptionFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "SmCaptionHeight" /t REG_SZ /d "-330" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "SmCaptionWidth" /t REG_SZ /d "-330" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "StatusFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "PaddedBorderWidth" /t REG_SZ /d "-60" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "AppliedDPI" /t REG_DWORD /d "96" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconSpacing" /t REG_SZ /d "-1125" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconVerticalSpacing" /t REG_SZ /d "-1125" /f
+Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MinAnimate" /t REG_SZ /d "0" /f
+Reg.exe add "HKCU\Control Panel\Desktop\MuiCached" /v "MachinePreferredUILanguages" /t REG_MULTI_SZ /d "th-TH" /f
 Reg.exe add "HKLM\SOFTWARE\Google" /v "start" /t REG_SZ /d "0" /f
 Reg.exe add "HKLM\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.microsoft.browsercore" /ve /t REG_SZ /d "C:\Program Files\Windows Security\BrowserCore\manifest.json" /f
 Reg.exe add "HKLM\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.microsoft.defender.browser_extension.native_message_host" /ve /t REG_SZ /d "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.23100.2009-0\com.microsoft.defender.be.chrome.json" /f
