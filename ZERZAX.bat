@@ -990,6 +990,8 @@ Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "startBoost" /t R
 Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "delayclicked" /t REG_BINARY /d "00d05ce00c02000070405de00c0200003000310020002800310029000000000038863773fe7f000030945ce00c020000000035353546352453264653634644000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
 cd C:\Program Files (x86)\Roblox\Versions\version-72b95a99cfcf4b7d
 start RobloxPlayerBeta.exe
+cd C:\Users\siwat\AppData\Local\Roblox\Versions\version-72b95a99cfcf4b7d
+start RobloxPlayerBeta
 ping -n 23 127.0.0.1>nul
 TASKKILL /F /IM RobloxPlayerBeta.exe /T
 ping -n 3 127.0.0.1>nul
