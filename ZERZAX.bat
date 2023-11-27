@@ -2222,7 +2222,7 @@ reg add "HKLM\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\CPU\Paused" /v "S
 reg add "HKLM\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\CPU\SoftCapFull" /v "CapPercentage" /t REG_DWORD /d "0" /f >> APB_Log.txt
 reg add "HKLM\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\CPU\SoftCapFull" /v "SchedulingType" /t REG_DWORD /d "0" /f >> APB_Log.txt
 reg add "HKLM\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\CPU\SoftCapLow" /v "CapPercentage" /t REG_DWORD /d "0" /f >> APB_Log.txt
-reg add "HKLM\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\CPU\SoftCapLow" /v "SchedulingType" /t REG_DWORD /d "0" /f >> APB_Log.txt
+reg add "HKLM\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\\SoftCapLow" /v "SchedulingType" /t REG_DWORD /d "0" /f >> APB_Log.txt
 
 reg add "HKLM\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Flags\BackgroundDefault" /v "IsLowPriority" /t REG_DWORD /d "0" /f >> APB_Log.txt
 reg add "HKLM\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Flags\Frozen" /v "IsLowPriority" /t REG_DWORD /d "0" /f >> APB_Log.txt
@@ -2285,7 +2285,6 @@ taskkill /f /im explorer.exe
 chcp 65001
 start explorer.exe
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "22" /f
->> APB_Log.txt)
 echo shutdown ??
 ping -n 2 127.0.0.1>nul
 cls
@@ -2938,15 +2937,11 @@ echo                                ░░███╔═╝█████╗�
 echo                                ██╔══╝░░██╔══╝░░██╔══██╗██╔══╝░░██╔══██║░██╔██╗░
 echo                                ███████╗███████╗██║░░██║███████╗██║░░██║██╔╝╚██╗
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
-git clone https://github.com/rraapt66/cout.git
 goto setupCpu
 
 
 :setupCpu
-cd cout
-cd Cout X
-ping -n 2 127.0.0.1>nul
-satrt CoutX-Setup.exe
+goto commingsoon
 goto menu
 :Keyboard
 title Keybord
