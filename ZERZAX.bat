@@ -1456,9 +1456,9 @@ echo                                ╚══════╝╚═════�
 cls
 echo 1 shutdown
 echo 2 NO shutdown
-SET /p choix=" PRESS NUMBER  >  "
-if %choix%== 1 Goto :shd
-if %choix%== 2 Goto :Question
+SET /p choix=" >  "
+if %choix%== 1,yes Goto :shd
+if %choix%== 2,no Goto :Question
 Echo Enable Gamemode
 goto boost
 ping -n 4 127.0.0.1>nul
