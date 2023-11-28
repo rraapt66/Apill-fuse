@@ -2753,7 +2753,7 @@ if %choix%== yes Goto :dis
 if %choix%== no Goto :menu
 
 :dis
-start https://discord.gg/DDyMPBcN
+start https://discord.gg/xbky7U6g
 goto menu
 
 :backup
