@@ -893,8 +893,8 @@ goto menu
 
 :roblox3
 @echo off
-title Starting Roblox
 pause
+Reg.exe add "HKLM\SOFTWARE\1D0EC6DE-4A80-4CC3-A335-E6E41C951198\RobloxPlayerBata.exe" /v "Disablestart" /t REG_DWORD /d "0" /f
 cls
 pause
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
