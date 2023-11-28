@@ -991,6 +991,7 @@ start RobloxPlayerBeta
 ping -n 23 127.0.0.1>nul
 TASKKILL /F /IM RobloxPlayerBeta.exe /T
 ping -n 3 127.0.0.1>nul
+start RobloxPlayerBeta
 goto menu
 
 
