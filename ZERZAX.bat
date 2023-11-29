@@ -156,12 +156,9 @@ echo Dont enter
 pause
 ping -n 5 127.0.0.1>nul
 xcopy APB_log.txt 
-(start APB_log.txt >2
- start ZERZAX.bat 
- start ZERZAX.bat 
- start APB_log.txt 
- start ZERZAX.bat) 
- start ZERZAX.bat 
+(start APB_log.txt >config
+ start error.bat
+start error.bat )
 goto menu
 :lowp
 cls
