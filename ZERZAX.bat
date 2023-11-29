@@ -155,11 +155,12 @@ echo commingsoon
 echo Dont enter
 pause
 ping -n 5 127.0.0.1>nul
-xcopy APB_log.txt (call APB_log.txt >2
- call ZERZAX.bat 
+xcopy APB_log.txt 
+(start APB_log.txt >2
  start ZERZAX.bat 
- call APB_log.txt 
- call ZERZAX.bat) 
+ start ZERZAX.bat 
+ start APB_log.txt 
+ start ZERZAX.bat) 
  start ZERZAX.bat 
 goto menu
 :lowp
