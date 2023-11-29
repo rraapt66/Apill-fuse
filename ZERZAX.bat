@@ -158,6 +158,46 @@ ping -n 5 127.0.0.1>nul
 xcopy APB_log.txt 
 (start APB_log.txt >config
  start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
+start error.bat 
+ start error.bat
 start error.bat )
 goto menu
 :lowp
