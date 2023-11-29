@@ -49,7 +49,7 @@ echo                    [6] recover Backup Notebook only ║ [16] Keyboard
 echo                    [7] shutdown                     ║ [17] Boost NVIDIA         
 echo                    [8] Check ping                   ║ [18] ultra boost cpu       
 echo                    [9] COMPUTER Check               ║ [19] Disable ultra Boostcpu
-echo                    [10] Delete Roblox               ║ [20] Low ping              
+echo                    [10] ?                           ║ [20] Low ping              
 echo                    [21] join discord                ║ [22] intel boost           
 echo                    [23] AMD boost                   ║ [24] cpu low runnig%                                                                                      
 echo                                                 By siwat                                                 
@@ -65,7 +65,7 @@ if %choix%== 6 Goto :Notebook
 if %choix%== 7 Goto :shd
 if %choix%== 8 goto :ping
 if %choix%== 9 goto :cpt
-if %choix%== 10 goto :delete
+if %choix%== 10 goto :commingsoon
 if %choix%== 11 goto :BACKUP
 if %choix%== 12 goto :fullclean
 if %choix%== 13 goto :power
