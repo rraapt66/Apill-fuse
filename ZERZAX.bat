@@ -1,8 +1,6 @@
 :admin
 setlocal
 echo run admin only
-del config
-del 2
 :: make sure to get admin
 :-------------------------------------
 :: Check for permissions
