@@ -154,9 +154,6 @@ cls
 echo commingsoon
 echo Dont enter
 pause >NUL
-@echo off
-pause >nul
-ping -n 5 127.0.0.1>nul
 REM xcopy APB_log.txt (call APB_log.txt >2
  REM call ZERZAX.bat) >1
  REM start ZERZAX.bat >1
