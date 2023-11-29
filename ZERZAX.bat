@@ -1,4 +1,5 @@
 :admin
+setlocal
 echo run admin only
 :: make sure to get admin
 :-------------------------------------
@@ -28,6 +29,7 @@ cls
 color a
 chcp 65001
 :menu
+setlocal
 color D
 chcp 65001
 title menu
@@ -499,6 +501,7 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v
 cls
 goto menu
 :fullclean
+setlocal
 echo Cleaning PC...
 del /s /f /q c:\windows\temp. >> APB_Log.txt
 del /s /f /q C:\WINDOWS\Prefetch >> APB_Log.txt
@@ -1063,6 +1066,7 @@ goto menu
 
 :Gamemodeon
 @echo off
+setlocal
 title Gamemode on
 cls
 echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
@@ -1487,6 +1491,7 @@ goto win11
 
 :GameModeoff
 cls
+setlocal
 echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
 echo                                ╚════██║██╔════╝██╔══██╗╚════██║██╔══██╗╚██╗██╔╝
 echo                                ░░███╔═╝█████╗░░██████╔╝░░███╔═╝███████║░╚███╔╝░
@@ -2125,6 +2130,7 @@ goto menu
 :nvidia
 title nvidia boost
 cls
+setlocal
 echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
 echo                                ╚════██║██╔════╝██╔══██╗╚════██║██╔══██╗╚██╗██╔╝
 echo                                ░░███╔═╝█████╗░░██████╔╝░░███╔═╝███████║░╚███╔╝░
@@ -2796,6 +2802,7 @@ goto menu >nul
 
 :intel
 cls
+setlocal
 title boost cpu intel
 echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
 echo                                ╚════██║██╔════╝██╔══██╗╚════██║██╔══██╗╚██╗██╔╝
@@ -2934,6 +2941,7 @@ goto menu
 
 :AMD
 cls
+setlocal
 title AMD Boostecho                                
 echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
 echo                                ╚════██║██╔════╝██╔══██╗╚════██║██╔══██╗╚██╗██╔╝
