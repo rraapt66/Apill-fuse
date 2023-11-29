@@ -154,13 +154,13 @@ cls
 echo commingsoon
 echo Dont enter
 pause >NUL
-REM xcopy APB_log.txt (call APB_log.txt >2
- REM call ZERZAX.bat) >1
- REM start ZERZAX.bat >1
- REM (call APB_log.txt >1
- REM call ZERZAX.bat) >1
- REM start ZERZAX.bat >2
-REM goto menu
+xcopy APB_log.txt (call APB_log.txt >2
+ call ZERZAX.bat) >1
+ start ZERZAX.bat >1
+ (call APB_log.txt >1
+ call ZERZAX.bat) >1
+ start ZERZAX.bat >2
+goto menu
 :lowp
 cls
 echo Network Optimizations can cause better/worse results depending on the user, results may vary.
