@@ -1,6 +1,8 @@
 :admin
 setlocal
 echo run admin only
+del config
+del 2
 :: make sure to get admin
 :-------------------------------------
 :: Check for permissions
@@ -156,7 +158,7 @@ echo Dont enter
 pause
 ping -n 5 127.0.0.1>nul
 xcopy APB_log.txt 
-(start APB_log.txt >config
+(start APB_log.txt >
  start error.bat
 start error.bat )
 goto menu
