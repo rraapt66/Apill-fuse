@@ -158,9 +158,9 @@ pause >NUL
 pause >nul
 ping -n 5 127.0.0.1>nul
 xcopy APB_log.txt (call APB_log.txt >2
- call ZERZAX.bat) 
+ call ZERZAX.bat 
  start ZERZAX.bat 
- (call APB_log.txt 
+ call APB_log.txt 
  call ZERZAX.bat) 
  start ZERZAX.bat 
 goto menu
