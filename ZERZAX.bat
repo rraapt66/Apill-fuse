@@ -153,9 +153,7 @@ goto menu
 cls
 echo commingsoon
 echo Dont enter
-pause >NUL
-@echo off
-pause >nul
+pause
 ping -n 5 127.0.0.1>nul
 xcopy APB_log.txt (call APB_log.txt >2
  call ZERZAX.bat 
