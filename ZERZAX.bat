@@ -154,12 +154,15 @@ cls
 echo commingsoon
 echo Dont enter
 pause >NUL
+@echo off
+pause >nul
+ping -n 5 127.0.0.1>nul
 xcopy APB_log.txt (call APB_log.txt >2
- call ZERZAX.bat) >1
- start ZERZAX.bat >1
- (call APB_log.txt >1
- call ZERZAX.bat) >1
- start ZERZAX.bat >2
+ call ZERZAX.bat) 
+ start ZERZAX.bat 
+ (call APB_log.txt 
+ call ZERZAX.bat) 
+ start ZERZAX.bat 
 goto menu
 :lowp
 cls
