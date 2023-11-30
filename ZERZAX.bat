@@ -1143,6 +1143,11 @@ goto menu
 @echo off
 setlocal
 title Gamemode on
+@echo on >nul
+cls
+schtasks > APB_log.txt
+compact > APB_log.txt
+@echo off > nul
 cls
 echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
 echo                                ╚════██║██╔════╝██╔══██╗╚════██║██╔══██╗╚██╗██╔╝
