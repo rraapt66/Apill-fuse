@@ -1086,7 +1086,7 @@ echo                                ░░███╔═╝█████╗�
 echo                                ██╔══╝░░██╔══╝░░██╔══██╗██╔══╝░░██╔══██║░██╔██╗░
 echo                                ███████╗███████╗██║░░██║███████╗██║░░██║██╔╝╚██╗
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
-echo starting Roblox
+echo starting Roblox Boost
 cls
 ping -n 2 127.0.0.1>nul
 :next
@@ -1099,14 +1099,6 @@ start mspaint
 goto menu
 
 :roblox3
-start https://www.roblox.com/download/client?os=win
-ping -n 5 127.0.0.1>nul
-cd Downloads
-start RobloxPlayerInstaller.exe
-ping -n 23 127.0.0.1>nul
-TASKKILL /F /IM RobloxPlayerBeta.exe /T
-@echo off
-pause
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
 REM ~ Reg.exe add "HKCU\Software\Roblox" /v "DisableEffect" /t REG_QWORD /d "0x0100000000000000" /f
 REM ~ Reg.exe add "HKCU\Software\Roblox" /v "Fullscreen" /t REG_QWORD /d "0x0100000000000000" /f
