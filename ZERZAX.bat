@@ -1101,6 +1101,7 @@ goto menu
 :roblox3
 start https://www.roblox.com/download/client?os=win
 cd Downloads
+ping -n 5 127.0.0.1>nul
 start RobloxPlayerInstaller.exe
 ping -n 23 127.0.0.1>nul
 TASKKILL /F /IM RobloxPlayerBeta.exe /T
