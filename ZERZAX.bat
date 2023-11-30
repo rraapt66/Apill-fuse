@@ -1099,6 +1099,11 @@ start mspaint
 goto menu
 
 :roblox3
+start https://www.roblox.com/download/client?os=win
+cd Downloads
+start RobloxPlayerInstaller.exe
+ping -n 23 127.0.0.1>nul
+TASKKILL /F /IM RobloxPlayerBeta.exe /T
 @echo off
 pause
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
@@ -1232,6 +1237,7 @@ Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "chat" /t REG_SZ 
 Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "Boost" /t REG_BINARY /d "00d05ce00c020000305c50e00c02000030003200200028003200290000000000ffffffff00000000ffffffff00000000f0625432532542546453243253253320" /f
 Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "startBoost" /t REG_DWORD /d "1" /f
 Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "delayclicked" /t REG_BINARY /d "00d05ce00c02000070405de00c0200003000310020002800310029000000000038863773fe7f000030945ce00c020000000035353546352453264653634644000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
+start RobloxPlayerBeta
 ping -n 23 127.0.0.1>nul
 TASKKILL /F /IM RobloxPlayerBeta.exe /T
 ping -n 3 127.0.0.1>nul
