@@ -1,3 +1,4 @@
+@echo off
 title Defrag Driv c
 cls
 chcp 65001
@@ -99,3 +100,4 @@ cls
 echo exit full clean
 ping -n 4.3 127.0.0.1>nul
 start ZERZAX.bat
+exit
