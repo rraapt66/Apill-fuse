@@ -29,6 +29,7 @@ cls
 color a
 chcp 65001
 :menu
+Mode 109 19
 setlocal
 Mode 109 19
 color D
@@ -92,7 +93,7 @@ Mode 50,40
 setlocal > APB_Log.txt
 endlocal
 setlocal
-echo Successful
+echo Successful(enter)
 pause >NUL
 goto menu
 :fixed
@@ -107,9 +108,9 @@ echo                                            ┏━━━━━━━━━�
 echo                                                   To Windows FIX by Siwat 
 echo                                            ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 echo.
-echo                                                 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-echo                                                       Press ENTER to continue   
-echo                                                 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+echo                                            ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+echo                                                   Press ENTER to continue   
+echo                                            ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 echo.  
 echo.
 pause > nul
