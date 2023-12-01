@@ -1101,9 +1101,7 @@ goto menu
 @echo off
 :erp
 echo run roblox first!!!!!!!!!!
-setlocal > completed Boost roblox.txt
-setlocal > Boost roblox Successful.txt
-ping -n 3.2 127.0.0.1>nul
+ping -n 7.2 127.0.0.1>nul
 goto stt
 :stt
 TASKKILL /IM RobloxPlayerBeta.exe > APB_Log.txt
