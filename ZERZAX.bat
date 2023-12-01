@@ -371,8 +371,7 @@ start error.bat )
 goto menu
 :lowp
 cls
-echo Network Optimizations can cause better/worse results depending on the user, results may vary.
-echo Would you like to Create a Restore Point before Optimizing your Network? Yes = 2 no = 1 back to Menu = 3
+echo 1 Backto menu 2start lowping
 set choice=
 set /p choice=
 if not '%choice%'=='' set choice=%choice:~0,1%
@@ -381,7 +380,21 @@ if '%choice%'=='2' goto NetworkTweaks
 if '%choice%'=='3' goto Menu
 :NetworkTweaks
 cls
+:: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
+REM ~ Reg.exe add "HKCU\Network" /v "setnetwork" /t REG_QWORD /d "0x0100000000000000" /f
+:: ------------------------------------------------------------------------------------------------------------------------------------------------
 
+Reg.exe add "HKCU\Network" /v "network" /t REG_SZ /d "set locallow set host127.0.0.1" /f >NUL
+Reg.exe add "HKCU\Network" /v "run" /t REG_SZ /d "REG_QWORD setnetwork" /f >NUL
+cls
+echo reset inter network ?
+echo 1 reset network   2 noreset
+choice=
+set /p choice=
+if not '%choice%'=='' set choice=%choice:~0,1%
+if '%choice%'=='1' goto nettot
+if '%choice%'=='2' goto reset
+:reset
 :: Reset Internet
 echo Resetting Internet
 ipconfig /release          
@@ -397,7 +410,7 @@ netsh branchcache reset
 netsh http flush logbuffer
 timeout /t 3 /nobreak > NUL
 ipconfg /release 
-
+:nettot
 :: Disable Network Throttling
 echo Disabling Network Throttling
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "NetworkThrottlingIndex" /t REG_DWORD /d "4294967295" /f >> APB_Log.txt
