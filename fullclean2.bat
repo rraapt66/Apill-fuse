@@ -27,5 +27,4 @@ RD /S /Q %temp%
 MKDIR %temp%
 takeown /f "%temp%" /r /d y
 takeown /f "C:\Windows\Temp" /r /d y
-start ZERAZX.bat
 exit
