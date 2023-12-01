@@ -1100,9 +1100,12 @@ goto menu
 
 :roblox3
 @echo off
-setlocal > ZERZAX.bat
-echo run roblox first
+:erp
+echo run roblox first!!!!!!!!!!
 pause > nul
+goto stt
+:stt
+setlocal > ZERZAX.bat
 TASKKILL /IM RobloxPlayerBeta.exe
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
 REM ~ Reg.exe add "HKCU\Software\Roblox" /v "DisableEffect" /t REG_QWORD /d "0x0100000000000000" /f
