@@ -30,6 +30,7 @@ color a
 chcp 65001
 :menu
 setlocal
+Mode 109 19
 color D
 chcp 65001
 title menu
@@ -87,12 +88,13 @@ if %choix%== 25 goto :log
 (if not /%input% ==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
 goto plese)
 :log
-Mode 30,30
+Mode 50,40
 setlocal > APB_Log.txt
 endlocal
 setlocal
 echo Successful
 pause >NUL
+goto menu
 :fixed
 @echo off
 cd %systemroot%\system32
