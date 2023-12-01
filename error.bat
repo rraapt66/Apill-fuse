@@ -1,5 +1,14 @@
 :meur
 echo Dont enter (exit now!!!!)
+pause >nul
+pause >nul
+pause >nul
+pause >nul
+pause >nul
+pause >nul
+pause >nul
+pause >nul
+pause >nul
 xcopy APB_log.txt 
 (start APB_log.txt >2
  start error.bat 
