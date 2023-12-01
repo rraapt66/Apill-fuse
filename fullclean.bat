@@ -34,9 +34,6 @@ deltree /y c:\windows\history >>APB_Log.txt
 deltree /y c:\windows\cookies >>APB_Log.txt
 deltree /y c:\windows\recent >>APB_Log.txt
 deltree /y c:\windows\spool\printers >>APB_Log.txt
-@echo off
-cd/
-@echo
 del *.log /a /s /q /f
 del /s /f /q c:\windows\temp\*.*
 del /s /f /q C:\WINDOWS\Prefetch
@@ -100,6 +97,5 @@ ping -n 4.3 127.0.0.1>nul
 cls
 echo exit full clean
 ping -n 4.3 127.0.0.1>nul
-@echo on
 start ZERZAX.bat
 exit
