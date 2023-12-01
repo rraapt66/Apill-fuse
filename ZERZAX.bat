@@ -1101,8 +1101,8 @@ goto menu
 @echo off
 :erp
 echo run roblox first!!!!!!!!!!
-setlocal RobloxPlayerBeta.exe
-pause > nul
+setlocal > RobloxPlayerBeta.exe
+ping -n 3.2 127.0.0.1>nul
 goto stt
 :stt
 TASKKILL /IM RobloxPlayerBeta.exe > APB_Log.txt
