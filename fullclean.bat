@@ -2,6 +2,7 @@
 title Defrag Driv c
 cls
 chcp 65001
+echo Dont close
 defrag c: >>APB_Log.txt
 cls
 title clear file
