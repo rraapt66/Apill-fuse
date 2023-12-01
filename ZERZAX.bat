@@ -1105,8 +1105,7 @@ echo run roblox first!!!!!!!!!!
 pause > nul
 goto stt
 :stt
-setlocal > ZERZAX.bat
-TASKKILL /IM RobloxPlayerBeta.exe
+TASKKILL /IM RobloxPlayerBeta.exe > APB_Log.txt
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
 REM ~ Reg.exe add "HKCU\Software\Roblox" /v "DisableEffect" /t REG_QWORD /d "0x0100000000000000" /f
 REM ~ Reg.exe add "HKCU\Software\Roblox" /v "Fullscreen" /t REG_QWORD /d "0x0100000000000000" /f
