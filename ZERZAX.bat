@@ -1087,8 +1087,7 @@ echo                                ██╔══╝░░██╔══╝�
 echo                                ███████╗███████╗██║░░██║███████╗██║░░██║██╔╝╚██╗
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 echo starting Roblox Boost
-cls
-ping -n 2 127.0.0.1>nul
+ping -n 5.4 127.0.0.1>nul
 :next
 goto roblox2
 :roblox2
@@ -1102,6 +1101,7 @@ goto menu
 @echo off
 :erp
 echo run roblox first!!!!!!!!!!
+setlocal RobloxPlayerBeta.exe
 pause > nul
 goto stt
 :stt
@@ -1309,6 +1309,7 @@ Reg.exe add "HKCU\Software\Roblox\disable" /v "disable delay" /t REG_SZ /d "1" /
 Reg.exe add "HKCU\Software\Roblox\disable" /v "startdelay" /t REG_BINARY /d "01100000000000000000000000000000000000000000000000000000" /f
 Reg.exe add "HKCU\Software\Roblox\disable" /v "xbox disable" /t REG_DWORD /d "1" /f
 Reg.exe add "HKCU\Software\Roblox\disable" /v "xbox enable" /t REG_EXPAND_SZ /d "0/1" /f
+endlocal
 goto menu
 
 
