@@ -383,9 +383,9 @@ Reg.exe add "HKCU\Network" /v "run" /t REG_SZ /d "REG_QWORD setnetwork" /f >NUL
 cls
 echo reset inter network ?
 echo 1 reset network   2 noreset
-set /p choice=
-if %choice%== 1 goto nettot
-if %choice%== 2 goto reset
+set /p choix=
+if %choix%== 1 goto :reset
+if %choix%== 2 goto :nettot
 :reset
 :: Reset Internet
 echo Resetting Internet
