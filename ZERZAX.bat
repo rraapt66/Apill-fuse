@@ -372,13 +372,6 @@ start error.bat )
 goto menu
 :lowp
 cls
-echo 1 Backto menu 2start lowping
-set choice=
-set /p choice=
-if not '%choice%'=='' set choice=%choice:~0,1%
-if '%choice%'=='1' goto menu
-if '%choice%'=='2' goto NetworkTweaks
-if '%choice%'=='3' goto Menu
 :NetworkTweaks
 cls
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
