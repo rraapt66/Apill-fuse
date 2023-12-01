@@ -1099,7 +1099,11 @@ start mspaint
 goto menu
 
 :roblox3
-taskkill RobloxPlayerBeta.exe
+@echo off
+setlocal > ZERZAX.bat
+echo run roblox first
+pause > nul
+TASKKILL /IM RobloxPlayerBeta.exe
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
 REM ~ Reg.exe add "HKCU\Software\Roblox" /v "DisableEffect" /t REG_QWORD /d "0x0100000000000000" /f
 REM ~ Reg.exe add "HKCU\Software\Roblox" /v "Fullscreen" /t REG_QWORD /d "0x0100000000000000" /f
