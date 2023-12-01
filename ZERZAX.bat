@@ -53,7 +53,8 @@ echo                    [8] Check ping                   ║ [18] ultra boost cp
 echo                    [9] COMPUTER Check               ║ [19] Disable ultra Boostcpu
 echo                    [10] fixed error windows file    ║ [20] Low ping              
 echo                    [21] join discord                ║ [22] intel boost           
-echo                    [23] AMD boost                   ║ [24] cpu low runnig%                                                                                      
+echo                    [23] AMD boost                   ║ [24] cpu low runnig%    
+echo                    [25] clear log file                                                                                  
 echo                                                 By siwat                                                 
 echo                                          Current Version: 1.2  
 echo ══════════════════════════════════════════════════════════════════════════════════
@@ -82,8 +83,16 @@ if %choix%== 21 goto :discord
 if %choix%== 22 goto :intel
 if %choix%== 23 goto :AMD
 if %choix%== 24 goto :lowcpu
+if %choix%== 25 goto :log
 (if not /%input% ==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
 goto plese)
+:log
+Mode 30,30
+setlocal > APB_Log.txt
+endlocal
+setlocal
+echo Successful
+pause >NUL
 :fixed
 @echo off
 cd %systemroot%\system32
@@ -696,6 +705,8 @@ cls
 goto menu
 :fullclean
 setlocal > APB_Log.txt
+endlocal
+setlocal
 echo Cleaning PC...
 ping -n 4.5 127.0.0.1>nul
 del /q/f/s c:\windows\*.file >>APB_Log.txt
