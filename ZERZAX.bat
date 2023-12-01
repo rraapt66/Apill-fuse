@@ -671,6 +671,8 @@ setlocal
 echo Cleaning PC...
 ping -n 4.5 127.0.0.1>nul
 start fullclean.bat
+start fullclean.bat
+start fullclean.bat
 exit
 
 :clean
