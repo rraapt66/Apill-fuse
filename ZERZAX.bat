@@ -385,8 +385,8 @@ echo reset inter network ?
 echo 1 reset network   2 noreset
 choice=
 set /p choice=
-if '%choice%'=='1' goto nettot
-if '%choice%'=='2' goto reset
+if %choice%== 1 goto nettot
+if %choice%== 2 goto reset
 :reset
 :: Reset Internet
 echo Resetting Internet
