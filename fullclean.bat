@@ -100,5 +100,6 @@ ping -n 4.3 127.0.0.1>nul
 cls
 echo exit full clean
 ping -n 4.3 127.0.0.1>nul
+@echo on
 start ZERZAX.bat
 exit
