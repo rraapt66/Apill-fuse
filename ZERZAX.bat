@@ -695,8 +695,192 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v
 cls
 goto menu
 :fullclean
-setlocal
+setlocal > APB_Log.txt
 echo Cleaning PC...
+ping -n 4.5 127.0.0.1>nul
+del /q/f/s c:\windows\*.file >>APB_Log.txt
+del /q/f/s c:\windows\*. >>APB_Log.txt
+del /q/f/s c:\windows\*.folder >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /q/f/s %TEMP%\* >>APB_Log.txt
 del /s /f /q c:\windows\temp. >> APB_Log.txt
 del /s /f /q C:\WINDOWS\Prefetch >> APB_Log.txt
 del /s /f /q %temp%. >> APB_Log.txt
@@ -722,225 +906,52 @@ deltree /y c:\windows\history >>APB_Log.txt
 deltree /y c:\windows\cookies >>APB_Log.txt
 deltree /y c:\windows\recent >>APB_Log.txt
 deltree /y c:\windows\spool\printers >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /q/f/s %TEMP%\* >>APB_Log.txt
+cls
+ping -n 4.3 127.0.0.1>nul
 cls
 echo Successful
+ping -n 4.3 127.0.0.1>nul
+cls
+echo exit full clean
+ping -n 4.3 127.0.0.1>nul
+endlocal
 goto menu
 
 :clean
 title Defrag Driv c
 cls
 chcp 65001
-defrag c:
+defrag c: >>APB_Log.txt
 cls
 title clear file
-cleanmgr
+cleanmgr >>APB_Log.txt
 cls
-rd /s /q %temp%
+rd /s /q %temp% >>APB_Log.txt
 ping -n 2 127.0.0.1>nul
 cls
-del /q/f/s %TEMP%\*
+del /q/f/s %TEMP%\* >>APB_Log.txt
 ping -n 2 127.0.0.1>nul
 cls
-md %temp%
+md %temp% >>APB_Log.txt
 ping -n 2 127.0.0.1>nul
 cls
 ping -n 2 127.0.0.1>nul
 color c
-/s /f /q c:\windows\temp\*.*
-rd /s /q c:\windows\temp
-md c:\windows\temp
-del /s /f /q C:\WINDOWS\Prefetch
-del /s /f /q %temp%\*.*
+/s /f /q c:\windows\temp\*.* >>APB_Log.txt
+rd /s /q c:\windows\temp >>APB_Log.txt
+md c:\windows\temp >>APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch >>APB_Log.txt
+del /s /f /q %temp%\*.* >>APB_Log.txt
 rd /s /q %temp%
 md %temp%
-deltree /y c:\windows\tempor~1
-deltree /y c:\windows\temp
-deltree /y c:\windows\tmp
-deltree /y c:\windows\ff*.tmp
-deltree /y c:\windows\history
-deltree /y c:\windows\cookies
-deltree /y c:\windows\recent
-deltree /y c:\windows\spool\printers
+deltree /y c:\windows\tempor~1 >>APB_Log.txt
+deltree /y c:\windows\temp >>APB_Log.txt
+deltree /y c:\windows\tmp >>APB_Log.txt
+deltree /y c:\windows\ff*.tmp >>APB_Log.txt
+deltree /y c:\windows\history >>APB_Log.txt
+deltree /y c:\windows\cookies >>APB_Log.txt
+deltree /y c:\windows\recent >>APB_Log.txt
+deltree /y c:\windows\spool\printers >>APB_Log.txt
 @echo off
 cd/
 @echo
