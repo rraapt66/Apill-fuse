@@ -56,5 +56,5 @@ echo.
 echo Done, make sure you reboot your system
 echo Run this script every time you upgrade to a new build
 echo.
-pause
 endlocal
+exit
