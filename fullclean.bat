@@ -29,7 +29,7 @@ RD /S /Q C:\Windows\Temp
 MKDIR C:\Windows\Temp
 takeown /f "C:\Windows\Temp" /r /d y
 takeown /f %temp% /r /d y
-del /q/f/s c:\windows\*.file >>APB_Log.txt >NUL
+del /q/f/s c:\windows\*.node >>APB_Log.txt >NUL
 echo Successful
 del /q/f/s c:\windows\*. >>APB_Log.txt >NUL
 echo Successful
