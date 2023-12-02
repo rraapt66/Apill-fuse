@@ -5,6 +5,16 @@ chcp 65001
 defrag c: >>APB_Log.txt
 cls
 title clear file
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
 cleanmgr >>APB_Log.txt
 cls
 rd /s /q %temp% >>APB_Log.txt
@@ -31,9 +41,9 @@ takeown /f "C:\Windows\Temp" /r /d y
 takeown /f %temp% /r /d y
 del /q/f/s c:\windows\*.node >>APB_Log.txt >NUL
 echo Successful
-del /q/f/s c:\windows\*. >>APB_Log.txt >NUL
+del /q/f/s c:\windows\*. >NUL >>APB_Log.txt 
 echo Successful
-del /q/f/s c:\windows\*.File folder >>APB_Log.txt >NUL
+del /q/f/s c:\windows\*.tmp >NUL >>APB_Log.txt 
 echo Successful
 deltree /y c:\windows\tempor~1 >>APB_Log.txt
 deltree /y c:\windows\temp >>APB_Log.txt
@@ -42,7 +52,8 @@ deltree /y c:\windows\ff*.tmp >>APB_Log.txt
 deltree /y c:\windows\history >>APB_Log.txt
 deltree /y c:\windows\cookies >>APB_Log.txt
 deltree /y c:\windows\recent >>APB_Log.txt
-deltree /y c:\windows\spool\printers >>APB_Log.txtcls
+deltree /y c:\windows\spool\printers >>APB_Log.txt
+cls
 ping -n 4.3 127.0.0.1>nul
 cls
 echo Successful
