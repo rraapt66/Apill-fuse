@@ -103,14 +103,23 @@ echo Successful....
 ping -n 2 127.0.0.1>nul
 cls
 md %temp% >NUL >>APB_Log.txt
+tree
 cls
 echo Successful
+tree
 ping -n 2 127.0.0.1>nul
 cls
 ping -n 2 127.0.0.1>nul
 cls
 ping -n 4.3 127.0.0.1>nul
 cls
+tree
+tree
+tree
+tree
+tree
+tree
+tree
 echo Successful
 ping -n 4.3 127.0.0.1>nul
 cls
