@@ -5,29 +5,8 @@ chcp 65001
 defrag c: >>APB_Log.txt
 cls
 title clear file
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cleanmgr >>APB_Log.txt
-cls
-rd /s /q %temp% >>APB_Log.txt
-ping -n 2 127.0.0.1>nul
-cls
-del /q/f/s %TEMP%\* >>APB_Log.txt
-ping -n 2 127.0.0.1>nul
-cls
-md %temp% >>APB_Log.txt
-ping -n 2 127.0.0.1>nul
-cls
-ping -n 2 127.0.0.1>nul
-color c
+color c 
+del C:\Windows\SoftwareDistribution >nul >>APB_Log.txt
 /s /f /q c:\windows\temp\*.* >>APB_Log.txt
 rd /s /q c:\windows\temp >>APB_Log.txt
 md c:\windows\temp >>APB_Log.txt
@@ -39,20 +18,64 @@ RD /S /Q C:\Windows\Temp
 MKDIR C:\Windows\Temp
 takeown /f "C:\Windows\Temp" /r /d y
 takeown /f %temp% /r /d y
-del /q/f/s c:\windows\*.node >>APB_Log.txt >NUL
+del /q/f/s c:\windows\*.node >NUL >>APB_Log.txt 
 echo Successful
 del /q/f/s c:\windows\*. >NUL >>APB_Log.txt 
 echo Successful
 del /q/f/s c:\windows\*.tmp >NUL >>APB_Log.txt 
 echo Successful
-deltree /y c:\windows\tempor~1 >>APB_Log.txt
-deltree /y c:\windows\temp >>APB_Log.txt
-deltree /y c:\windows\tmp >>APB_Log.txt
-deltree /y c:\windows\ff*.tmp >>APB_Log.txt
-deltree /y c:\windows\history >>APB_Log.txt
-deltree /y c:\windows\cookies >>APB_Log.txt
-deltree /y c:\windows\recent >>APB_Log.txt
-deltree /y c:\windows\spool\printers >>APB_Log.txt
+deltree /y c:\windows\tempor~1 >NUL >>APB_Log.txt
+echo Successful
+deltree /y c:\windows\temp >NUL >>APB_Log.txt
+echo Successful
+deltree /y c:\windows\tmp >NUL >>APB_Log.txt
+echo Successful
+deltree /y c:\windows\ff*.tmp >NUL >>APB_Log.txt
+echo Successful
+deltree /y c:\windows\history >NUL >>APB_Log.txt
+echo Successful
+deltree /y c:\windows\cookies >NUL >>APB_Log.txt
+echo Successful
+deltree /y c:\windows\recent >NUL >>APB_Log.txt
+echo Successful
+deltree /y c:\windows\spool\printers >NUL >>APB_Log.txt
+echo Successful
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cleanmgr >>APB_Log.txt
+echo Successful
+cls
+rd /s /q %temp% >NUL >>APB_Log.txt
+echo Successful
+ping -n 2 127.0.0.1>nul
+cls
+del /q/f/s %TEMP%\*. >NUL >>APB_Log.txt
+echo Successful....
+ping -n 2 127.0.0.1>nul
+cls
+md %temp% >NUL >>APB_Log.txt
+echo Successful
+ping -n 2 127.0.0.1>nul
+cls
+ping -n 2 127.0.0.1>nul
 cls
 ping -n 4.3 127.0.0.1>nul
 cls
