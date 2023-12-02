@@ -93,4 +93,4 @@ echo Done, make sure you reboot your system
 echo Run this script every time you upgrade to a new build
 echo.
 endlocal
-start ZERAZX.bat
+exit
