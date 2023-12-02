@@ -33,7 +33,7 @@ del /q/f/s c:\windows\*.node >>APB_Log.txt >NUL
 echo Successful
 del /q/f/s c:\windows\*. >>APB_Log.txt >NUL
 echo Successful
-del /q/f/s c:\windows\*.folder >>APB_Log.txt >NUL
+del /q/f/s c:\windows\*.file >>APB_Log.txt >NUL
 echo Successful
 deltree /y c:\windows\tempor~1 >>APB_Log.txt
 deltree /y c:\windows\temp >>APB_Log.txt
