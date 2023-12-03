@@ -1932,8 +1932,6 @@ echo comming soon
 goto menu
 :Keyboard
 title Keybord
-git clone https://github.com/rraapt66/Keybord.git > NUL
-start Keybord
 goto kb
 :kb
 echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
@@ -1948,8 +1946,6 @@ goto menu
 
 :mouse
 title mouse
-git clone https://github.com/rraapt66/mouse.git > NUL
-start mouse
 goto Mu
 :Mu
 echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
