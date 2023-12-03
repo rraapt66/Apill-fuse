@@ -22,6 +22,7 @@ if '%errorlevel%' NEQ '0' (
     if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
     pushd "%CD%"
     CD /D "%~dp0"
+	endlocal
 :--------------------------------------
 Mode 109 19
 title cmd VV Bysiwat
@@ -108,12 +109,17 @@ REM ~ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "shootingdelay" /t R
 REM ~ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "shottingdown" /t REG_QWORD /d "0x0100000000000000" /f
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
 
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Riot Games\VALORANT\live\VALORANT.exe" /f >nul >> APB_Log.txt
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "moveuphead" /t REG_BINARY /d "1221323432454640" /f >nul >> APB_Log.txt
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Riot Games\VALORANT\live\VALORANT.exe" /f >> APB_Log.txt
+cls
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "moveuphead" /t REG_BINARY /d "1221323432454640" /f >> APB_Log.txt
+cls
 ping -n 4 127.0.0.1>nul
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "movehead" /t REG_SZ /d "1" /f >nul >> APB_Log.txt
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "walk" /t REG_MULTI_SZ /d "player=setspeed=0" /f >nul >> APB_Log.txt
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "keyx" /t REG_SZ /d "ping set = 0.2392139129131" /f >nul >> APB_Log.txt
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "movehead" /t REG_SZ /d "1" /f >> APB_Log.txt
+cls
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "walk" /t REG_MULTI_SZ /d "player=setspeed=0" /f >> APB_Log.txt
+cls
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "keyx" /t REG_SZ /d "ping set = 0.2392139129131" >> APB_Log.txt
+cls
 ping -n 4 127.0.0.1>nul
 goto menu
 :log
