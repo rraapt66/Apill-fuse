@@ -59,7 +59,7 @@ echo                    [9] COMPUTER Check               ║ [19] Disable ultra 
 echo                    [10] fixed error windows file    ║ [20] Low ping              
 echo                    [21] join discord                ║ [22] intel boost           
 echo                    [23] AMD boost                   ║ [24] cpu low runnig%    
-echo                    [25] clear log file                [26] boost valorant                                                                 
+echo                    [25] clear log file              ║ [26] boost valorant                                                                 
 echo                                                 By siwat                                                 
 echo                                          Current Version: 1.2  
 echo ══════════════════════════════════════════════════════════════════════════════════
