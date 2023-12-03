@@ -52,7 +52,7 @@ echo                    [3] roblox                       ║ [13] edit power pla
 echo                    [4] GameModeoff                  ║ [14] Boost cpu            
 echo                    [5] Gamemodeon                   ║ [15] mouse                 
 echo                    [6] recover Backup Notebook only ║ [16] Keyboard              
-echo                    [7] shutdown                     ║ [17] Boost NVIDIA         
+echo                    [7] Restart                      ║ [17] Boost NVIDIA         
 echo                    [8] Check ping                   ║ [18] ultra boost cpu       
 echo                    [9] COMPUTER Check               ║ [19] Disable ultra Boostcpu
 echo                    [10] fixed error windows file    ║ [20] Low ping              
@@ -1546,8 +1546,8 @@ echo                                ██╔══╝░░██╔══╝�
 echo                                ███████╗███████╗██║░░██║███████╗██║░░██║██╔╝╚██╗
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 cls
-echo 1 shutdown
-echo 2 NO shutdown
+echo 1 Restart
+echo 2 NO Restart
 SET /p choix=" >  "
 if %choix%== 1,yes Goto :shd
 if %choix%== 2,no Goto :Question
@@ -1608,10 +1608,11 @@ if %choix%== 2 Goto :menu
 timeout 10
 goto menu
 :shd
-title shutdown
-echo shutdown
+title restart 
+cls
+echo Restart
 timeout 3
-shutdown -s -t 1
+shutdown /r /t 0 
 taskkill cmd
 
 :sh
