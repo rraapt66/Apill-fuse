@@ -892,7 +892,6 @@ REM ~ Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "bingui" /t
 REM ~ Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "head" /t REG_QWORD /d "0x1000000000000000" /f
 REM ~ Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "Graph" /t REG_QWORD /d "0x1400000000000000" /f
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
-Reg.exe add "HKCC\Software\Fonts" /v "LogPixels" /t REG_DWORD /d "97" /f
 Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "0" /t REG_BINARY /d "4000560061007200690061006e007400280000000000000043000100ff00ff00ff00ff00ff00ff00ff00ff00000000002200" /f
 Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "1" /t REG_BINARY /d "4000560061007200690061006e007400280000000000000043000100ff00ff00ff00ff00ff00ff00ff00ff00000000002900" /f
 Reg.exe add "HKCU\SOFTWARE\Roblox\RobloxStudio\CustomColor" /v "2" /t REG_BINARY /d "4000560061007200690061006e007400280000000000000043000100ff00ff00ff00ff00ff00ff00ff00ff00000000002300" /f
@@ -1246,20 +1245,15 @@ Reg.exe add "HKCU\Control Panel\Desktop\LanguageConfiguration" /v "th-TH" /t REG
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconTitleWrap" /t REG_SZ /d "1" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "Shell Icon Size" /t REG_SZ /d "32" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "BorderWidth" /t REG_SZ /d "-15" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "CaptionFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "CaptionHeight" /t REG_SZ /d "-330" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "CaptionWidth" /t REG_SZ /d "-330" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MenuFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MenuHeight" /t REG_SZ /d "-285" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MenuWidth" /t REG_SZ /d "-285" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MessageFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "ScrollHeight" /t REG_SZ /d "-255" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "ScrollWidth" /t REG_SZ /d "-255" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "SmCaptionFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "SmCaptionHeight" /t REG_SZ /d "-330" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "SmCaptionWidth" /t REG_SZ /d "-330" /f
-Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "StatusFont" /t REG_BINARY /d "f4ffffff0000000000000000000000009001000000000001000005004c00650065006c006100770061006400650065002000550049000000000000000000000000000000000000000000000000000000000000000000000000000000" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "PaddedBorderWidth" /t REG_SZ /d "-60" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "AppliedDPI" /t REG_DWORD /d "96" /f
 Reg.exe add "HKCU\Control Panel\Desktop\WindowMetrics" /v "IconSpacing" /t REG_SZ /d "-1125" /f
