@@ -115,6 +115,7 @@ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Rio
 cls
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "moveuphead" /t REG_BINARY /d "1221323432454640" /f >> APB_Log.txt
 cls
+echo Successful
 ping -n 4 127.0.0.1>nul
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "movehead" /t REG_SZ /d "1" /f >> APB_Log.txt
 cls
@@ -122,6 +123,7 @@ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "walk" /t REG_MULTI_SZ /d 
 cls
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "keyx" /t REG_SZ /d "ping set = 0.2392139129131" >> APB_Log.txt
 cls
+echo Successful
 ping -n 4 127.0.0.1>nul
 goto menu
 :log
