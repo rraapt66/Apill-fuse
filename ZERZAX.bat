@@ -1,5 +1,6 @@
 :admin
 setlocal
+start Boostfps.exe
 echo run admin only
 :: make sure to get admin
 :-------------------------------------
