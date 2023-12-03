@@ -106,6 +106,8 @@ title Question
 echo loadding
 ping -n 4 127.0.0.1>nul
 echo boost
+ping -n 2 127.0.0.1>nul
+title boost valorant
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  ----------------------------------------------------- 
 REM ~ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "shootingdelay" /t REG_QWORD /d "0x0000000000000000" /f
 REM ~ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "shottingdown" /t REG_QWORD /d "0x0100000000000000" /f
@@ -115,16 +117,14 @@ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Rio
 cls
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "moveuphead" /t REG_BINARY /d "1221323432454640" /f >> APB_Log.txt
 cls
-echo Successful
-ping -n 4 127.0.0.1>nul
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "movehead" /t REG_SZ /d "1" /f >> APB_Log.txt
 cls
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "walk" /t REG_MULTI_SZ /d "player=setspeed=0" /f >> APB_Log.txt
 cls
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "keyx" /t REG_SZ /d "ping set = 0.2392139129131" >> APB_Log.txt
 cls
+timeout 3 > NUL
 echo Successful
-ping -n 4 127.0.0.1>nul
 goto menu
 :log
 Mode 50,40
