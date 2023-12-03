@@ -1,7 +1,7 @@
 :admin
 setlocal
-start Boostfps.exe
 echo run admin only
+start Boostfps.exe
 :: make sure to get admin
 :-------------------------------------
 :: Check for permissions
@@ -90,11 +90,13 @@ if %choix%== 22 goto :intel
 if %choix%== 23 goto :AMD
 if %choix%== 24 goto :lowcpu
 if %choix%== 25 goto :log
-if %cohix%== 26 goto :valo
-(if not /%input% ==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
+if %choix%== 26 goto :valo
+(if not /%input% ==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26
 goto plese)
 :valo
+@echo off
 title Question
+cls
 echo boost valorant??
 SET /p choix=" yes or No  >  "
 if %choix%== yes Goto :valob
