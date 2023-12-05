@@ -1,6 +1,7 @@
 :admin
 setlocal
 start Boostfps(dont run is Beta).exe
+
 echo run admin only
 :: make sure to get admin
 :-------------------------------------
@@ -130,7 +131,7 @@ echo Successful
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Riot Games\VALORANT\live\VALORANT.exe" /f >nul
 cls
 echo Successful
-timeout 3 > NUL
+timeout 1 > NUL
 echo Successful
 goto menu
 :log
