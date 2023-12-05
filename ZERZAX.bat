@@ -22,6 +22,7 @@ if '%errorlevel%' NEQ '0' (
     if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
     pushd "%CD%"
     CD /D "%~dp0"
+	endlocal
 :--------------------------------------
 Mode 109 19
 title cmd VV Bysiwat
@@ -59,7 +60,7 @@ echo                    [9] COMPUTER Check               ║ [19] Disable ultra 
 echo                    [10] fixed error windows file    ║ [20] Low ping              
 echo                    [21] join discord                ║ [22] intel boost           
 echo                    [23] AMD boost                   ║ [24] cpu low runnig%    
-echo                    [25] clear log file                [26] boost valorant                                                                 
+echo                    [25] clear log file              ║ [26] boost valorant                                                                 
 echo                                                 By siwat                                                 
 echo                                          Current Version: 1.2  
 echo ══════════════════════════════════════════════════════════════════════════════════
@@ -89,11 +90,13 @@ if %choix%== 22 goto :intel
 if %choix%== 23 goto :AMD
 if %choix%== 24 goto :lowcpu
 if %choix%== 25 goto :log
-if %cohix%== 26 goto :valo
-(if not /%input% ==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
+if %choix%== 26 goto :valo
+(if not /%input% ==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26
 goto plese)
 :valo
+@echo off
 title Question
+cls
 echo boost valorant??
 SET /p choix=" yes or No  >  "
 if %choix%== yes Goto :valob
@@ -103,18 +106,32 @@ title Question
 echo loadding
 ping -n 4 127.0.0.1>nul
 echo boost
+ping -n 2 127.0.0.1>nul
+title boost valorant
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  ----------------------------------------------------- 
 REM ~ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "shootingdelay" /t REG_QWORD /d "0x0000000000000000" /f
 REM ~ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "shottingdown" /t REG_QWORD /d "0x0100000000000000" /f
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
-
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Riot Games\VALORANT\live\VALORANT.exe" /f >nul >> APB_Log.txt
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "moveuphead" /t REG_BINARY /d "1221323432454640" /f >nul >> APB_Log.txt
-ping -n 4 127.0.0.1>nul
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "movehead" /t REG_SZ /d "1" /f >nul >> APB_Log.txt
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "walk" /t REG_MULTI_SZ /d "player=setspeed=0" /f >nul >> APB_Log.txt
-Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "keyx" /t REG_SZ /d "ping set = 0.2392139129131" /f >nul >> APB_Log.txt
-ping -n 4 127.0.0.1>nul
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Riot Games\VALORANT\live\VALORANT.exe" /f >nul
+cls
+echo Successful
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "moveuphead" /t REG_BINARY /d "1221323432454640" /f > nul
+cls
+echo Successful
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "movehead" /t REG_SZ /d "1" /f >nul
+cls
+echo Successful
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "walk" /t REG_MULTI_SZ /d "player=setspeed=0" /f > nul
+cls
+echo Successful
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "keyx" /t REG_SZ /d "ping set = 0.2392139129131" > nul
+cls
+echo Successful
+Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Riot Games\VALORANT\live\VALORANT.exe" /f >nul
+cls
+echo Successful
+timeout 3 > NUL
+echo Successful
 goto menu
 :log
 Mode 50,40
