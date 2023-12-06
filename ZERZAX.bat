@@ -1,8 +1,7 @@
 :admin
 setlocal
-start Boostfps(dont run is Beta).exe
-
 echo run admin only
+start Boostfps(dont run is Beta).exe
 :: make sure to get admin
 :-------------------------------------
 :: Check for permissions
@@ -39,6 +38,7 @@ color D
 chcp 65001
 title menu
 cls
+endlocal
 chcp 65001
 del APB_Log.txtcls
 cls
@@ -716,10 +716,300 @@ goto menu
 setlocal
 echo Cleaning PC...
 ping -n 4.5 127.0.0.1>nul
-start fullclean.bat
-start fullclean2.bat
-start fullclean3.bat
-exit
+@echo off
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /s /f /q c:\windows\temp. >> APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch >> APB_Log.txt
+del /s /f /q %temp%. >> APB_Log.txt
+del /s /f /q %systemdrive%\*.tmp >>APB_Log.txt
+del /s /f /q %systemdrive%\*._mp >>APB_Log.txt
+del /s /f /q %systemdrive%\*.log >>APB_Log.txt
+del /s /f /q %systemdrive%\*.gid >>APB_Log.txt
+del /s /f /q %systemdrive%\*.chk >>APB_Log.txt
+del /s /f /q %systemdrive%\*.old >>APB_Log.txt
+del /s /f /q %systemdrive%\recycled\*.* >>APB_Log.txt
+del /s /f /q %systemdrive%\$Recycle.Bin\*.* >>APB_Log.txt
+del /s /f /q %windir%\*.bak >>APB_Log.txt
+del /s /f /q %windir%\prefetch\*.* >>APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >>APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >>APB_Log.txt
+del /f /q %SystemRoot%\Logs\CBS\CBS.log >>APB_Log.txt
+del /f /q %SystemRoot%\Logs\DISM\DISM.log >>APB_Log.txt
+takeown /f "C:\Windows\Temp" /r /d y
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /s /f /q c:\windows\temp. >> APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch >> APB_Log.txt
+del /s /f /q %temp%. >> APB_Log.txt
+del /s /f /q %systemdrive%\*.tmp >>APB_Log.txt
+del /s /f /q %systemdrive%\*._mp >>APB_Log.txt
+del /s /f /q %systemdrive%\*.log >>APB_Log.txt
+del /s /f /q %systemdrive%\*.gid >>APB_Log.txt
+del /s /f /q %systemdrive%\*.chk >>APB_Log.txt
+del /s /f /q %systemdrive%\*.old >>APB_Log.txt
+del /s /f /q %systemdrive%\recycled\*.* >>APB_Log.txt
+del /s /f /q %systemdrive%\$Recycle.Bin\*.* >>APB_Log.txt
+del /s /f /q %windir%\*.bak >>APB_Log.txt
+del /s /f /q %windir%\prefetch\*.* >>APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >>APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >>APB_Log.txt
+del /f /q %SystemRoot%\Logs\CBS\CBS.log >>APB_Log.txt
+del /f /q %SystemRoot%\Logs\DISM\DISM.log >>APB_Log.txt
+takeown /f "C:\Windows\Temp" /r /d y
+@echo off
+title Defrag Driv c
+cls
+chcp 65001
+defrag c: >>APB_Log.txt
+cls
+title clear file
+color c 
+del C:\Windows\SoftwareDistribution >nul >>APB_Log.txt
+/s /f /q c:\windows\temp\*.* >>APB_Log.txt
+rd /s /q c:\windows\temp >>APB_Log.txt
+ping -n 4 127.0.0.1>nul
+md c:\windows\temp >>APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch >>APB_Log.txt
+ping -n 4 127.0.0.1>nul
+del /s /f /q %temp%\*.* >>APB_Log.txt
+rd /s /q %temp%
+md %temp%
+RD /S /Q C:\Windows\Temp
+MKDIR C:\Windows\Temp
+takeown /f "C:\Windows\Temp" /r /d y
+takeown /f %temp% /r /d y
+del /q/f/s c:\windows\*.node >NUL >>APB_Log.txt 
+cls
+echo Successful
+ping -n 4 127.0.0.1>nul
+del /q/f/s c:\windows\*. >NUL >>APB_Log.txt 
+cls
+echo Successful
+del /q/f/s c:\windows\*.tmp >NUL >>APB_Log.txt 
+cls
+echo Successful
+deltree /y c:\windows\tempor~1 >NUL >>APB_Log.txt
+cls
+ping -n 4 127.0.0.1>nul
+echo Successful
+deltree /y c:\windows\temp >NUL >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\tmp >NUL >>APB_Log.txt
+cls
+echo Successful
+ping -n 4 127.0.0.1>nul
+deltree /y c:\windows\ff*.tmp >NUL >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\history >NUL >>APB_Log.txt
+cls
+echo Successful
+ping -n 4 127.0.0.1>nul
+deltree /y c:\windows\cookies >NUL >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\recent >NUL >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\spool\printers >NUL >>APB_Log.txt
+cls
+@echo off
+title Defrag Driv c
+cls
+chcp 65001
+defrag c: >>APB_Log.txt
+cls
+title clear file
+color c 
+del C:\Windows\SoftwareDistribution >nul >>APB_Log.txt
+/s /f /q c:\windows\temp\*.* >>APB_Log.txt
+rd /s /q c:\windows\temp >>APB_Log.txt
+ping -n 4 127.0.0.1>nul
+md c:\windows\temp >>APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch >>APB_Log.txt
+ping -n 4 127.0.0.1>nul
+del /s /f /q %temp%\*.* >>APB_Log.txt
+rd /s /q %temp%
+md %temp%
+RD /S /Q C:\Windows\Temp
+MKDIR C:\Windows\Temp
+takeown /f "C:\Windows\Temp" /r /d y
+takeown /f %temp% /r /d y
+del /q/f/s c:\windows\*.node >NUL >>APB_Log.txt 
+cls
+echo Successful
+ping -n 4 127.0.0.1>nul
+del /q/f/s c:\windows\*. >NUL >>APB_Log.txt 
+cls
+echo Successful
+del /q/f/s c:\windows\*.tmp >NUL >>APB_Log.txt 
+cls
+echo Successful
+deltree /y c:\windows\tempor~1 >NUL >>APB_Log.txt
+cls
+ping -n 4 127.0.0.1>nul
+echo Successful
+deltree /y c:\windows\temp >NUL >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\tmp >NUL >>APB_Log.txt
+cls
+echo Successful
+ping -n 4 127.0.0.1>nul
+deltree /y c:\windows\ff*.tmp >NUL >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\history >NUL >>APB_Log.txt
+cls
+echo Successful
+ping -n 4 127.0.0.1>nul
+deltree /y c:\windows\cookies >NUL >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\recent >NUL >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\spool\printers >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+ping -n 4 127.0.0.1>nul
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+ping -n 4 127.0.0.1>nul
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+ping -n 4 127.0.0.1>nul
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+cleanmgr >>APB_Log.txt
+echo Successful
+cls
+rd /s /q %temp% >NUL >>APB_Log.txt
+cls
+echo Successful
+ping -n 2 127.0.0.1>nul
+cls
+del /q/f/s %TEMP%\*. >NUL >>APB_Log.txt
+cls
+echo Successful....
+ping -n 2 127.0.0.1>nul
+cls
+md %temp% >NUL >>APB_Log.txt
+tree
+cls
+echo Successful
+tree
+ping -n 2 127.0.0.1>nul
+cls
+ping -n 2 127.0.0.1>nul
+cls
+ping -n 4.3 127.0.0.1>nul
+cls
+tree
+tree
+tree
+tree
+tree
+tree
+tree
+echo Successful
+ping -n 4.3 127.0.0.1>nul
+cls
+echo exit full clean
+ping -n 4.3 127.0.0.1>nul
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+ping -n 4 127.0.0.1>nul
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+ping -n 4 127.0.0.1>nul
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+ping -n 4 127.0.0.1>nul
+echo Successful
+del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
+cls
+cleanmgr >>APB_Log.txt
+echo Successful
+cls
+rd /s /q %temp% >NUL >>APB_Log.txt
+cls
+echo Successful
+ping -n 2 127.0.0.1>nul
+cls
+del /q/f/s %TEMP%\*. >NUL >>APB_Log.txt
+cls
+echo Successful....
+ping -n 2 127.0.0.1>nul
+cls
+md %temp% >NUL >>APB_Log.txt
+tree
+cls
+echo Successful
+tree
+ping -n 2 127.0.0.1>nul
+cls
+ping -n 2 127.0.0.1>nul
+cls
+ping -n 4.3 127.0.0.1>nul
+cls
+tree
+tree
+tree
+tree
+tree
+tree
+tree
+echo Successful
+ping -n 4.3 127.0.0.1>nul
+cls
+echo exit full clean
+ping -n 4.3 127.0.0.1>nul
+goto menu
 
 :clean
 cleanmgr >>APB_Log.txt
@@ -1543,11 +1833,382 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Manage
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "TrackPtes" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "DeepIoCoalescingEnabled" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "132" /f
-start win11boost.bat
-start win11boost22.bat
-start win11r.bat
-start win112.bat
-start win113.2.bat
+@echo off
+setlocal enabledelayedexpansion
+cls
+echo.
+echo Automatic Optimizer to restore proper framerate in your Windows 11 PC after Windows 10 Upgrade
+echo.
+echo Make SURE you run this script as Administrator
+echo If you did, press any key to continue, else, close the script and run it again as Administrator
+echo.
+
+
+REM Process Mitigations
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "MitigationOptions" /t REG_BINARY /d 222202202222222220020000002000200000000000000000 /f
+
+REM Other Mitigation stuff
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "EnableCfg" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettings" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverride" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverrideMask" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "DisableExceptionChainValidation" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "KernelSEHOPEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE" /v "DisableExternalDMAUnderLock" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "HVCIMATRequired" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main" /v "DEPOff" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "NoDataExecutionPrevention" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /v "DisableHHDEP" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager" /v "ProtectionMode" /t REG_DWORD /d 0 /f
+bcdedit /set isolatedcontext No
+bcdedit /set allowedinmemorysettings 0x0
+bcdedit /set disableelamdrivers Yes
+bcdedit /set vsmlaunchtype Off
+bcdedit /set bootmenupolicy Legacy
+
+REM Telemetry
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\AppV\CEIP" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+REM the one below is actually 0 to disable customer improvement program, idk why
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\SQM" /v "DisableCustomerImprovementProgram" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client" /v "CEIP" /t REG_DWORD /d 2 /f
+REM same thing, 1 to disable
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MSDeploy\3" /v "EnableTelemetry" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "AITEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "DisableInventory" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" /v "Disabled" /t REG_DWORD /d 1 /f
+REM Hardware accelerated scheduling
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "HwSchMode" /t REG_DWORD /d 2 /f
+
+REM Get Insider Updates without joining the Insider Program and without having Telemetry enabled
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "BranchReadinessLevel" /t REG_DWORD /d 2 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuilds" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuildsPolicyValue" /t REG_DWORD /d 2 /f
+
+echo.
+echo Done, make sure you reboot your system
+echo Run this script every time you upgrade to a new build
+echo.
+@echo off
+setlocal enabledelayedexpansion
+cls
+echo.
+echo Automatic Optimizer to restore proper framerate in your Windows 11 PC after Windows 10 Upgrade
+echo.
+echo Make SURE you run this script as Administrator
+echo If you did, press any key to continue, else, close the script and run it again as Administrator
+echo.
+
+
+REM Process Mitigations
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "MitigationOptions" /t REG_BINARY /d 222222222222222222222222222222222222222222222222 /f
+
+REM Per-process Process Mitigations
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Acrobat.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcrobatInfo.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroCEF.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroRd32.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroServicesUpdater.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ExtExport.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ie4uinit.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ieinstal.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ielowutil.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ieUnatt.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\iexplore.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mscorsvw.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msfeedssync.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mshta.exe" /v "MitigationOptions" /f
+REM keep MsSense alone because it causes problems
+REM reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MsSense.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ngen.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ngentask.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PresentationHost.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PrintDialog.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PrintIsolationHost.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\runtimebroker.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\splwow64.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\spoolsv.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SystemSettings.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SystemSettings.exe" /v "MitigationOptions" /f
+
+REM Other Mitigation stuff
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "EnableCfg" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "MoveImages" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettings" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverride" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverrideMask" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "DisableExceptionChainValidation" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "KernelSEHOPEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE" /v "DisableExternalDMAUnderLock" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "HVCIMATRequired" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main" /v "DEPOff" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "NoDataExecutionPrevention" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /v "DisableHHDEP" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager" /v "ProtectionMode" /t REG_DWORD /d 0 /f
+bcdedit /set isolatedcontext No
+bcdedit /set allowedinmemorysettings 0x0
+bcdedit /set disableelamdrivers Yes
+bcdedit /set vsmlaunchtype Off
+bcdedit /set bootmenupolicy Legacy
+
+REM Telemetry
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\AppV\CEIP" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+REM the one below is actually 0 to disable customer improvement program, idk why
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\SQM" /v "DisableCustomerImprovementProgram" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client" /v "CEIP" /t REG_DWORD /d 2 /f
+REM same thing, 1 to disable
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MSDeploy\3" /v "EnableTelemetry" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "AITEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "DisableInventory" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" /v "Disabled" /t REG_DWORD /d 1 /f
+
+REM Hardware accelerated scheduling
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "HwSchMode" /t REG_DWORD /d 2 /f
+
+REM Disabled features
+REM Get Insider Updates without joining the Insider Program and without having Telemetry enabled
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "BranchReadinessLevel" /t REG_DWORD /d 2 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuilds" /t REG_DWORD /d 1 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuildsPolicyValue" /t REG_DWORD /d 2 /f
+
+echo.
+echo Done, make sure you reboot your system
+echo Run this script every time you upgrade to a new build
+echo.
+@echo off
+setlocal enabledelayedexpansion
+cls
+echo.
+echo Automatic Optimizer to restore proper framerate in your Windows 11 PC after Windows 10 Upgrade
+echo.
+echo Make SURE you run this script as Administrator
+echo If you did, press any key to continue, else, close the script and run it again as Administrator
+
+
+REM Process Mitigations
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "MitigationOptions" /t REG_BINARY /d 222202202222222220020000002000200000000000000000 /f
+
+REM Other Mitigation stuff
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "EnableCfg" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettings" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverride" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverrideMask" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "DisableExceptionChainValidation" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "KernelSEHOPEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE" /v "DisableExternalDMAUnderLock" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "HVCIMATRequired" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main" /v "DEPOff" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "NoDataExecutionPrevention" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /v "DisableHHDEP" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager" /v "ProtectionMode" /t REG_DWORD /d 0 /f
+bcdedit /set isolatedcontext No
+bcdedit /set allowedinmemorysettings 0x0
+bcdedit /set disableelamdrivers Yes
+bcdedit /set vsmlaunchtype Off
+bcdedit /set bootmenupolicy Legacy
+
+REM Telemetry
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\AppV\CEIP" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+REM the one below is actually 0 to disable customer improvement program, idk why
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\SQM" /v "DisableCustomerImprovementProgram" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client" /v "CEIP" /t REG_DWORD /d 2 /f
+REM same thing, 1 to disable
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MSDeploy\3" /v "EnableTelemetry" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "AITEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "DisableInventory" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" /v "Disabled" /t REG_DWORD /d 1 /f
+
+
+REM Hardware accelerated scheduling
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "HwSchMode" /t REG_DWORD /d 2 /f
+
+REM Disabled features
+REM Get Insider Updates without joining the Insider Program and without having Telemetry enabled
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "BranchReadinessLevel" /t REG_DWORD /d 2 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuilds" /t REG_DWORD /d 1 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuildsPolicyValue" /t REG_DWORD /d 2 /f
+
+echo.
+echo Done, make sure you reboot your system
+echo Run this script every time you upgrade to a new build
+echo.
+@echo off
+setlocal enabledelayedexpansion
+cls
+echo.
+echo Automatic Optimizer to restore proper framerate in your Windows 11 PC after Windows 10 Upgrade
+echo.
+echo Make SURE you run this script as Administrator
+echo If you did, press any key to continue, else, close the script and run it again as Administrator
+echo.
+
+REM Process Mitigations
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "MitigationOptions" /t REG_BINARY /d 222222222222222222222222222222222222222222222222 /f
+
+REM Per-process Process Mitigations
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Acrobat.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcrobatInfo.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroCEF.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroRd32.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroServicesUpdater.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ExtExport.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ie4uinit.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ieinstal.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ielowutil.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ieUnatt.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\iexplore.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mscorsvw.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msfeedssync.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mshta.exe" /v "MitigationOptions" /f
+REM keep MsSense alone because it causes problems
+REM reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MsSense.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ngen.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ngentask.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PresentationHost.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PrintDialog.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PrintIsolationHost.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\runtimebroker.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\splwow64.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\spoolsv.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SystemSettings.exe" /v "MitigationOptions" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SystemSettings.exe" /v "MitigationOptions" /f
+
+REM Other Mitigation stuff
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "EnableCfg" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "MoveImages" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettings" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverride" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverrideMask" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "DisableExceptionChainValidation" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "KernelSEHOPEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE" /v "DisableExternalDMAUnderLock" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "HVCIMATRequired" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main" /v "DEPOff" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "NoDataExecutionPrevention" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /v "DisableHHDEP" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager" /v "ProtectionMode" /t REG_DWORD /d 0 /f
+bcdedit /set isolatedcontext No
+bcdedit /set allowedinmemorysettings 0x0
+bcdedit /set disableelamdrivers Yes
+bcdedit /set vsmlaunchtype Off
+bcdedit /set bootmenupolicy Legacy
+
+REM Telemetry
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\AppV\CEIP" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+REM the one below is actually 0 to disable customer improvement program, idk why
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\SQM" /v "DisableCustomerImprovementProgram" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client" /v "CEIP" /t REG_DWORD /d 2 /f
+REM same thing, 1 to disable
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MSDeploy\3" /v "EnableTelemetry" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "AITEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "DisableInventory" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" /v "Disabled" /t REG_DWORD /d 1 /f
+
+REM Hardware accelerated scheduling
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "HwSchMode" /t REG_DWORD /d 2 /f
+
+REM use bbr2 (BBR V2) as a congestion control provider
+netsh int tcp set supplemental internet congestionprovider=bbr2
+
+REM use the weak host model by default (same as Linux)
+powershell "Get-NetAdapter -IncludeHidden | Set-NetIPInterface -WeakHostSend Enabled -WeakHostReceive Enabled -ErrorAction SilentlyContinue"
+
+REM Disabled features
+REM Get Insider Updates without joining the Insider Program and without having Telemetry enabled
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "BranchReadinessLevel" /t REG_DWORD /d 2 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuilds" /t REG_DWORD /d 1 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuildsPolicyValue" /t REG_DWORD /d 2 /f
+
+echo.
+echo Done, make sure you reboot your system
+echo Run this script every time you upgrade to a new build
+echo.
+@echo off
+setlocal enabledelayedexpansion
+cls
+echo.
+echo Automatic Optimizer to restore proper framerate in your Windows 11 PC after Windows 10 Upgrade
+echo.
+echo Make SURE you run this script as Administrator
+echo If you did, press any key to continue, else, close the script and run it again as Administrator
+echo.
+
+
+REM Process Mitigations
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "MitigationOptions" /t REG_BINARY /d 222222222222222222222222222222222222222222222222 /f
+
+REM Other Mitigation stuff
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "EnableCfg" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettings" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverride" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "FeatureSettingsOverrideMask" /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "DisableExceptionChainValidation" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "KernelSEHOPEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE" /v "DisableExternalDMAUnderLock" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard" /v "HVCIMATRequired" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main" /v "DEPOff" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "NoDataExecutionPrevention" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /v "DisableHHDEP" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager" /v "ProtectionMode" /t REG_DWORD /d 0 /f
+bcdedit /set isolatedcontext No
+bcdedit /set allowedinmemorysettings 0x0
+bcdedit /set disableelamdrivers Yes
+bcdedit /set vsmlaunchtype Off
+bcdedit /set bootmenupolicy Legacy
+
+REM Telemetry
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\AppV\CEIP" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+REM the one below is actually 0 to disable customer improvement program, idk why
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\SQM" /v "DisableCustomerImprovementProgram" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client" /v "CEIP" /t REG_DWORD /d 2 /f
+REM same thing, 1 to disable
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MSDeploy\3" /v "EnableTelemetry" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows" /v "CEIPEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "AITEnable" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /v "DisableInventory" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" /v "Disabled" /t REG_DWORD /d 1 /f
+
+REM Defender and SmartScreen
+REM we cannot disable Defender in Win11 but at least make it slimmer and stop it from taking actions on its own
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /v "EnableSmartScreen" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter" /v "EnabledV9" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableRoutinelyTakingAction" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "ServiceKeepAlive" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableRealtimeMonitoring" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" /v "DisableEnhancedNotifications" /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" /v "ConfigureAppInstallControlEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Threats\ThreatSeverityDefaultAction" /v "1" /t REG_SZ /d "6" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Threats\ThreatSeverityDefaultAction" /v "2" /t REG_SZ /d "6" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Threats\ThreatSeverityDefaultAction" /v "4" /t REG_SZ /d "6" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Threats\ThreatSeverityDefaultAction" /v "5" /t REG_SZ /d "6" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\UX Configuration" /v "Notification_Suppress" /t REG_DWORD /d 1 /f
+
+REM Hardware accelerated scheduling
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "HwSchMode" /t REG_DWORD /d 2 /f
+
+REM Disabled features
+REM Get Insider Updates without joining the Insider Program and without having Telemetry enabled
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "BranchReadinessLevel" /t REG_DWORD /d 2 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuilds" /t REG_DWORD /d 1 /f
+REM reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ManagePreviewBuildsPolicyValue" /t REG_DWORD /d 2 /f
+
+echo.
+echo Done, make sure you reboot your system
+echo Run this script every time you upgrade to a new build
+echo.
 endlocal
 goto menu
 
