@@ -34,7 +34,7 @@ chcp 65001
 Mode 109 19
 setlocal
 Mode 109 19
-color D
+color 0f
 chcp 65001
 title menu
 cls
