@@ -1,7 +1,6 @@
 :admin
 setlocal
 echo run admin only
-start Boostfps(dont run is Beta).exe
 :: make sure to get admin
 :-------------------------------------
 :: Check for permissions

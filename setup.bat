@@ -10,5 +10,4 @@ python -m pip install -r requirements.txt
 pause
 cls
 start ZERZAX.bat
-start Boostfps(dont_run_is_Beta).exe
 exit
