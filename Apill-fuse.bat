@@ -46,23 +46,23 @@ echo              ███████║██████╔╝██║█�
 echo              ██╔══██║██╔═══╝░██║██║░░░░░██║░░░░░╚════╝██╔══╝░░██║░░░██║░╚═══██╗██╔══╝░░
 echo              ██║░░██║██║░░░░░██║███████╗███████╗░░░░░░██║░░░░░╚██████╔╝██████╔╝███████╗
 echo              ╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚══════╝░░░░░░╚═╝░░░░░░╚═════╝░╚═════╝░╚══════╝ 
-echo                   ═════════════════════════════════════════════════════════════════
-echo                   ║ [1] clean file                   ║ [11] Backup                ║
-echo                   ║ [2] Remote                       ║ [12] FULL CLEAN            ║ 
-echo                   ║ [3] roblox                       ║ [13] edit power plan       ║ 
-echo                   ║ [4] GameModeoff                  ║ [14] Boost cpu             ║
-echo                   ║ [5] Gamemodeon                   ║ [15] mouse                 ║ 
-echo                   ║ [6] recover Backup Notebook only ║ [16] Keyboard              ║ 
-echo                   ║ [7] Restart                      ║ [17] Boost NVIDIA          ║
-echo                   ║ [8] Check ping                   ║ [18] ultra boost cpu       ║ 
-echo                   ║ [9] COMPUTER Check               ║ [19] Disable ultra Boostcpu║
-echo                   ║ [10] fixed error windows file    ║ [20] Low ping              ║
-echo                   ║ [21] join discord                ║ [22] intel boost           ║
-echo                   ║ [23] AMD boost                   ║ [24] cpu low runnig        ║                   
-echo                   ║ [25] clear log file              ║ [26] boost valorant        ║     
-echo                   ║ [26] start Setting scan virus    ║ [28] start Riot            ║  
-echo                     [29] report bug 
-echo                   ═════════════════════════════════════════════════════════════════                                    
+echo                   ═══════════════════════════════════════════════════════════════════
+echo                   ║ [1] clean file                   ║ [16] Keyboard                ║         
+echo                   ║ [2] Remote                       ║ [17] Boost NVIDIA            ║ 
+echo                   ║ [3] roblox                       ║ [18] ultra boost cpu         ║ 
+echo                   ║ [4] GameModeoff                  ║ [19] Disable ultra Boostcpu  ║
+echo                   ║ [5] Gamemodeon                   ║ [20] Low ping                ║ 
+echo                   ║ [6] recover Backup Notebook only ║ [21] join discord            ║ 
+echo                   ║ [7] Restart                      ║ [22] intel boost             ║
+echo                   ║ [8] Check ping                   ║ [23] AMD boost               ║ 
+echo                   ║ [9] COMPUTER Check               ║ [24] cpu low runnig          ║
+echo                   ║ [10] fixed error windows file    ║ [25] clear log file          ║
+echo                   ║ [11] Backup                      ║ [26] boost valorant          ║
+echo                   ║ [12] FULL CLEAN                  ║ [27] start Setting scan virus║                   
+echo                   ║ [13] edit power plan             ║ [28] start Riot              ║     
+echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
+echo                   ║ [15] mouse                       ║ [30] comming soon            ║
+echo                   ═══════════════════════════════════════════════════════════════════  
 echo                                                 By siwat                                                 
 echo                                          Current Version: 1.4  
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
