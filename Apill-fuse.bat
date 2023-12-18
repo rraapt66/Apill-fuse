@@ -29,7 +29,6 @@ title Apill-fuse Bysiwat
 cls
 color a
 chcp 65001
-:menu
 :CheckInterNet
 cls
 title Check Inter net
@@ -59,7 +58,9 @@ chcp 65001
 title menu
 cls
 endlocal
+:menu
 chcp 65001
+title Apill-fuse Fusion ZERZAX ZERZAX is old version 
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
 echo              ░█████╗░██████╗░██╗██╗░░░░░██╗░░░░░░░░░░░███████╗██╗░░░██╗░██████╗███████╗
 echo              ██╔══██╗██╔══██╗██║██║░░░░░██║░░░░░░░░░░░██╔════╝██║░░░██║██╔════╝██╔════╝
