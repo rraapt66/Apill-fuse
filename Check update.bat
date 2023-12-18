@@ -16,9 +16,9 @@ echo .....
 del setup.bat > nul
 ping -n 4 127.0.0.1>nul
 echo .............
-del ZERZAX.bat > nul
+del Apill-fuse.bat > nul
 del readme.txt > nul
-git clone https://github.com/rraapt66/ZERZAX.git
+git clone https://github.com/rraapt66/Apill-fuse.git
 echo .
 ping -n 2 127.0.0.1>nul
 cls
