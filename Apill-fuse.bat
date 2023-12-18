@@ -24,7 +24,7 @@ if '%errorlevel%' NEQ '0' (
 	endlocal
 :--------------------------------------
 Mode 109 19
-title cmd VV Bysiwat
+title Apill-fuse Bysiwat
 @echo off
 cls
 color a
