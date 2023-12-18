@@ -111,16 +111,13 @@ cls
 cls
 title Check Inter net
 echo check inter net
-rem กำหนดชื่อโปรแกรมที่ต้องการเปิด
-cd C:\Riot Games\Riot Client
-set program="RiotClientServices.exe"
 
 rem ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
 if errorlevel 1 (
   echo No internet connection!
-  exit
+  timeout 16 >nul
 ) else (
   echo Internet connection active.
 )
@@ -140,6 +137,9 @@ for %%i in (*RiotClientServices.exe) do (
   )
 )
 :startProgram
+rem กำหนดชื่อโปรแกรมที่ต้องการเปิด
+cd C:\Riot Games\Riot Client
+set program="RiotClientServices.exe"
 cls
 title start-program
 rem เปิดโปรแกรม
