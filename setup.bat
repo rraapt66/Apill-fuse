@@ -9,5 +9,5 @@ ping -n 16 127.0.0.1>nul
 python -m pip install -r requirements.txt
 pause
 cls
-start ZERZAX.bat
+start Apill-fuse.bat
 exit
