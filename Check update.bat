@@ -1,4 +1,6 @@
 @echo off
+cd Apill-fuse
+cls
 echo check update
 echo .
 del APB_Log.txt > nul
