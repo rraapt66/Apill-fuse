@@ -60,7 +60,8 @@ echo                   ║ [10] fixed error windows file    ║ [20] Low ping   
 echo                   ║ [21] join discord                ║ [22] intel boost           ║
 echo                   ║ [23] AMD boost                   ║ [24] cpu low runnig        ║                   
 echo                   ║ [25] clear log file              ║ [26] boost valorant        ║     
-echo                   ║ [26] start Setting scan virus    ║ [28] start Riot            ║   
+echo                   ║ [26] start Setting scan virus    ║ [28] start Riot            ║  
+echo                     [29] report bug 
 echo                   ═════════════════════════════════════════════════════════════════                                    
 echo                                                 By siwat                                                 
 echo                                          Current Version: 1.4  
@@ -94,8 +95,15 @@ if %choix%== 25 goto :log
 if %choix%== 26 goto :valo
 if %choix%== 27 goto :virus
 if %choix%== 28 goto :valorantStart
-(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28
+if %choix%== 29 goto :bug
+(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29
 goto plese)
+:bug
+color 0
+title report bug
+SET /p bug=" enter bug  >  "
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST https://discord.com/api/webhooks/... --data "{\"content\": \"%bug%\"}" https://discord.com/api/webhooks/1181283255018864821/BX7KseLsgA1pLRAXPW-7qASo-XSrEC0RKe96Me-xVu7ijwMCNFyIR05uSVXtGDjVmyCO
+goto menu
 :valorantStart
 @echo off
 cls
