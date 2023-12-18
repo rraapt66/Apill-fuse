@@ -34,7 +34,7 @@ chcp 65001
 cls
 title Check Inter net
 echo check inter net
-
+timeout 4 >nul
 rem ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
