@@ -7,10 +7,8 @@ echo ..
 del error.bat > nul
 ping -n 1 127.0.0.1>nul
 echo ...
-del reportbug.py > nul
 ping -n 3 127.0.0.1>nul
 echo ....
-del requirements.txt > nul
 ping -n 2 127.0.0.1>nul
 echo .....
 del setup.bat > nul
