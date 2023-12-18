@@ -63,7 +63,7 @@ echo                   ║ [25] clear log file              ║ [26] boost valor
 echo                   ║ [26] start Setting scan virus    ║ [28] start Riot            ║   
 echo                   ═════════════════════════════════════════════════════════════════                                    
 echo                                                 By siwat                                                 
-echo                                          Current Version: 1.2  
+echo                                          Current Version: 1.4  
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
 SET /p choix=" PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :clean
