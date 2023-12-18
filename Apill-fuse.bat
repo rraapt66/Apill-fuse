@@ -917,7 +917,7 @@ defrag c: >>APB_Log.txt
 cls
 title clear file
 color c 
-del C:\Windows\SoftwareDistribution >nul >>APB_Log.txt
+del C:\Windows\SoftwareDistribution  >>APB_Log.txt
 /s /f /q c:\windows\temp\*.* >>APB_Log.txt
 rd /s /q c:\windows\temp >>APB_Log.txt
 ping -n 4 127.0.0.1>nul
