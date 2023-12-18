@@ -107,6 +107,23 @@ goto menu
 :valorantStart
 @echo off
 cls
+:CheckInterNet
+cls
+title Check Inter net
+echo check inter net
+rem กำหนดชื่อโปรแกรมที่ต้องการเปิด
+cd C:\Riot Games\Riot Client
+set program="RiotClientServices.exe"
+
+rem ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต
+@echo off
+ping 8.8.8.8 -n 1 -l 32 >nul
+if errorlevel 1 (
+  echo No internet connection!
+  exit
+) else (
+  echo Internet connection active.
+)
 :checkProgram
 title Check Program Riot
 cd C:\Riot Games\Riot Client
@@ -121,21 +138,6 @@ for %%i in (*RiotClientServices.exe) do (
 	echo you Dont have Riot or you Riot UPDATE
 	TIMEOUT 4 > nul
   )
-)
-:CheckInterNet
-cls
-title Check Inter net
-echo check inter net
-rem กำหนดชื่อโปรแกรมที่ต้องการเปิด
-cd C:\Riot Games\Riot Client
-set program="RiotClientServices.exe"
-
-rem ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต
-ping -n 1 8.8.8.8 >nul
-if errorlevel 1 (
-  echo "Riot ready"
-  TIMEOUT 4 > nul
-  exit /b 1
 )
 :startProgram
 cls
