@@ -64,6 +64,8 @@ goto login)
 title Successful
 mkdir user-for-Apill-fuse
 cd user-for-Apill-fuse
+setlocal login.txt
+endlocal
 echo username:%name%-id:%random% >> login.txt
 :local
 setlocal
@@ -90,8 +92,8 @@ echo                   ║ [2] Remote                       ║ [17] Boost NVIDI
 echo                   ║ [3] roblox                       ║ [18] ultra boost cpu         ║ 
 echo                   ║ [4] GameModeoff                  ║ [19] Disable ultra Boostcpu  ║
 echo                   ║ [5] Gamemodeon                   ║ [20] Low ping                ║ 
-echo                   ║ [6] recover Backup Notebook only ║ [21] join discord            ║ 
-echo                   ║ [7] Restart                      ║ [22] intel boost             ║
+echo                   ║ [6] recover Backup Notebook only ║ [21] join discord            ║ %By-siwat%
+echo                   ║ [7] Restart                      ║ [22] intel boost             ║ %Version%
 echo                   ║ [8] Check ping                   ║ [23] AMD boost               ║ 
 echo                   ║ [9] COMPUTER Check               ║ [24] cpu low runnig          ║
 echo                   ║ [10] fixed error windows file    ║ [25] clear log file          ║
