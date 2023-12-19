@@ -51,6 +51,21 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
   echo Internet connection active.
 )
 cls
+:login 
+title login
+echo enter name window
+SET /p name=" users name window  >  "
+cd C:\Users\%name%
+if errorlevel 1 (The system cannot find the path specified.
+cls
+echo error PRESS ENTER username
+timeout /t 3 /nobreak > NUL
+goto login)
+title Successful
+mkdir user-for-Apill-fuse
+cd user-for-Apill-fuse
+echo username:%name%-id:%random% >> login.txt
+:local
 setlocal
 Mode 299 209
 color 0f
