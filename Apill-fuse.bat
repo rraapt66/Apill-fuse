@@ -83,7 +83,7 @@ echo                   ║ [11] Backup                      ║ [26] boost valor
 echo                   ║ [12] FULL CLEAN                  ║ [27] start Setting scan virus║                   
 echo                   ║ [13] edit power plan             ║ [28] start Riot              ║     
 echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
-echo                   ║ [15] mouse                       ║ [30] comming soon            ║
+echo                   ║ [15] mouse                       ║ [30] task manager            ║
 echo                   ═══════════════════════════════════════════════════════════════════  
 echo                                                 By siwat                                                 
 echo                                          Current Version: 1.4  
@@ -118,8 +118,19 @@ if %choix%== 26 goto :valo
 if %choix%== 27 goto :virus
 if %choix%== 28 goto :valorantStart
 if %choix%== 29 goto :bug
-(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29
+if %choix%== 30 goto :task
+(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30
 goto plese)
+:task
+@echo off
+title find task manager
+echo Find task manager
+timeout /t 3 /nobreak > NUL
+title start task manager
+echo Starting......
+timeout /t 5 /nobreak > NUL
+taskmgr
+goto menu
 :bug
 color 0
 title report bug
