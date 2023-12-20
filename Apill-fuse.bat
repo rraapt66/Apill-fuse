@@ -1,4 +1,5 @@
 :admin
+rem admin
 setlocal
 echo run admin only
 :: make sure to get admin
@@ -30,6 +31,7 @@ cls
 color a
 chcp 65001
 :CheckInterNet
+rem check internet
 cls
 title Check Inter net
 echo check inter net
@@ -52,6 +54,7 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
 )
 cls
 :login 
+rem login
 title login
 echo enter name window
 SET /p name=" users name window  >  "
@@ -91,6 +94,10 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
   echo Internet connection active.
 )
 chcp 65001
+rem menu
+set Version=1.4
+set choix=bysiwat
+set website=https://github.com/rraapt66
 title Apill-fuse Fusion ZERZAX ZERZAX is old version 
 cls
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
@@ -106,8 +113,8 @@ echo                   ║ [2] Remote                       ║ [17] Boost NVIDI
 echo                   ║ [3] roblox                       ║ [18] ultra boost cpu         ║ 
 echo                   ║ [4] GameModeoff                  ║ [19] Disable ultra Boostcpu  ║
 echo                   ║ [5] Gamemodeon                   ║ [20] Low ping                ║ 
-echo                   ║ [6] recover Backup Notebook only ║ [21] join discord            ║ %By-siwat%
-echo                   ║ [7] Restart                      ║ [22] intel boost             ║ %Version%
+echo                   ║ [6] recover Backup Notebook only ║ [21] join discord            ║ 
+echo                   ║ [7] Restart                      ║ [22] intel boost             ║ 
 echo                   ║ [8] Check ping                   ║ [23] AMD boost               ║ 
 echo                   ║ [9] COMPUTER Check               ║ [24] cpu low runnig          ║
 echo                   ║ [10] fixed error windows file    ║ [25] clear log file          ║
@@ -116,10 +123,10 @@ echo                   ║ [12] FULL CLEAN                  ║ [27] start Setti
 echo                   ║ [13] edit power plan             ║ [28] start Riot              ║     
 echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
 echo                   ║ [15] mouse                       ║ [30] task manager            ║
-echo                   ║ [32] comming soon                ║ [31] spotify no ads          ║ 
+echo                   ║ [32] comming soon                ║ [31] spotify no ads          ║ 000 credit
 echo                   ═══════════════════════════════════════════════════════════════════  
 echo                                                 By siwat                                                 
-echo                                          Current Version: 1.4  
+echo                                          Current Version:%Version%
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
 SET /p choix=" PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :clean
@@ -153,8 +160,12 @@ if %choix%== 28 goto :valorantStart
 if %choix%== 29 goto :bug
 if %choix%== 30 goto :task
 if %choix%== 31 goto :SpotX
-(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31
+if %choix%== 000 goto :www
+(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,000
 goto plese)
+:www
+start %website%
+goto menu
 :SpotX
 @echo off
 start setup-spotify.bat
@@ -238,7 +249,7 @@ timeout 6 > nul
 start "" "%program%"
 goto menu
 :virus
-start windowsdefender://threat #is scan virus soft#
+start windowsdefender://threat
 goto menu
 :valo
 @echo off
