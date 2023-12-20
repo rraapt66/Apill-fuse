@@ -123,7 +123,7 @@ echo                   ║ [12] FULL CLEAN                  ║ [27] start Setti
 echo                   ║ [13] edit power plan             ║ [28] start Riot              ║     
 echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
 echo                   ║ [15] mouse                       ║ [30] task manager            ║
-echo                   ║ [32] comming soon                ║ [31] spotify no ads          ║ 000 credit
+echo                   ║ [32] comming soon                ║ [31] spotify no ads          ║ 000 credit  
 echo                   ═══════════════════════════════════════════════════════════════════  
 echo                                                 By siwat                                                 
 echo                                          Current Version:%Version%
