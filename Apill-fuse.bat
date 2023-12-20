@@ -64,9 +64,8 @@ goto login)
 title Successful
 mkdir user-for-Apill-fuse
 cd user-for-Apill-fuse
-setlocal login.txt
-endlocal
-echo username:%name%-id:%random% >> login.txt
+del login.txt
+echo username:%name%-Thank-for-use >> login.txt
 :local
 setlocal
 Mode 299 209
@@ -76,6 +75,21 @@ title menu
 cls
 endlocal
 :menu
+@echo off
+ping 8.8.8.8 -n 1 -l 32 >nul
+if errorlevel 1 (  
+chcp 65001
+echo ███╗░░██╗░█████╗░░░░░░░██╗███╗░░██╗████████╗███████╗██████╗░░░░░░░███╗░░██╗███████╗████████╗
+echo ████╗░██║██╔══██╗░░░░░░██║████╗░██║╚══██╔══╝██╔════╝██╔══██╗░░░░░░████╗░██║██╔════╝╚══██╔══╝
+echo ██╔██╗██║██║░░██║█████╗██║██╔██╗██║░░░██║░░░█████╗░░██████╔╝█████╗██╔██╗██║█████╗░░░░░██║░░░
+echo ██║╚████║██║░░██║╚════╝██║██║╚████║░░░██║░░░██╔══╝░░██╔══██╗╚════╝██║╚████║██╔══╝░░░░░██║░░░
+echo ██║░╚███║╚█████╔╝░░░░░░██║██║░╚███║░░░██║░░░███████╗██║░░██║░░░░░░██║░╚███║███████╗░░░██║░░░
+echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═╝╚═╝░░╚══╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝░░░░░░╚═╝░░╚══╝╚══════╝░░░╚═╝░░░
+  timeout /t 19 /nobreak > NUL
+  goto CheckInterNet
+) else (
+  echo Internet connection active.
+)
 chcp 65001
 title Apill-fuse Fusion ZERZAX ZERZAX is old version 
 cls
