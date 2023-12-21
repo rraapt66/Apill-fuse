@@ -56,19 +56,9 @@ cls
 :login 
 rem login
 title login
-echo enter name window
-SET /p name=" users name window  >  "
-cd C:\Users\%name%
-if errorlevel 1 (The system cannot find the path specified.
-cls
-echo error PRESS ENTER username
-timeout /t 3 /nobreak > NUL
-goto login)
-title Successful
-mkdir user-for-Apill-fuse
-cd user-for-Apill-fuse
-del login.txt
-echo username:%name%-Thank-for-use >> login.txt
+echo What your name ?
+SET /p name=" >  "
+goto local
 :local
 setlocal
 Mode 299 209
@@ -870,6 +860,9 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v
 cls
 goto menu
 :fullclean
+cls
+setlocal >>APB_Log.txt
+@echo off
 echo Cleaning PC...
 ping -n 4.5 127.0.0.1>nul
 @echo off
