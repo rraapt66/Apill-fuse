@@ -870,7 +870,6 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v
 cls
 goto menu
 :fullclean
-setlocal
 echo Cleaning PC...
 ping -n 4.5 127.0.0.1>nul
 @echo off
@@ -1032,137 +1031,11 @@ echo Successful
 del /q/f/s %TEMP%\ >>APB_Log.txt
 cls
 echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-ping -n 4 127.0.0.1>nul
-echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-ping -n 4 127.0.0.1>nul
-echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-ping -n 4 127.0.0.1>nul
-echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-cleanmgr >>APB_Log.txt
-echo Successful
-cls
-rd /s /q %temp% >>APB_Log.txt
-cls
-echo Successful
-ping -n 2 127.0.0.1>nul
-cls
-del /q/f/s %TEMP%\*. >>APB_Log.txt
-cls
-echo Successful....
-ping -n 2 127.0.0.1>nul
-cls
-md %temp%  >>APB_Log.txt
-tree
-cls
-echo Successful
-tree
-ping -n 2 127.0.0.1>nul
-cls
-ping -n 2 127.0.0.1>nul
-cls
 ping -n 4.3 127.0.0.1>nul
-cls
 tree
 tree
 tree
 tree
-tree
-tree
-tree
-echo Successful
-ping -n 4.3 127.0.0.1>nul
-cls
-echo exit full clean
-ping -n 4.3 127.0.0.1>nul
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-ping -n 4 127.0.0.1>nul
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-ping -n 4 127.0.0.1>nul
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-ping -n 4 127.0.0.1>nul
-echo Successful
-del /q/f/s %TEMP%\ >NUL >>APB_Log.txt
-cls
-cleanmgr >>APB_Log.txt
-echo Successful
-cls
-rd /s /q %temp% >NUL >>APB_Log.txt
-cls
-echo Successful
-ping -n 2 127.0.0.1>nul
-cls
-del /q/f/s %TEMP%\*. >NUL >>APB_Log.txt
-cls
-echo Successful....
-ping -n 2 127.0.0.1>nul
-cls
-md %temp% >NUL >>APB_Log.txt
-tree
-cls
-echo Successful
-tree
-ping -n 2 127.0.0.1>nul
-cls
-ping -n 2 127.0.0.1>nul
-cls
-ping -n 4.3 127.0.0.1>nul
-cls
-tree
-tree
-tree
-tree
-tree
-tree
-tree
-echo Successful
-ping -n 4.3 127.0.0.1>nul
 cls
 echo exit full clean
 ping -n 4.3 127.0.0.1>nul
