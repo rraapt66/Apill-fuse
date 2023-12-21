@@ -1,4 +1,5 @@
 :admin
+echo 0_0 connect >use.txt
 rem admin
 setlocal
 echo run admin only
@@ -456,39 +457,39 @@ goto menu
 goto backup
 
 :discup
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt 
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f >> APB_Log.txt
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f >> APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt 
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "8" /f > APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f > APB_Log.txt
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f >> APB_Log.txt
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
@@ -765,16 +766,16 @@ reg add "%%n" /v "GigaLite" /t REG_SZ /d "0" /f >> APB_Log.txt
 reg add "%%n" /v "NicAutoPowerSaver" /t REG_SZ /d "2" /f >> APB_Log.txt
 reg add "%%n" /v "PowerDownPll" /t REG_SZ /d "0" /f >> APB_Log.txt
 reg add "%%n" /v "PowerSavingMode" /t REG_SZ /d "0" /f >> APB_Log.txt
-reg add "%%n" /v "ReduceSpeedOnPowerDown" /t REG_SZ /d "0" /f >> APB_Log.txt
-reg add "%%n" /v "SmartPowerDownEnable" /t REG_SZ /d "0" /f >> APB_Log.txt
+reg add "%%n" /v "ReduceSpeedOnPowerDown" /t REG_SZ /d "0" /f > APB_Log.txt
+reg add "%%n" /v "SmartPowerDownEnable" /t REG_SZ /d "0" /f > APB_Log.txt
 reg add "%%n" /v "S5NicKeepOverrideMacAddrV2" /t REG_SZ /d "0" /f >> APB_Log.txt
-reg add "%%n" /v "S5WakeOnLan" /t REG_SZ /d "0" /f >> APB_Log.txt
-reg add "%%n" /v "ULPMode" /t REG_SZ /d "0" /f >> APB_Log.txt
-reg add "%%n" /v "WakeOnDisconnect" /t REG_SZ /d "0" /f >> APB_Log.txt
-reg add "%%n" /v "*WakeOnMagicPacket" /t REG_SZ /d "0" /f >> APB_Log.txt
-reg add "%%n" /v "*WakeOnPattern" /t REG_SZ /d "0" /f >> APB_Log.txt
-reg add "%%n" /v "WakeOnLink" /t REG_SZ /d "0" /f >> APB_Log.txt
-reg add "%%n" /v "WolShutdownLinkSpeed" /t REG_SZ /d "2" /f >> APB_Log.txt
+reg add "%%n" /v "S5WakeOnLan" /t REG_SZ /d "0" /f > APB_Log.txt
+reg add "%%n" /v "ULPMode" /t REG_SZ /d "0" /f > APB_Log.txt
+reg add "%%n" /v "WakeOnDisconnect" /t REG_SZ /d "0" /f > APB_Log.txt
+reg add "%%n" /v "*WakeOnMagicPacket" /t REG_SZ /d "0" /f > APB_Log.txt
+reg add "%%n" /v "*WakeOnPattern" /t REG_SZ /d "0" /f > APB_Log.txt
+reg add "%%n" /v "WakeOnLink" /t REG_SZ /d "0" /f > APB_Log.txt
+reg add "%%n" /v "WolShutdownLinkSpeed" /t REG_SZ /d "2" /f > APB_Log.txt
 timeout /t 1 /nobreak > NUL
 
 :: Disable Jumbo Frame
@@ -854,51 +855,51 @@ cls
 echo  (═════════════════════════════════════════════)
 ping -n 1 127.0.0.1>nul
 cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "0" /f >> APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "0" /f > APB_Log.txt
 cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "0" /f >> APB_Log.txt
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "0" /f > APB_Log.txt
 cls
 goto menu
 :fullclean
 cls
-setlocal >>APB_Log.txt
+setlocal 
 @echo off
 echo Cleaning PC...
 ping -n 4.5 127.0.0.1>nul
 @echo off
 del /q/f/s %TEMP%\* >>APB_Log.txt
-del /s /f /q c:\windows\temp. >> APB_Log.txt
-del /s /f /q C:\WINDOWS\Prefetch >> APB_Log.txt
+del /s /f /q c:\windows\temp. > APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch > APB_Log.txt
 del /s /f /q %temp%. >> APB_Log.txt
-del /s /f /q %systemdrive%\*.tmp >>APB_Log.txt
-del /s /f /q %systemdrive%\*._mp >>APB_Log.txt
-del /s /f /q %systemdrive%\*.log >>APB_Log.txt
-del /s /f /q %systemdrive%\*.gid >>APB_Log.txt
-del /s /f /q %systemdrive%\*.chk >>APB_Log.txt
-del /s /f /q %systemdrive%\*.old >>APB_Log.txt
-del /s /f /q %systemdrive%\recycled\*.* >>APB_Log.txt
-del /s /f /q %systemdrive%\$Recycle.Bin\*.* >>APB_Log.txt
-del /s /f /q %windir%\*.bak >>APB_Log.txt
-del /s /f /q %windir%\prefetch\*.* >>APB_Log.txt
-del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >>APB_Log.txt
-del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >>APB_Log.txt
-del /f /q %SystemRoot%\Logs\CBS\CBS.log >>APB_Log.txt
-del /f /q %SystemRoot%\Logs\DISM\DISM.log >>APB_Log.txt
+del /s /f /q %systemdrive%\*.tmp >APB_Log.txt
+del /s /f /q %systemdrive%\*._mp >APB_Log.txt
+del /s /f /q %systemdrive%\*.log >APB_Log.txt
+del /s /f /q %systemdrive%\*.gid >APB_Log.txt
+del /s /f /q %systemdrive%\*.chk >APB_Log.txt
+del /s /f /q %systemdrive%\*.old >APB_Log.txt
+del /s /f /q %systemdrive%\recycled\*.* >APB_Log.txt
+del /s /f /q %systemdrive%\$Recycle.Bin\*.* >APB_Log.txt
+del /s /f /q %windir%\*.bak >APB_Log.txt
+del /s /f /q %windir%\prefetch\*.* >APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >APB_Log.txt
+del /f /q %SystemRoot%\Logs\CBS\CBS.log >APB_Log.txt
+del /f /q %SystemRoot%\Logs\DISM\DISM.log >APB_Log.txt
 takeown /f "C:\Windows\Temp" /r /d y
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /s /f /q c:\windows\temp. >> APB_Log.txt
-del /s /f /q C:\WINDOWS\Prefetch >> APB_Log.txt
-del /s /f /q %temp%. >> APB_Log.txt
-del /s /f /q %systemdrive%\*.tmp >>APB_Log.txt
-del /s /f /q %systemdrive%\*._mp >>APB_Log.txt
-del /s /f /q %systemdrive%\*.log >>APB_Log.txt
-del /s /f /q %systemdrive%\*.gid >>APB_Log.txt
-del /s /f /q %systemdrive%\*.chk >>APB_Log.txt
-del /s /f /q %systemdrive%\*.old >>APB_Log.txt
-del /s /f /q %systemdrive%\recycled\*.* >>APB_Log.txt
-del /s /f /q %systemdrive%\$Recycle.Bin\*.* >>APB_Log.txt
-del /s /f /q %windir%\*.bak >>APB_Log.txt
-del /s /f /q %windir%\prefetch\*.* >>APB_Log.txt
+del /q/f/s %TEMP%\* >APB_Log.txt
+del /s /f /q c:\windows\temp. > APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch > APB_Log.txt
+del /s /f /q %temp%. > APB_Log.txt
+del /s /f /q %systemdrive%\*.tmp >APB_Log.txt
+del /s /f /q %systemdrive%\*._mp >APB_Log.txt
+del /s /f /q %systemdrive%\*.log >APB_Log.txt
+del /s /f /q %systemdrive%\*.gid >APB_Log.txt
+del /s /f /q %systemdrive%\*.chk >APB_Log.txt
+del /s /f /q %systemdrive%\*.old >APB_Log.txt
+del /s /f /q %systemdrive%\recycled\*.* >APB_Log.txt
+del /s /f /q %systemdrive%\$Recycle.Bin\*.* >APB_Log.txt
+del /s /f /q %windir%\*.bak >APB_Log.txt
+del /s /f /q %windir%\prefetch\*.* >APB_Log.txt
 del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >>APB_Log.txt
 del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >>APB_Log.txt
 del /f /q %SystemRoot%\Logs\CBS\CBS.log >>APB_Log.txt
@@ -1019,6 +1020,7 @@ deltree /y c:\windows\recent >>APB_Log.txt
 cls
 echo Successful
 deltree /y c:\windows\spool\printers >>APB_Log.txt
+endlocal >APB_Log.txt
 cls
 echo Successful
 del /q/f/s %TEMP%\ >>APB_Log.txt
