@@ -869,7 +869,6 @@ cls
 goto menu
 :fullclean
 cls
-setlocal 
 @echo off
 echo Cleaning PC...
 ping -n 4.5 127.0.0.1>nul
@@ -1027,7 +1026,6 @@ deltree /y c:\windows\recent >>APB_Log.txt
 cls
 echo Successful
 deltree /y c:\windows\spool\printers >>APB_Log.txt
-endlocal >APB_Log.txt
 cls
 echo Successful
 del /q/f/s %TEMP%\ >>APB_Log.txt
