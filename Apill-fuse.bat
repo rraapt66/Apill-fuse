@@ -54,20 +54,31 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
   echo Internet connection active.
 )
 cls
-:login 
+::login 
 rem login
 title login
-echo What your name ?
-SET /p name=" >  "
-goto local
-:local
+echo enter name window
+SET /p name=" users name window  >  "
+@echo off
 setlocal
-Mode 299 209
-color 0f
-chcp 65001
-title menu
+
+rem ค้นหาชื่อผู้ใช้
+for /f "delims=" %%i in ('0_0 Connect') do (
+    set username=%%i
+)
+
+rem เปลี่ยนไดเร็กทอรี
+cd C:\Users\%name%
+if errorlevel 1 (The system cannot find the path specified.
 cls
-endlocal
+echo error PRESS ENTER username
+timeout /t 3 /nobreak > NUL
+goto login)
+title Successful
+mkdir user-for-Apill-fuse
+cd user-for-Apill-fuse
+del login.txt
+echo username:%name%-Thank-for-use >> login.txt
 :menu
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
