@@ -57,18 +57,11 @@ cls
 ::login 
 rem login
 title login
-echo enter name window
-SET /p name=" users name window  >  "
 @echo off
-setlocal
-
-rem ค้นหาชื่อผู้ใช้
-for /f "delims=" %%i in ('0_0 Connect') do (
-    set username=%%i
-)
-
-rem เปลี่ยนไดเร็กทอรี
-cd C:\Users\%name%
+@echo off
+echo The current user is: %username%
+pause
+cd C:\Users\%username%
 if errorlevel 1 (The system cannot find the path specified.
 cls
 echo error PRESS ENTER username
@@ -78,7 +71,7 @@ title Successful
 mkdir user-for-Apill-fuse
 cd user-for-Apill-fuse
 del login.txt
-echo username:%name%-Thank-for-use >> login.txt
+echo username:%username%-Thank-for-use >> login.txt
 :menu
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
