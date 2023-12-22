@@ -58,9 +58,7 @@ cls
 rem login
 title login
 @echo off
-@echo off
 echo The current user is: %username%
-pause
 cd C:\Users\%username%
 if errorlevel 1 (The system cannot find the path specified.
 cls
