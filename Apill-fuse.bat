@@ -29,7 +29,7 @@ Mode 109 19
 title Apill-fuse Bysiwat
 @echo off
 cls
-color a
+color 0
 chcp 65001
 :CheckInterNet
 rem check internet
