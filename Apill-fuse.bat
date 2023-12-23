@@ -147,7 +147,7 @@ echo                   ║ [9] COMPUTER Check               ║ [24] cpu low run
 echo                   ║ [10] fixed error windows file    ║ [25] clear log file          ║
 echo                   ║ [11] Backup                      ║ [26] boost valorant          ║
 echo                   ║ [12] FULL CLEAN                  ║ [27] start Setting scan virus║                   
-echo                   ║ [13] edit power plan             ║ [28] start Riot              ║     0001 name roblox me
+echo                   ║ [13] edit power plan             ║ [28] start Riot              ║ 001 name roblox me
 echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
 echo                   ║ [15] mouse                       ║ [30] task manager            ║
 echo                   ║ [32] comming soon                ║ [31] spotify no ads          ║ 000 credit  
