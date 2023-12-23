@@ -121,7 +121,6 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
 )
 chcp 65001
 rem menu
-set roblox=https://www-rolblox.com/users/451746398/profile
 set Version=1.4
 set choix=bysiwat
 set website=https://github.com/rraapt66
@@ -135,21 +134,21 @@ echo              ██╔══██╗██╔══██╗██║█�
 echo              ███████║██████╔╝██║██║░░░░░██║░░░░░█████╗█████╗░░██║░░░██║╚█████╗░█████╗░░
 echo              ██╔══██║██╔═══╝░██║██║░░░░░██║░░░░░╚════╝██╔══╝░░██║░░░██║░╚═══██╗██╔══╝░░
 echo              ██║░░██║██║░░░░░██║███████╗███████╗░░░░░░██║░░░░░╚██████╔╝██████╔╝███████╗
-echo              ╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚══════╝░░░░░░╚═╝░░░░░░╚═════╝░╚═════╝░╚══════╝  Hello %username% !
+echo              ╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚══════╝░░░░░░╚═╝░░░░░░╚═════╝░╚═════╝░╚══════╝  
 echo                   ═══════════════════════════════════════════════════════════════════
 echo                   ║ [1] clean file                   ║ [16] Keyboard                ║         
-echo                   ║ [2] Remote                       ║ [17] Boost NVIDIA            ║ 
-echo                   ║ [3] roblox                       ║ [18] ultra boost cpu         ║ 
+echo                   ║ [2] Remote                       ║ [17] Boost NVIDIA            ║ Hello %username% !
+echo                   ║ [3] roblox                       ║ [18] ultra boost cpu         ║ id:%id%
 echo                   ║ [4] GameModeoff                  ║ [19] Disable ultra Boostcpu  ║
 echo                   ║ [5] Gamemodeon                   ║ [20] Low ping                ║ 
 echo                   ║ [6] recover Backup Notebook only ║ [21] join discord            ║ 
-echo                   ║ [7] Restart                      ║ [22] intel boost             ║ id:%id%
+echo                   ║ [7] Restart                      ║ [22] intel boost             ║ 
 echo                   ║ [8] Check ping                   ║ [23] AMD boost               ║ 
 echo                   ║ [9] COMPUTER Check               ║ [24] cpu low runnig          ║
 echo                   ║ [10] fixed error windows file    ║ [25] clear log file          ║
 echo                   ║ [11] Backup                      ║ [26] boost valorant          ║
 echo                   ║ [12] FULL CLEAN                  ║ [27] start Setting scan virus║                   
-echo                   ║ [13] edit power plan             ║ [28] start Riot              ║ 001 name roblox me
+echo                   ║ [13] edit power plan             ║ [28] start Riot              ║ 
 echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
 echo                   ║ [15] mouse                       ║ [30] task manager            ║
 echo                   ║ [32] comming soon                ║ [31] spotify no ads          ║ 000 credit  
@@ -193,9 +192,6 @@ if %choix%== 000 goto :www
 if %choix%== 001 goto :wwwr
 (if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,000,001
 goto plese)
-:wwwr
-start %roblox%
-goto menu
 :www
 start %website%
 goto menu
