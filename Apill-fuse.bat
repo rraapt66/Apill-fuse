@@ -322,7 +322,6 @@ echo Successful
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Riot Games\VALORANT\live\VALORANT.exe" /f >nul
 cls
 echo Successful
-timeout 1 > NUL
 echo Successful
 start Successful.vbs
 goto menu
