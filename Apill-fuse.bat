@@ -1082,49 +1082,13 @@ goto menu
 cls
 chcp 65001
 title remoteZ
-echo goto select
-ping -n 2 127.0.0.1>nul
 goto ALL
 
 :ALL
 cls
-echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
-echo                                ╚════██║██╔════╝██╔══██╗╚════██║██╔══██╗╚██╗██╔╝
-echo                                ░░███╔═╝█████╗░░██████╔╝░░███╔═╝███████║░╚███╔╝░
-echo                                ██╔══╝░░██╔══╝░░██╔══██╗██╔══╝░░██╔══██║░██╔██╗░
-echo                                ███████╗███████╗██║░░██║███████╗██║░░██║██╔╝╚██╗
-echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
-title select
-echo select 
-ping -n 2 127.0.0.1>nul
-cls
-title Question
-echo remote Shell type z          newtabcmd  type x         mspaint type c   4goto menu type v             
-chcp 65001
-if %choix%== z Goto :remoteShell
-if %choix%== x Goto :newtabcmd
-if %choix%== c Goto :mspaint
-if %choix%== v Goto :menu
-if %choix%== t Goto :Chackip
-ping -n 2 127.0.0.1>nul
-SET /p choix="select  >  "
-
+SET /p command="  >  "
+%command%
 goto ALL
-:Shell
-cls
-title Shell
-start powershell
-goto menu
-
-:remotet
-cls
-title remote
-shutdown-i
-goto menu
-
-:newtabcmd
-start cmd
-goto menu
 :roblox1
 chcp 65001
 cls
