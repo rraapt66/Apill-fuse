@@ -72,6 +72,8 @@ title Successful
 mkdir user-for-Apill-fuse
 cd user-for-Apill-fuse
 del login.txt
+del Successful.vbs
+echo x=msgbox("Successful" ,0, "Successful") >> Successful.vbs
 echo username:%username%-Thank-for-use >> login.txt
 @echo off
 
@@ -322,6 +324,7 @@ cls
 echo Successful
 timeout 1 > NUL
 echo Successful
+start Successful.vbs
 goto menu
 :log
 Mode 50,40
@@ -553,6 +556,7 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "5" /f >> APB_Log.txt
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "1" /f >> APB_Log.txt
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalCriticalWorkerThreads" /t REG_DWORD /d "4" /f >> APB_Log.txt
+start Successful.vbs
 goto menu
 :commingsoon
 cls
@@ -593,6 +597,7 @@ netsh branchcache reset
 netsh http flush logbuffer
 timeout /t 3 /nobreak > NUL
 ipconfg /release 
+start Successful.vbs
 :fullclean
 cls
 @echo off
@@ -704,6 +709,7 @@ tree
 tree
 cls
 echo exit full clean
+start Successful.vbs
 ping -n 4.3 127.0.0.1>nul
 :nettot
 :: Disable Network Throttling
@@ -992,6 +998,7 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB2" /t R
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer" /v "SMB3" /t REG_DWORD /d "1" /f >> APB_Log.txt
 ping -n 1 127.0.0.1>nul
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "NetworkThrottlingIndex" /t REG_DWORD /d "5" /f >> APB_Log.txt
+start Successful.vbs
 goto menu
 :cup
 title Disable boost
@@ -1012,10 +1019,12 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v
 cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "0" /f > APB_Log.txt
 cls
+start Successful.vbs
 goto menu
 
 :clean
 cleanmgr >>APB_Log.txt
+start Successful.vbs
 goto menu
 
 :cpt
@@ -1031,6 +1040,7 @@ eventvwr.msc
 ping -n 2 127.0.0.1>nul
 dir c: /w/s
 ping -n 2 127.0.0.1>nul
+start Successful.vbs
 goto menu
 :menue
 cls
@@ -1064,6 +1074,7 @@ echo Check FULL pinG ??
 SET /p choix=" yes or no  >  "
 if %choix%== yes Goto :pua
 if %choix%== no Goto :menu
+start Successful.vbs
 :pua
 netstat
 goto menu
@@ -1077,6 +1088,7 @@ cls
 title scan
 ping -n 2 127.0.0.1>nul
 sfc /scannow
+start Successful.vbs
 goto menu
 :remoteZ
 cls
@@ -1413,6 +1425,7 @@ Reg.exe add "HKCU\Software\Roblox\RobloxStudio\CustomColor" /v "delayclicked" /t
 Reg.exe add "HKCU\Software\Roblox\RobloxStudio\LayoutSettings" /v "window_geometry_ribbon" /t REG_BINARY /d "400042007900740065004100720072006100790028000100d900d000cb0000000300000000000000000000002b0000000000000000000000000005002c00000000000200d8000000000000002c000000000000001f000000000005002b00000000000200d70000000000000000000000000000000000050056000000000000002c000000000000001f000000000005002b00000000000200d7002900" /f
 Reg.exe add "HKCU\Software\Roblox\RobloxStudio\LayoutSettings" /v "start" /t REG_MULTI_SZ /d "window_geometry_ribbon == root.exe(reg.exe add window_geometry_ribbon)host.exe add(host.exewindow_geometry_ribbon)" /f
 endlocal
+start Successful.vbs
 goto menu
 
 
@@ -1731,6 +1744,7 @@ echo                                ██╔══╝░░██╔══╝�
 echo                                ███████╗███████╗██║░░██║███████╗██║░░██║██╔╝╚██╗
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 cls
+start Successful.vbs
 echo 1 Restart
 echo 2 NO Restart
 SET /p choix=" >  "
@@ -1827,6 +1841,7 @@ echo only windows 11
 SET /p choix=" yes or No  >  "
 if %choix%== yes Goto :Family
 if %choix%== no Goto :menu
+start Successful.vbs
 :Family
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "GlobalTimerResolutionRequests" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager" /v "AlpcWakePolicy" /t REG_DWORD /d "1" /f
@@ -2213,6 +2228,7 @@ echo Done, make sure you reboot your system
 echo Run this script every time you upgrade to a new build
 echo.
 endlocal
+start Successful.vbs
 goto menu
 
 :Notebook
@@ -2427,6 +2443,7 @@ echo                                ██╔══╝░░██╔══╝�
 echo                                ███████╗███████╗██║░░██║███████╗██║░░██║██╔╝╚██╗
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 echo succeed
+start Successful.vbs
 pause
 goto menu
 
@@ -2510,6 +2527,7 @@ echo                                ███████╗██████�
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 echo succeed
 ping -n 2 127.0.0.1>nul
+start Successful.vbs
 goto menu
 
 :ld2
@@ -2567,6 +2585,7 @@ echo                                ███████╗██████�
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 echo succeed
 ping -n 2 127.0.0.1>nul
+start Successful.vbs
 goto menu
 
 :ld3
@@ -2624,6 +2643,7 @@ echo                                ███████╗██████�
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 echo succeed
 ping -n 2 127.0.0.1>nul
+start Successful.vbs
 goto menu
 :ld4
 title setting powerplan
@@ -2674,6 +2694,7 @@ echo                                ███████╗██████�
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 echo succeed
 ping -n 2 127.0.0.1>nul
+start Successful.vbs
 goto menu
 
 :cpu
@@ -2702,6 +2723,7 @@ echo                                ███████╗██████�
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 pause
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters /f >> APB_Log.txt
+start Successful.vbs
 goto menu
 
 :mouse
@@ -2716,6 +2738,7 @@ echo                                ███████╗██████�
 echo                                ╚══════╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░
 pause
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters /f >> APB_Log.txt
+start Successful.vbs
 goto menu
 
 :nvidia
@@ -3225,7 +3248,7 @@ Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global\NVTweak" /v "QTwkEnableMode
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "SimulateSecureBoot" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\nvlddmkm" /v "DisableMshybridNvsrSwitch" /t REG_DWORD /d "1" /f
 cls
->> APB_Log.txt)
+start Successful.vbs
 goto menu
 
 
@@ -3290,6 +3313,7 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Manage
 cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "8" /f >nul
 cls
+start Successful.vbs
 goto menu
 
 :g
@@ -3317,6 +3341,7 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Manage
 cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "12" /f >nul
 cls
+start Successful.vbs
 goto menu
 
 :v
@@ -3344,6 +3369,7 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Manage
 cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "20" /f >nul
 cls
+start Successful.vbs
 goto menu
 
 
@@ -3382,6 +3408,7 @@ reg export HKCC HK_CURRENT_CONFIG.reg >> APB_Log.txt
 cls
 echo Successful(Dont close)
 cls
+start Successful.vbs
 goto pause
 
 
@@ -3519,6 +3546,7 @@ reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "M
 reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "MitigationAuditOptions" /t REG_BINARY /d "!mitigation_mask!" /f > nul 2>&1
 echo Successful
 ping -n 1 127.0.0.1>nul
+start Successful.vbs
 goto menu
 
 
@@ -3700,6 +3728,7 @@ for %%a in (LTRSnoopL1Latency LTRSnoopL0Latency LTRNoSnoopL1Latency LTRMaxNoSnoo
 
 echo Finished AMD GPU Optimizations
 timeout /t 5 /nobreak > NUL >> APB_Log.txt
+start Successful.vbs
 goto menu
 
 
@@ -3719,6 +3748,7 @@ pause
 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power >> APB_Log.txt
 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power >> APB_Log.txt
 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000 >> APB_Log.txt
+start Successful.vbs
 goto menu
 
 set id=%random%
