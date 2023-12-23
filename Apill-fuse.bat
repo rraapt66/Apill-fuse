@@ -649,7 +649,7 @@ RD /S /Q C:\Windows\Temp
 MKDIR C:\Windows\Temp
 takeown /f "C:\Windows\Temp" /r /d y
 takeown /f %temp% /r /d y
-del /q/f/s c:\windows\*.node >NUL >>APB_Log.txt 
+del /q/f/s c:\windows\*.node >>APB_Log.txt 
 cls
 echo Successful
 ping -n 1 127.0.0.1>nul
