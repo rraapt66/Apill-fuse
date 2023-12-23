@@ -305,23 +305,11 @@ REM ~ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "shootingdelay" /t R
 REM ~ Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "shottingdown" /t REG_QWORD /d "0x0100000000000000" /f
 :: ------------------------------------------------------------------------------------------------------------------------------------------------
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Riot Games\VALORANT\live\VALORANT.exe" /f >nul
-cls
-echo Successful
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "moveuphead" /t REG_BINARY /d "1221323432454640" /f > nul
-cls
-echo Successful
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "movehead" /t REG_SZ /d "1" /f >nul
-cls
-echo Successful
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "walk" /t REG_MULTI_SZ /d "player=setspeed=0" /f > nul
-cls
-echo Successful
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "keyx" /t REG_SZ /d "ping set = 0.2392139129131" > nul
-cls
-echo Successful
 Reg.exe add "HKCU\Software\ChangeTracker\Valorant" /v "run" /t REG_SZ /d "C:\Riot Games\VALORANT\live\VALORANT.exe" /f >nul
-cls
-echo Successful
 echo Successful
 start Successful.vbs
 goto menu
