@@ -698,6 +698,7 @@ cls
 echo exit full clean
 start Successful.vbs
 ping -n 4.3 127.0.0.1>nul
+goto menu
 :nettot
 :: Disable Network Throttling
 echo Disabling Network Throttling
