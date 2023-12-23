@@ -152,8 +152,7 @@ echo                   ║ [13] edit power plan             ║ [28] start Riot 
 echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
 echo                   ║ [15] mouse                       ║ [30] task manager            ║
 echo                   ║ [31]more                         ║  By siwat                    ║ 000 credit  
-echo                   ═══════════════════════════════════════════════════════════════════  
-echo                                                                                                
+echo                   ═══════════════════════════════════════════════════════════════════                                                                                              
 echo                                          Current Version:%Version%
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════ 
 SET /p choix=" PRESS NUMBER USE  >  "
