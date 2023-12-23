@@ -25,6 +25,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 	endlocal
 :--------------------------------------
+@echo off
 Mode 109 19
 title Apill-fuse Bysiwat
 @echo off
@@ -72,6 +73,32 @@ mkdir user-for-Apill-fuse
 cd user-for-Apill-fuse
 del login.txt
 echo username:%username%-Thank-for-use >> login.txt
+@echo off
+
+rem ตรวจสอบว่ามีไฟล์ id.txt หรือไม่
+if exist id.txt (
+
+rem อ่าน ID จากไฟล์
+set /p id=<id.txt
+
+rem แสดงผล ID
+echo %id%
+
+) else (
+
+rem สร้างไฟล์ใหม่
+echo %random% > id.txt
+
+rem สร้าง ID แบบสุ่ม
+set idNew=%random%
+
+rem เขียน ID ลงในไฟล์
+echo %idNew% >> id.txt
+
+rem แสดงผล ID
+echo %idNew%
+
+)
 :menu
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
@@ -98,6 +125,7 @@ set website=https://github.com/rraapt66
 title Apill-fuse Fusion ZERZAX ZERZAX is old version 
 color 0
 cls
+cls
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
 echo              ░█████╗░██████╗░██╗██╗░░░░░██╗░░░░░░░░░░░███████╗██╗░░░██╗░██████╗███████╗
 echo              ██╔══██╗██╔══██╗██║██║░░░░░██║░░░░░░░░░░░██╔════╝██║░░░██║██╔════╝██╔════╝
@@ -112,7 +140,7 @@ echo                   ║ [3] roblox                       ║ [18] ultra boost
 echo                   ║ [4] GameModeoff                  ║ [19] Disable ultra Boostcpu  ║
 echo                   ║ [5] Gamemodeon                   ║ [20] Low ping                ║ 
 echo                   ║ [6] recover Backup Notebook only ║ [21] join discord            ║ 
-echo                   ║ [7] Restart                      ║ [22] intel boost             ║ 
+echo                   ║ [7] Restart                      ║ [22] intel boost             ║ id:%id%
 echo                   ║ [8] Check ping                   ║ [23] AMD boost               ║ 
 echo                   ║ [9] COMPUTER Check               ║ [24] cpu low runnig          ║
 echo                   ║ [10] fixed error windows file    ║ [25] clear log file          ║
@@ -125,7 +153,7 @@ echo                   ║ [32] comming soon                ║ [31] spotify no 
 echo                   ═══════════════════════════════════════════════════════════════════  
 echo                                                 By siwat                                                 
 echo                                          Current Version:%Version%
-echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
+echo ═════════════════════════════════════════════════════════════════════════════════════════════════════ 
 SET /p choix=" PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :clean
 if %choix%== 2 Goto :remoteZ
@@ -166,6 +194,7 @@ start %website%
 goto menu
 :SpotX
 @echo off
+
 start setup-spotify.bat
 exit /b
 goto menu
@@ -3686,3 +3715,5 @@ Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power >> APB_Lo
 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power >> APB_Log.txt
 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000 >> APB_Log.txt
 goto menu
+
+set id=%random%
