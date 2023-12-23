@@ -559,6 +559,118 @@ netsh branchcache reset
 netsh http flush logbuffer
 timeout /t 3 /nobreak > NUL
 ipconfg /release 
+:fullclean
+cls
+@echo off
+echo Cleaning PC...
+ping -n 4.5 127.0.0.1>nul
+@echo off
+del /q/f/s %TEMP%\* >>APB_Log.txt
+del /s /f /q c:\windows\temp. > APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch > APB_Log.txt
+del /s /f /q %temp%. >> APB_Log.txt
+del /s /f /q %systemdrive%\*.tmp >APB_Log.txt
+del /s /f /q %systemdrive%\*._mp >APB_Log.txt
+del /s /f /q %systemdrive%\*.log >APB_Log.txt
+del /s /f /q %systemdrive%\*.gid >APB_Log.txt
+del /s /f /q %systemdrive%\*.chk >APB_Log.txt
+del /s /f /q %systemdrive%\*.old >APB_Log.txt
+del /s /f /q %systemdrive%\recycled\*.* >APB_Log.txt
+del /s /f /q %systemdrive%\$Recycle.Bin\*.* >APB_Log.txt
+del /s /f /q %windir%\*.bak >APB_Log.txt
+del /s /f /q %windir%\prefetch\*.* >APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >APB_Log.txt
+del /f /q %SystemRoot%\Logs\CBS\CBS.log >APB_Log.txt
+del /f /q %SystemRoot%\Logs\DISM\DISM.log >APB_Log.txt
+takeown /f "C:\Windows\Temp" /r /d y
+del /q/f/s %TEMP%\* >APB_Log.txt
+del /s /f /q c:\windows\temp. > APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch > APB_Log.txt
+del /s /f /q %temp%. > APB_Log.txt
+del /s /f /q %systemdrive%\*.tmp >APB_Log.txt
+del /s /f /q %systemdrive%\*._mp >APB_Log.txt
+del /s /f /q %systemdrive%\*.log >APB_Log.txt
+del /s /f /q %systemdrive%\*.gid >APB_Log.txt
+del /s /f /q %systemdrive%\*.chk >APB_Log.txt
+del /s /f /q %systemdrive%\*.old >APB_Log.txt
+del /s /f /q %systemdrive%\recycled\*.* >APB_Log.txt
+del /s /f /q %systemdrive%\$Recycle.Bin\*.* >APB_Log.txt
+del /s /f /q %windir%\*.bak >APB_Log.txt
+del /s /f /q %windir%\prefetch\*.* >APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >>APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >>APB_Log.txt
+del /f /q %SystemRoot%\Logs\CBS\CBS.log >>APB_Log.txt
+del /f /q %SystemRoot%\Logs\DISM\DISM.log >>APB_Log.txt
+takeown /f "C:\Windows\Temp" /r /d y
+@echo off
+title Defrag Drive c
+cls
+chcp 65001
+defrag c: >>APB_Log.txt
+cls
+title clear file
+color c 
+del C:\Windows\SoftwareDistribution  >>APB_Log.txt
+/s /f /q c:\windows\temp\*.* >>APB_Log.txt
+rd /s /q c:\windows\temp >>APB_Log.txt
+md c:\windows\temp >>APB_Log.txt
+del /s /f /q C:\WINDOWS\Prefetch >>APB_Log.txt
+del /s /f /q %temp%\*.* >>APB_Log.txt
+rd /s /q %temp%
+md %temp%
+RD /S /Q C:\Windows\Temp
+MKDIR C:\Windows\Temp
+takeown /f "C:\Windows\Temp" /r /d y
+takeown /f %temp% /r /d y
+del /q/f/s c:\windows\*.node >NUL >>APB_Log.txt 
+cls
+echo Successful
+ping -n 1 127.0.0.1>nul
+del /q/f/s c:\windows\*. >>APB_Log.txt 
+cls
+echo Successful
+del /q/f/s c:\windows\*.tmp  >>APB_Log.txt 
+cls
+echo Successful
+deltree /y c:\windows\tempor~1  >>APB_Log.txt
+cls
+ping -n 1 127.0.0.1>nul
+echo Successful
+deltree /y c:\windows\temp  >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\tmp >>APB_Log.txt
+cls
+echo Successful
+ping -n 1 127.0.0.1>nul
+deltree /y c:\windows\ff*.tmp  >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\history  >>APB_Log.txt
+cls
+echo Successful
+ping -n 1 127.0.0.1>nul
+deltree /y c:\windows\cookies >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\recent >>APB_Log.txt
+cls
+echo Successful
+deltree /y c:\windows\spool\printers >>APB_Log.txt
+cls
+echo Successful
+del /q/f/s %TEMP%\ >>APB_Log.txt
+cls
+echo Successful
+ping -n 4.3 127.0.0.1>nul
+tree
+tree
+tree
+tree
+cls
+echo exit full clean
+ping -n 4.3 127.0.0.1>nul
 :nettot
 :: Disable Network Throttling
 echo Disabling Network Throttling
@@ -866,179 +978,6 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v
 cls
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive" /v "AdditionalDelayedWorkerThreads" /t REG_DWORD /d "0" /f > APB_Log.txt
 cls
-goto menu
-:fullclean
-cls
-@echo off
-echo Cleaning PC...
-ping -n 4.5 127.0.0.1>nul
-@echo off
-del /q/f/s %TEMP%\* >>APB_Log.txt
-del /s /f /q c:\windows\temp. > APB_Log.txt
-del /s /f /q C:\WINDOWS\Prefetch > APB_Log.txt
-del /s /f /q %temp%. >> APB_Log.txt
-del /s /f /q %systemdrive%\*.tmp >APB_Log.txt
-del /s /f /q %systemdrive%\*._mp >APB_Log.txt
-del /s /f /q %systemdrive%\*.log >APB_Log.txt
-del /s /f /q %systemdrive%\*.gid >APB_Log.txt
-del /s /f /q %systemdrive%\*.chk >APB_Log.txt
-del /s /f /q %systemdrive%\*.old >APB_Log.txt
-del /s /f /q %systemdrive%\recycled\*.* >APB_Log.txt
-del /s /f /q %systemdrive%\$Recycle.Bin\*.* >APB_Log.txt
-del /s /f /q %windir%\*.bak >APB_Log.txt
-del /s /f /q %windir%\prefetch\*.* >APB_Log.txt
-del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >APB_Log.txt
-del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >APB_Log.txt
-del /f /q %SystemRoot%\Logs\CBS\CBS.log >APB_Log.txt
-del /f /q %SystemRoot%\Logs\DISM\DISM.log >APB_Log.txt
-takeown /f "C:\Windows\Temp" /r /d y
-del /q/f/s %TEMP%\* >APB_Log.txt
-del /s /f /q c:\windows\temp. > APB_Log.txt
-del /s /f /q C:\WINDOWS\Prefetch > APB_Log.txt
-del /s /f /q %temp%. > APB_Log.txt
-del /s /f /q %systemdrive%\*.tmp >APB_Log.txt
-del /s /f /q %systemdrive%\*._mp >APB_Log.txt
-del /s /f /q %systemdrive%\*.log >APB_Log.txt
-del /s /f /q %systemdrive%\*.gid >APB_Log.txt
-del /s /f /q %systemdrive%\*.chk >APB_Log.txt
-del /s /f /q %systemdrive%\*.old >APB_Log.txt
-del /s /f /q %systemdrive%\recycled\*.* >APB_Log.txt
-del /s /f /q %systemdrive%\$Recycle.Bin\*.* >APB_Log.txt
-del /s /f /q %windir%\*.bak >APB_Log.txt
-del /s /f /q %windir%\prefetch\*.* >APB_Log.txt
-del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >>APB_Log.txt
-del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >>APB_Log.txt
-del /f /q %SystemRoot%\Logs\CBS\CBS.log >>APB_Log.txt
-del /f /q %SystemRoot%\Logs\DISM\DISM.log >>APB_Log.txt
-takeown /f "C:\Windows\Temp" /r /d y
-@echo off
-title Defrag Drive c
-cls
-chcp 65001
-defrag c: >>APB_Log.txt
-cls
-title clear file
-color c 
-del C:\Windows\SoftwareDistribution  >>APB_Log.txt
-/s /f /q c:\windows\temp\*.* >>APB_Log.txt
-rd /s /q c:\windows\temp >>APB_Log.txt
-ping -n 4 127.0.0.1>nul
-md c:\windows\temp >>APB_Log.txt
-del /s /f /q C:\WINDOWS\Prefetch >>APB_Log.txt
-ping -n 4 127.0.0.1>nul
-del /s /f /q %temp%\*.* >>APB_Log.txt
-rd /s /q %temp%
-md %temp%
-RD /S /Q C:\Windows\Temp
-MKDIR C:\Windows\Temp
-takeown /f "C:\Windows\Temp" /r /d y
-takeown /f %temp% /r /d y
-del /q/f/s c:\windows\*.node >NUL >>APB_Log.txt 
-cls
-echo Successful
-ping -n 4 127.0.0.1>nul
-del /q/f/s c:\windows\*. >>APB_Log.txt 
-cls
-echo Successful
-del /q/f/s c:\windows\*.tmp  >>APB_Log.txt 
-cls
-echo Successful
-deltree /y c:\windows\tempor~1  >>APB_Log.txt
-cls
-ping -n 4 127.0.0.1>nul
-echo Successful
-deltree /y c:\windows\temp  >>APB_Log.txt
-cls
-echo Successful
-deltree /y c:\windows\tmp >>APB_Log.txt
-cls
-echo Successful
-ping -n 4 127.0.0.1>nul
-deltree /y c:\windows\ff*.tmp  >>APB_Log.txt
-cls
-echo Successful
-deltree /y c:\windows\history  >>APB_Log.txt
-cls
-echo Successful
-ping -n 4 127.0.0.1>nul
-deltree /y c:\windows\cookies >>APB_Log.txt
-cls
-echo Successful
-deltree /y c:\windows\recent >>APB_Log.txt
-cls
-echo Successful
-deltree /y c:\windows\spool\printers >>APB_Log.txt
-cls
-@echo off
-title Defrag Driv c
-cls
-chcp 65001
-defrag c: >>APB_Log.txt
-cls
-title clear file
-color c 
-del C:\Windows\SoftwareDistribution  >>APB_Log.txt
-/s /f /q c:\windows\temp\*.* >>APB_Log.txt
-rd /s /q c:\windows\temp >>APB_Log.txt
-ping -n 4 127.0.0.1>nul
-md c:\windows\temp >>APB_Log.txt
-del /s /f /q C:\WINDOWS\Prefetch >>APB_Log.txt
-ping -n 4 127.0.0.1>nul
-del /s /f /q %temp%\*.* >>APB_Log.txt
-rd /s /q %temp%
-md %temp%
-RD /S /Q C:\Windows\Temp
-MKDIR C:\Windows\Temp
-takeown /f "C:\Windows\Temp" /r /d y
-takeown /f %temp% /r /d y
-del /q/f/s c:\windows\*.node >NUL >>APB_Log.txt 
-cls
-echo Successful
-ping -n 4 127.0.0.1>nul
-del /q/f/s c:\windows\*.  >>APB_Log.txt 
-cls
-echo Successful
-del /q/f/s c:\windows\*.tmp  >>APB_Log.txt 
-cls
-echo Successful
-deltree /y c:\windows\tempor~1  >>APB_Log.txt
-cls
-ping -n 4 127.0.0.1>nul
-echo Successful
-deltree /y c:\windows\temp  >>APB_Log.txt
-cls
-echo Successful
-deltree /y c:\windows\tmp  >>APB_Log.txt
-cls
-echo Successful
-ping -n 4 127.0.0.1>nul
-deltree /y c:\windows\ff*.tmp >>APB_Log.txt
-cls
-echo Successful
-deltree /y c:\windows\history >>APB_Log.txt
-cls
-echo Successful
-ping -n 4 127.0.0.1>nul
-deltree /y c:\windows\cookies >>APB_Log.txt
-cls
-echo Successful
-deltree /y c:\windows\recent >>APB_Log.txt
-cls
-echo Successful
-deltree /y c:\windows\spool\printers >>APB_Log.txt
-cls
-echo Successful
-del /q/f/s %TEMP%\ >>APB_Log.txt
-cls
-echo Successful
-ping -n 4.3 127.0.0.1>nul
-tree
-tree
-tree
-tree
-cls
-echo exit full clean
-ping -n 4.3 127.0.0.1>nul
 goto menu
 
 :clean
