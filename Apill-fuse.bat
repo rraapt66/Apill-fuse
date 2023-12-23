@@ -119,6 +119,7 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
 )
 chcp 65001
 rem menu
+set roblox=https://www-rolblox.com/users/451746398/profile
 set Version=1.4
 set choix=bysiwat
 set website=https://github.com/rraapt66
@@ -146,7 +147,7 @@ echo                   ║ [9] COMPUTER Check               ║ [24] cpu low run
 echo                   ║ [10] fixed error windows file    ║ [25] clear log file          ║
 echo                   ║ [11] Backup                      ║ [26] boost valorant          ║
 echo                   ║ [12] FULL CLEAN                  ║ [27] start Setting scan virus║                   
-echo                   ║ [13] edit power plan             ║ [28] start Riot              ║     
+echo                   ║ [13] edit power plan             ║ [28] start Riot              ║     0001 name roblox me
 echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
 echo                   ║ [15] mouse                       ║ [30] task manager            ║
 echo                   ║ [32] comming soon                ║ [31] spotify no ads          ║ 000 credit  
@@ -187,8 +188,12 @@ if %choix%== 29 goto :bug
 if %choix%== 30 goto :task
 if %choix%== 31 goto :SpotX
 if %choix%== 000 goto :www
-(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,000
+if %choix%== 001 goto :wwwr
+(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,000,001
 goto plese)
+:wwwr
+start %roblox%
+goto menu
 :www
 start %website%
 goto menu
