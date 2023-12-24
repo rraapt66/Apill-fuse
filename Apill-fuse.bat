@@ -104,24 +104,31 @@ echo x=msgbox("%id% is your ID" ,0, "max") >> ID.vbs
 start ID.vbs
 @echo off
 cls
+@echo off
 setlocal
 
-rem Set the correct ID
-set correctID=%id%
+set /p user_id=Your id: 
 
-rem Prompt the user for input
-set /p enteredID=Enter ID:
-
-rem Check if entered ID is correct
-if "%enteredID%" equ "%correctID%" (
-    echo ID is correct. Proceed with the rest of the script.
-    rem Add your additional code here.
-) else (
+rem ตรวจสอบไอดี
+if "%id%"=="%id%" (
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
 del IDS.vbs
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
 start IDS.vbs
+goto kill
+    rem ทำงานเพิ่มเติมที่นี่
+) else (
+echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
+del IDS.vbs
+echo x=msgbox("your ID not correct" ,0, "max") >> IDS.vbs
+start IDS.vbs
+    exit /b 1
 )
+rem ทำงานเพิ่มเติมที่นี่หลังจากตรวจสอบไอดีถูกต้อง
+
+endlocal
+)
+:kill
   timeout /t 2 /nobreak > NUL
 TASKKILL /IM wscript.exe >> APB_Log.txt
 rem แสดงผล ID
