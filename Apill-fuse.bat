@@ -68,7 +68,7 @@ cls
 echo error PRESS ENTER username
 timeout /t 3 /nobreak > NUL
 goto login)
-title Successful
+title cmd.exe
 mkdir user-for-Apill-fuse
 cd user-for-Apill-fuse
 del login.txt
@@ -111,8 +111,10 @@ if "%userID%"=="%id%" (
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
 del IDS.vbs
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
-start IDS.vbs (goto kill)
+start IDS.vbs (cls
     rem ทำสิ่งที่คุณต้องการทำต่อ
+	goto kill
+	)
 ) else (
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
  del IDS.vbs 
