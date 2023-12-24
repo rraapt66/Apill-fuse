@@ -107,6 +107,30 @@ rem แสดงผล ID
 echo %idNew%
 
 )
+rem ตรวจสอบว่ามีไฟล์ id.txt หรือไม่
+if exist id.txt (
+
+rem อ่าน ID จากไฟล์
+set /p id=<id.txt
+
+rem แสดงผล ID
+echo %id%
+
+) else (
+
+rem สร้างไฟล์ใหม่
+echo %random% > id.txt
+
+rem สร้าง ID แบบสุ่ม
+set idNew=%random%
+
+rem เขียน ID ลงในไฟล์
+echo %idNew% >> id.txt
+
+rem แสดงผล ID
+echo %idNew%
+
+)
 :menu
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
