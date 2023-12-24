@@ -182,7 +182,7 @@ echo                   ║ [12] FULL CLEAN                  ║ [27] start Setti
 echo                   ║ [13] edit power plan             ║ [28] start Riot              ║ 
 echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
 echo                   ║ [15] mouse                       ║ [30] task manager            ║ 002 see files clean
-echo                   ║ [31] more                        ║ :::BY SIWAT                  ║ 000 credit  
+echo                   ║ [31] Boost real time :beta:      ║ :::BY SIWAT                  ║ 000 credit  
 echo                   ═══════════════════════════════════════════════════════════════════   
 echo                                                    By siwat 
 echo                                          Current Version:%Version%
@@ -220,22 +220,13 @@ if %choix%== 29 goto :bug
 if %choix%== 30 goto :task
 if %choix%== 000 goto :www
 if %choix%== 001 goto :wwwr
-if %choix%== 31 goto :more
+if %choix%== 31 goto :boost
 if %choix%== 002 goto :files
 (if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,000,001,002
 goto plese)
 :files
 start APB_Log.txt
 goto menu
-:more
-cls
-call :banner
-echo 33 Boost real time
-echo                                                 By siwat                                                 
-echo                                          Current Version:%Version%
-echo ═════════════════════════════════════════════════════════════════════════════════════════════════════ 
-SET /p choix=" PRESS NUMBER USE  >  "
-if %choix%== 33 Goto :boost
 :boost
 cls
 echo Boost real time 
@@ -244,7 +235,10 @@ powershell -WindowStyle Hidden -Command "& {}"
 :yes
 mkdir Boost
 cd Boost
+echo x=msgbox("Boost is run" ,0, "max") >> maxBoost.vbs
+start maxBoost.vbs
 title Boost realtime
+:YS
 echo x=msgbox("Boost" ,0, "Successful") >> BOOST%random%.vbs 
 echo x=msgbox("Boost" ,0, "Successful") >> BOOST%random%.vbs 
 echo x=msgbox("Boost" ,0, "Successful") >> BOOST%random%.vbs 
@@ -1799,7 +1793,7 @@ echo x=msgbox("Boost" ,0, "Successful") >> BOOST%random%.vbs
 echo x=msgbox("Boost" ,0, "Successful") >> BOOST%random%.vbs 
 echo x=msgbox("Boost" ,0, "Successful") >> BOOST%random%.vbs 
 echo x=msgbox("Boost" ,0, "Successful") >> BOOST%random%.vbs 
-goto yes
+goto YS
 :no
 goto menu
 :www
