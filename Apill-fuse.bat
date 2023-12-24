@@ -104,24 +104,24 @@ echo x=msgbox("%id% is your ID" ,0, "max") >> ID.vbs
 start ID.vbs
 @echo off
 cls
-set /p userID=id: 
+set /p user_id=Your id: 
 
-rem ตรวจสอบไอดี
-if "%userID%"=="%id%" (
-echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
-del IDS.vbs
-echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
-start IDS.vbs 
-goto kill (if not "%userID%"=="%id%"  goto Error)
-:Error
-    rem ทำสิ่งที่คุณต้องการทำต่อ
-) else (
-echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
- del IDS.vbs 
- echo x=msgbox("your ID not correct" ,0, "max") >> IDS.vbs
- start IDS.vbs
+rem เช็คว่าไอดีถูกต้องหรือไม่
+if "%user_id%" neq "%id%" (
+echo x=msgbox("%id% is your ID" ,0, "max") >> IDN.vbs
+del IDN.vbs
+echo x=msgbox("%ID not correct" ,0, "max") >> IDN.vbs
+start IDN.vbs
     exit
 )
+
+rem ถ้าไอดีถูกต้อง
+echo x=msgbox("%id% is your ID" ,0, "max") >> IDC.vbs
+del IDC.vbs
+echo x=msgbox("%ID correct" ,0, "max") >> IDC.vbs
+start IDC.vbs
+rem ทำสิ่งที่คุณต้องการต่อไปที่นี่
+goto kill
 :kill
   timeout /t 2 /nobreak > NUL
 TASKKILL /IM wscript.exe >> APB_Log.txt
