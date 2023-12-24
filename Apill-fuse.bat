@@ -2203,10 +2203,6 @@ del /f /q %SystemRoot%\Logs\CBS\CBS.log >>APB_Log.txt
 del /f /q %SystemRoot%\Logs\DISM\DISM.log >>APB_Log.txt
 takeown /f "C:\Windows\Temp" /r /d y
 @echo off
-title Defrag Drive c
-cls
-chcp 65001
-defrag c: >>APB_Log.txt
 cls
 title clear file
 color c 
