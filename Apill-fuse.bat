@@ -68,6 +68,8 @@ cls
 echo error PRESS ENTER username
 timeout /t 3 /nobreak > NUL
 goto login)
+echo x=msgbox("Successful" ,0, "max") >> Successful.vbs
+echo username:%username%-Thank-for-use >> login.txt
 title Successful
 mkdir user-for-Apill-fuse
 cd user-for-Apill-fuse
