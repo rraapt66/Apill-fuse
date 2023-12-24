@@ -1,2 +1,0 @@
-:meur
-xcopy ZERZAX.bat
