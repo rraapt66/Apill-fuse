@@ -3954,7 +3954,6 @@ goto menu
 
 :power
 chcp 65001
-powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 > nul 
 title setting power plan
 cls
 echo                                ███████╗███████╗██████╗░███████╗░█████╗░██╗░░██╗
@@ -3966,13 +3965,11 @@ echo                                ╚══════╝╚═════�
 cls
 echo 1 balanced
 echo 2 High
-echo 3 TurBo on
-echo 4 smart game Boost
+echo 3 ultimate
 SET /p choix=" PRESS NUMBER USE  >  "
 if %choix%== 1 Goto :balanced
 if %choix%== 2 Goto :High
 if %choix%== 3 Goto :TurBo
-if %choix%== 4 Goto :smart
 :smart
 goto ld4
 :balanced
