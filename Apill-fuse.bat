@@ -125,6 +125,9 @@ start IDS.vbs
   timeout /t 2 /nobreak > NUL
 TASKKILL /IM wscript.exe >> APB_Log.txt
 rem แสดงผล ID
+echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
+del max.vbs > nul 
+echo x=msgbox("Hello %username% my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 :menu
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
@@ -143,9 +146,6 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
 ) else (
   echo Internet connection active.
 )
-echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
-del max.vbs > nul 
-echo x=msgbox("Hello %username% my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 start max.vbs
 chcp 65001
 rem menu
