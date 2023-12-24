@@ -132,29 +132,30 @@ echo %idNew%
 )
 @echo off
 :checkBot
-rem กำหนด ID ที่ถูกต้อง
-set id=%iduser%
-cls
-echo x=msgbox("%iduser% is your id" ,0, "max") >> maxSendId.vbs
+@echo off
+echo x=msgbox("%iduser%:is your id" ,0, "max") >> maxSendId.vbs
 del maxSendId.vbs
-echo x=msgbox("%iduser% is your id" ,0, "max") >> maxSendId.vbs
-cls
-start maxSendId.vbs
-rem แสดงข้อความขอป้อน ID
-echo Enter ID:
-set /p id=
+echo x=msgbox("%iduser%:is your id" ,0, "max") >> maxSendId.vbs
+@echo off
+rem รับค่าไอดีจากผู้ใช้
+echo ID: %iduser%
 
-rem ตรวจสอบ ID
-if not "%id%" == "%iduser%" (
-cls
-  echo ID no correct
-  ping -n 4 127.0.0.1>nul
-exit
+rem ตรวจสอบว่าไอดีตรงกับในไฟล์หรือไม่
+for /f "delims=" %%i in ('type if.txt') do (
+  if "%%i" == "%id%" (
+    rem ไอดีตรงกับในไฟล์
+    goto :continue
+  )
 )
-rem ดำเนินการต่อหาก ID ถูกต้อง
-echo ID correct id
-ping -n 4 127.0.0.1>nul
+rem ไอดีไม่ตรงกับในไฟล์
+echo ID is not correct.
+exit /b
 
+:continue
+
+rem ดำเนินการตามคำสั่งที่ต้องการ
+start maxSendId.vbs
+ping -n 4 127.0.0.1>nul
 rem (เพิ่มคำสั่งที่คุณต้องการให้สคริปต์ดำเนินการต่อ)
 goto menu
 :menu
@@ -5317,8 +5318,8 @@ Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers
 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000 >> APB_Log.txt
 start Successful.vbs
 goto menu
-
 set iduser=%random%
+
 :banner
 chcp 65001 > nul
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
