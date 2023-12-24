@@ -2221,7 +2221,6 @@ takeown /f %temp% /r /d y
 del /q/f/s c:\windows\*.node >>APB_Log.txt 
 cls
 echo Successful
-ping -n 1 127.0.0.1>nul
 del /q/f/s c:\windows\*. >>APB_Log.txt 
 cls
 echo Successful
@@ -2230,7 +2229,6 @@ cls
 echo Successful
 deltree /y c:\windows\tempor~1  >>APB_Log.txt
 cls
-ping -n 1 127.0.0.1>nul
 echo Successful
 deltree /y c:\windows\temp  >>APB_Log.txt
 cls
@@ -2238,14 +2236,12 @@ echo Successful
 deltree /y c:\windows\tmp >>APB_Log.txt
 cls
 echo Successful
-ping -n 1 127.0.0.1>nul
 deltree /y c:\windows\ff*.tmp  >>APB_Log.txt
 cls
 echo Successful
 deltree /y c:\windows\history  >>APB_Log.txt
 cls
 echo Successful
-ping -n 1 127.0.0.1>nul
 deltree /y c:\windows\cookies >>APB_Log.txt
 cls
 echo Successful
@@ -2258,7 +2254,6 @@ echo Successful
 del /q/f/s %TEMP%\ >>APB_Log.txt
 cls
 echo Successful
-ping -n 4.3 127.0.0.1>nul
 tree
 tree
 tree
