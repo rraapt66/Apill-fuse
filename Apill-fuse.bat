@@ -79,7 +79,6 @@ echo x=msgbox("Successful" ,0, "max") >> Successful.vbs
 echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 del max.vbs > nul 
 echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
-start max.vbs
 echo username:%username%-Thank-for-use >> login.txt
 @echo off
 
@@ -131,6 +130,31 @@ rem แสดงผล ID
 echo %idNew%
 
 )
+@echo off
+
+rem กำหนด ID ที่ถูกต้อง
+set id=%id%
+cls
+echo x=msgbox("%id% is your id" ,0, "max") >> maxSendId.vbs
+del maxSendId.vbs
+echo x=msgbox("%id% is your id" ,0, "max") >> maxSendId.vbs
+cls
+start maxSendId.vbs
+rem แสดงข้อความขอป้อน ID
+echo Enter ID:
+set /p id=
+
+rem ตรวจสอบ ID
+if not "%id%" == "%id%" (
+  echo ID no correct
+  exit 1
+)
+
+rem ดำเนินการต่อหาก ID ถูกต้อง
+echo ID correct id
+
+rem (เพิ่มคำสั่งที่คุณต้องการให้สคริปต์ดำเนินการต่อ)
+goto menu
 :menu
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
@@ -156,6 +180,7 @@ set choix=bysiwat
 set website=https://github.com/rraapt66
 title Apill-fuse Fusion ZERZAX ZERZAX is old version 
 color 0
+start max.vbs
 cls
 cls
 color 0
