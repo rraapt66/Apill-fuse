@@ -104,29 +104,21 @@ echo x=msgbox("%id% is your ID" ,0, "max") >> ID.vbs
 start ID.vbs
 @echo off
 cls
-@echo off
-setlocal
-
-set /p user_id=Your id: 
+set /p userID=id: 
 
 rem ตรวจสอบไอดี
-if "%id%"=="%id%" (
+if "%userID%"=="%id%" (
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
 del IDS.vbs
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
 start IDS.vbs
-goto kill
-    rem ทำงานเพิ่มเติมที่นี่
+    rem ทำสิ่งที่คุณต้องการทำต่อ
 ) else (
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
-del IDS.vbs
-echo x=msgbox("your ID not correct" ,0, "max") >> IDS.vbs
-start IDS.vbs
-    exit /b 1
-)
-rem ทำงานเพิ่มเติมที่นี่หลังจากตรวจสอบไอดีถูกต้อง
-
-endlocal
+ del IDS.vbs 
+ echo x=msgbox("your ID not correct" ,0, "max") >> IDS.vbs
+ start IDS.vbs
+    exit
 )
 :kill
   timeout /t 2 /nobreak > NUL
