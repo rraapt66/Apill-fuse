@@ -122,7 +122,7 @@ del IDS.vbs
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
 start IDS.vbs
 )
-  timeout /t 3 /nobreak > NUL
+  timeout /t 2 /nobreak > NUL
 TASKKILL /IM wscript.exe >> APB_Log.txt
 rem แสดงผล ID
 :menu
