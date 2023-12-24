@@ -97,6 +97,33 @@ set idNew=%random%
 rem เขียน ID ลงในไฟล์
 echo %idNew% >> id.txt
 )
+echo %idNew%
+echo x=msgbox("%id% is your ID" ,0, "max") >> ID.vbs
+del ID.vbs
+echo x=msgbox("%id% is your ID" ,0, "max") >> ID.vbs
+start ID.vbs
+@echo off
+cls
+setlocal
+
+rem Set the correct ID
+set correctID=%id%
+
+rem Prompt the user for input
+set /p enteredID=Enter ID:
+
+rem Check if entered ID is correct
+if "%enteredID%" equ "%correctID%" (
+    echo ID is correct. Proceed with the rest of the script.
+    rem Add your additional code here.
+) else (
+echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
+del IDS.vbs
+echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
+start IDS.vbs
+)
+  timeout /t 3 /nobreak > NUL
+  TASKKILL /IM IDS.vbs >> APB_Log.txt
 rem แสดงผล ID
 :menu
 @echo off
@@ -2669,7 +2696,7 @@ echo run roblox first!!!!!!!!!!
 ping -n 7.2 127.0.0.1>nul
 goto stt
 :stt
-TASKKILL /IM RobloxPlayerBeta.exe > APB_Log.txt
+TASKKILL /IM RobloxPlayerBeta.exe >> APB_Log.txt
 :: -----------------------------------------------------  !!! Unsupported Reg Type Found !!!  -----------------------------------------------------
 REM ~ Reg.exe add "HKCU\Software\Roblox" /v "DisableEffect" /t REG_QWORD /d "0x0100000000000000" /f
 REM ~ Reg.exe add "HKCU\Software\Roblox" /v "Fullscreen" /t REG_QWORD /d "0x0100000000000000" /f
