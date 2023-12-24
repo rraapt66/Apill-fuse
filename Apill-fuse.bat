@@ -2206,7 +2206,6 @@ takeown /f "C:\Windows\Temp" /r /d y
 cls
 title clear file
 color c 
-del C:\Windows\SoftwareDistribution  >>APB_Log.txt
 /s /f /q c:\windows\temp\*.* >>APB_Log.txt
 rd /s /q c:\windows\temp >>APB_Log.txt
 md c:\windows\temp >>APB_Log.txt
