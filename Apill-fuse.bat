@@ -120,6 +120,7 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
 ) else (
   echo Internet connection active.
 )
+del max.vbs > nul 
 echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 chcp 65001
 rem menu
