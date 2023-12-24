@@ -111,10 +111,10 @@ if "%userID%"=="%id%" (
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
 del IDS.vbs
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
-start IDS.vbs (if not "%userID%"=="%id%" cls
+start IDS.vbs 
+goto kill (if not "%userID%"=="%id%"  goto Error)
+:Error
     rem ทำสิ่งที่คุณต้องการทำต่อ
-	goto kill
-	)
 ) else (
 echo x=msgbox("your ID correct" ,0, "max") >> IDS.vbs
  del IDS.vbs 
