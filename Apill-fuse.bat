@@ -130,32 +130,6 @@ rem แสดงผล ID
 echo %idNew%
 
 )
-@echo off
-:checkBot
-@echo off
-echo x=msgbox("%iduser%:is your id" ,0, "max") >> maxSendId.vbs
-del maxSendId.vbs
-echo x=msgbox("%iduser%:is your id" ,0, "max") >> maxSendId.vbs
-@echo off
-rem รับค่าไอดีจากผู้ใช้
-echo ID: %iduser%
-
-rem ตรวจสอบว่าไอดีตรงกับในไฟล์หรือไม่
-for /f "delims=" %%i in ('type if.txt') do (
-  if "%%i" == "%id%" (
-    rem ไอดีตรงกับในไฟล์
-    goto :continue
-  )
-)
-rem ไอดีไม่ตรงกับในไฟล์
-echo ID is not correct.
-exit /b
-
-:continue
-
-rem ดำเนินการตามคำสั่งที่ต้องการ
-start maxSendId.vbs
-ping -n 4 127.0.0.1>nul
 rem (เพิ่มคำสั่งที่คุณต้องการให้สคริปต์ดำเนินการต่อ)
 goto menu
 :menu
