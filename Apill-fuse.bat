@@ -133,11 +133,11 @@ echo %idNew%
 @echo off
 :checkBot
 rem กำหนด ID ที่ถูกต้อง
-set id=%id%
+set id=%iduser%
 cls
-echo x=msgbox("%id% is your id" ,0, "max") >> maxSendId.vbs
+echo x=msgbox("%iduser% is your id" ,0, "max") >> maxSendId.vbs
 del maxSendId.vbs
-echo x=msgbox("%id% is your id" ,0, "max") >> maxSendId.vbs
+echo x=msgbox("%iduser% is your id" ,0, "max") >> maxSendId.vbs
 cls
 start maxSendId.vbs
 rem แสดงข้อความขอป้อน ID
@@ -151,7 +151,6 @@ cls
   ping -n 4 127.0.0.1>nul
 exit
 )
-
 rem ดำเนินการต่อหาก ID ถูกต้อง
 echo ID correct id
 ping -n 4 127.0.0.1>nul
