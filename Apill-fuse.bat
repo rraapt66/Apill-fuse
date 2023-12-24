@@ -2153,6 +2153,7 @@ netsh http flush logbuffer
 timeout /t 3 /nobreak > NUL
 ipconfg /release 
 start Successful.vbs
+goto menu
 :fullclean
 cls
 @echo off
