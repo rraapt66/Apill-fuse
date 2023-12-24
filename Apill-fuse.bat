@@ -89,7 +89,7 @@ rem อ่าน ID จากไฟล์
 set /p id=<id.txt
 
 rem แสดงผล ID
-echo %id%
+echo %iduser%
 
 ) else (
 
@@ -113,7 +113,7 @@ rem อ่าน ID จากไฟล์
 set /p id=<id.txt
 
 rem แสดงผล ID
-echo %id%
+echo %iduser%
 
 ) else (
 
@@ -145,7 +145,7 @@ echo Enter ID:
 set /p id=
 
 rem ตรวจสอบ ID
-if not "%id%" == "%id%" (
+if not "%id%" == "%iduser%" (
   echo ID no correct
   exit 1
 )
@@ -194,7 +194,7 @@ echo              ╚═╝░░╚═╝╚═╝░░░░░╚═╝╚�
 echo                   ═══════════════════════════════════════════════════════════════════
 echo                   ║ [1] clean file                   ║ [16] Keyboard                ║         
 echo                   ║ [2] Remote                       ║ [17] Boost NVIDIA            ║ Hello %username% !
-echo                   ║ [3] roblox                       ║ [18] ultra boost cpu         ║ id:%id%
+echo                   ║ [3] roblox                       ║ [18] ultra boost cpu         ║ id:%iduser%
 echo                   ║ [4] GameModeoff                  ║ [19] Disable ultra Boostcpu  ║
 echo                   ║ [5] Gamemodeon                   ║ [20] Low ping                ║ 
 echo                   ║ [6] recover Backup Notebook only ║ [21] join discord            ║ 
@@ -5316,7 +5316,7 @@ Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968
 start Successful.vbs
 goto menu
 
-set id=%random%
+set iduser=%random%
 :banner
 chcp 65001 > nul
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
