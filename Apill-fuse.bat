@@ -74,7 +74,6 @@ cd user-for-Apill-fuse
 del login.txt
 del Successful.vbs
 echo x=msgbox("Successful" ,0, "max") >> Successful.vbs
-start max.vbs
 echo username:%username%-Thank-for-use >> login.txt
 @echo off
 
@@ -97,11 +96,8 @@ set idNew=%random%
 
 rem เขียน ID ลงในไฟล์
 echo %idNew% >> id.txt
-
-rem แสดงผล ID
-echo %idNew%
-
 )
+rem แสดงผล ID
 :menu
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
@@ -120,8 +116,10 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
 ) else (
   echo Internet connection active.
 )
+echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 del max.vbs > nul 
 echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
+start max.vbs
 chcp 65001
 rem menu
 set Version=1.4
