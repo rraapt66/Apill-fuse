@@ -76,6 +76,9 @@ echo username:%username%-Thank-for-use >> login.txt
 del login.txt
 del Successful.vbs
 echo x=msgbox("Successful" ,0, "max") >> Successful.vbs
+echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
+del max.vbs > nul 
+echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 start max.vbs
 echo username:%username%-Thank-for-use >> login.txt
 @echo off
@@ -122,8 +125,6 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
 ) else (
   echo Internet connection active.
 )
-del max.vbs > nul 
-echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 chcp 65001
 rem menu
 set Version=1.4
