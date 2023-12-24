@@ -118,7 +118,7 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
 )
 echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 del max.vbs > nul 
-echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
+echo x=msgbox("Hello %username% my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 start max.vbs
 chcp 65001
 rem menu
