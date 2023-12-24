@@ -2178,8 +2178,8 @@ del /s /f /q %systemdrive%\recycled\*.* >>APB_Log.txt
 del /s /f /q %systemdrive%\$Recycle.Bin\*.* >>APB_Log.txt
 del /s /f /q %windir%\*.bak >>APB_Log.txt
 del /s /f /q %windir%\prefetch\*.* >>APB_Log.txt
-del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >APB_Log.txt
-del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >>APB_Log.txt
+del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >>APB_Log.txt
 del /f /q %SystemRoot%\Logs\CBS\CBS.log >>APB_Log.txt
 del /f /q %SystemRoot%\Logs\DISM\DISM.log >>APB_Log.txt
 takeown /f "C:\Windows\Temp" /r /d y
@@ -2195,7 +2195,7 @@ del /s /f /q %systemdrive%\*.chk >>APB_Log.txt
 del /s /f /q %systemdrive%\*.old >>APB_Log.txt
 del /s /f /q %systemdrive%\recycled\*.* >>APB_Log.txt
 del /s /f /q %systemdrive%\$Recycle.Bin\*.* >>APB_Log.txt
-del /s /f /q %windir%\*.bak >APB_Log.txt
+del /s /f /q %windir%\*.bak >>APB_Log.txt
 del /s /f /q %windir%\prefetch\*.* >>APB_Log.txt
 del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db >>APB_Log.txt
 del /s /f /q %LocalAppData%\Microsoft\Windows\Explorer\*.db >>APB_Log.txt
