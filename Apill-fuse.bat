@@ -131,7 +131,7 @@ echo %idNew%
 
 )
 @echo off
-
+:checkBot
 rem กำหนด ID ที่ถูกต้อง
 set id=%id%
 cls
@@ -149,6 +149,7 @@ if not "%id%" == "%iduser%" (
 cls
   echo ID no correct
   ping -n 4 127.0.0.1>nul
+exit
 )
 
 rem ดำเนินการต่อหาก ID ถูกต้อง
