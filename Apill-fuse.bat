@@ -146,12 +146,14 @@ set /p id=
 
 rem ตรวจสอบ ID
 if not "%id%" == "%iduser%" (
+cls
   echo ID no correct
-  exit 1
+  ping -n 4 127.0.0.1>nul
 )
 
 rem ดำเนินการต่อหาก ID ถูกต้อง
 echo ID correct id
+ping -n 4 127.0.0.1>nul
 
 rem (เพิ่มคำสั่งที่คุณต้องการให้สคริปต์ดำเนินการต่อ)
 goto menu
