@@ -144,7 +144,7 @@ pause
 
 rem ตัวอย่าง: จะทำสิ่งต่อไปนี้เมื่อ password ถูกต้อง
 endlocal
-
+start max.vbs
 goto menu
 :menu
 @echo off
@@ -164,7 +164,6 @@ echo ╚═╝░░╚══╝░╚════╝░░░░░░░╚═
 ) else (
   echo Internet connection active.
 )
-start max.vbs
 chcp 65001
 rem menu
 set Version=1.4
