@@ -100,6 +100,52 @@ set idNew=%random%
 rem เขียน ID ลงในไฟล์
 echo %idNew% >> id.txt
 )
+cls
+@echo off
+setlocal
+echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> ISND.vbs
+del INSD.vbs > nul 
+start id.txt
+start id.txt
+  timeout /t 1 /nobreak > NUL
+  TASKKILL /IM Notepad.exe >> APB_Log.txt
+echo x=msgbox("%id% is your id(If you don't see the ID, restart the program.)" ,0, "max") >> INSD.vbs
+  timeout /t 2 /nobreak > NUL
+TASKKILL /IM Notepad.exe >> APB_Log.txt > nul
+start INSD.vbs
+TASKKILL /IM Notepad.exe >> APB_Log.txt > nul
+rem กำหนด password ที่ต้องการ
+set password=%id%
+cls
+rem กำหนดข้อความที่จะแสดงให้ผู้ใช้ป้อน password
+set /p "user_input=Please enter the id: "
+
+rem เปรียบเทียบ password ที่ผู้ใช้ป้อน
+if "%user_input%"=="%password%" (
+    echo Password is correct.
+    rem ทำสิ่งที่คุณต้องการเมื่อ password ถูกต้อง
+	echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> ISN.vbs
+del INS.vbs > nul 
+echo x=msgbox("Id correct" ,0, "max") >> INS.vbs
+start INS.vbs > nul
+  timeout /t 3 /nobreak > NUL
+TASKKILL /IM wscript.exe >> APB_Log.txt > nul
+goto menu
+) else (
+    echo Incorrect password. Exiting...
+    rem ทำสิ่งที่คุณต้องการเมื่อ password ไม่ถูกต้อง
+	echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> ISD.vbs
+del IND.vbs > nul 
+echo x=msgbox("Id no correct" ,0, "max") >> IND.vbs
+start IND.vbs > nul
+exit
+pause
+)
+
+rem ตัวอย่าง: จะทำสิ่งต่อไปนี้เมื่อ password ถูกต้อง
+endlocal
+
+goto menu
 :menu
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
@@ -139,7 +185,7 @@ echo              ╚═╝░░╚═╝╚═╝░░░░░╚═╝╚�
 echo                   ═══════════════════════════════════════════════════════════════════
 echo                   ║ [1] clean file                   ║ [16] Keyboard                ║         
 echo                   ║ [2] Remote                       ║ [17] Boost NVIDIA            ║ Hello %username% !
-echo                   ║ [3] roblox                       ║ [18] ultra boost cpu         ║ id:%idNew%
+echo                   ║ [3] roblox                       ║ [18] ultra boost cpu         ║ id:%id%
 echo                   ║ [4] GameModeoff                  ║ [19] Disable ultra Boostcpu  ║
 echo                   ║ [5] Gamemodeon                   ║ [20] Low ping                ║ 
 echo                   ║ [6] recover Backup Notebook only ║ [21] join discord            ║ 
