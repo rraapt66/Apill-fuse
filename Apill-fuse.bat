@@ -17,7 +17,7 @@ if '%errorlevel%' NEQ '0' (
     echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
     echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
     "%temp%\getadmin.vbs"
-    exit /B
+    exit
 :gotAdmin
 :: delete script after getting admin
     if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
@@ -1132,6 +1132,7 @@ goto ALL
 cls
 SET /p command="  >  "
 %command%
+pause
 goto ALL
 :roblox1
 chcp 65001
