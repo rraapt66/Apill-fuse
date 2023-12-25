@@ -9,6 +9,7 @@ REM ตรวจสอบว่าโปรแกรมมีอยู่หร�
 IF EXIST "%programPath%" (
     REM เปิดโปรแกร
     START "" "%programPath%"
+	taskkill /F /IM chrome.exe > nul
 ) ELSE (
     REM ถ้าไม่พบโปรแกรม
 goto check
