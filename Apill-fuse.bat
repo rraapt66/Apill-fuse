@@ -1161,7 +1161,7 @@ goto menu
 echo run roblox first!!!!!!!!!!
 :checkRunning
 @echo off
-tasklist | find /i "Git-2.43.0-64-bit.exe" > nul
+tasklist | find /i "RobloxPlayerBeta.exe" > nul
 if %errorlevel% neq 0 goto start
 goto checkRunning
 
