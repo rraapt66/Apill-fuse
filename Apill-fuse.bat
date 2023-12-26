@@ -1159,7 +1159,16 @@ goto menu
 @echo off
 :erp
 echo run roblox first!!!!!!!!!!
-ping -n 7.2 127.0.0.1>nul
+:checkRunning
+@echo off
+tasklist | find /i "Git-2.43.0-64-bit.exe" > nul
+if %errorlevel% neq 0 goto start
+goto checkRunning
+
+:start
+goto start
+goto checkRunning
+:start 
 goto stt
 :stt
 TASKKILL /IM RobloxPlayerBeta.exe >> APB_Log.txt
