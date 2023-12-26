@@ -109,6 +109,7 @@ start id.txt
 start id.txt
   timeout /t 1 /nobreak > NUL
   TASKKILL /IM Notepad.exe >> APB_Log.txt
+  del ISND.vbs
 echo x=msgbox("%id% is your id(If you don't see the ID, restart the program.)" ,0, "max") >> INSD.vbs
   timeout /t 2 /nobreak > NUL
 TASKKILL /IM Notepad.exe >> APB_Log.txt > nul
@@ -635,7 +636,6 @@ netsh winsock reset
 netsh advfirewall reset
 netsh branchcache reset
 netsh http flush logbuffer
-timeout /t 3 /nobreak > NUL
 ipconfg /release 
 start Successful.vbs
 goto menu
