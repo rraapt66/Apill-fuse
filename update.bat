@@ -6,12 +6,10 @@ del setup.bat > nul
 del Apill-fuse.bat >nul
 del Delete.bat > nul
 attrib +h update.bat
-cd C:\Users\%username%
-echo x=msgbox("update Successful" ,0, "max") >>update.vbs
-start update.vbs 
-timeout 3 > nul
-del update.vbs
 git clone https://github.com/rraapt66/Apill-fuse.git
 cd Apill-fuse
+echo x=msgbox("update Successful" ,0, "max") >>update.vbs
+start update.vbs 
 start Apill-fuse.bat
+del update.vbs
 exit
