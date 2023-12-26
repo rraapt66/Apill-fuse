@@ -11,5 +11,8 @@ cd Apill-fuse
 echo x=msgbox("update Successful" ,0, "max") >>update.vbs
 start update.vbs 
 start Apill-fuse.bat
+cls
+echo enter to exit
+pause
 del update.vbs
 exit
