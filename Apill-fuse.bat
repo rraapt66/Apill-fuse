@@ -693,6 +693,10 @@ md c:\windows\temp >>APB_Log.txt
 del /s /f /q C:\WINDOWS\Prefetch >>APB_Log.txt
 del /s /f /q %temp%\*.* >>APB_Log.txt
 rd /s /q %temp%
+rd /s /q C:\Windows\SoftwareDistribution\SLS
+rd /s /q C:\Windows\SoftwareDistribution\PostRebootEventCache.V2
+rd /s /q C:\Windows\SoftwareDistribution\Download
+rd /s /q C:\Windows\SoftwareDistribution\DataStore
 md %temp%
 RD /S /Q C:\Windows\Temp
 MKDIR C:\Windows\Temp
