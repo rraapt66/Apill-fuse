@@ -687,7 +687,6 @@ takeown /f "C:\Windows\Temp" /r /d y
 @echo off
 cls
 title clear file
-color c 
 /s /f /q c:\windows\temp\*.* >>APB_Log.txt
 rd /s /q c:\windows\temp >>APB_Log.txt
 md c:\windows\temp >>APB_Log.txt
