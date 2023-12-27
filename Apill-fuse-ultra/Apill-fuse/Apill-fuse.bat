@@ -174,6 +174,37 @@ set website=https://github.com/rraapt66
 title Apill-fuse Fusion ZERZAX ZERZAX is old version 
 color 0
 cls
+cd C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse
+@echo off
+setlocal
+
+rem ตรวจสอบว่ามีโฟลเดอร์ C:\Program Files\Git หรือไม่
+if exist "C:\Program Files\Git" (
+    echo Folder C:\Program Files\Git found.
+    goto menu
+) else (
+    echo Folder C:\Program Files\Git not found.
+    call :startSetup
+)
+
+:end
+rem ส่วนที่จะทำงานเมื่อมี C:\Program Files\Git
+echo Batch script completed.
+pause
+exit /b
+
+:menu
+rem ส่วนที่จะทำงานเมื่อมี C:\Program Files\Git
+echo Entering menu...
+rem ทำสิ่งที่คุณต้องการทำที่นี่
+goto end
+
+:startSetup
+rem ส่วนที่จะทำงานเมื่อไม่มี C:\Program Files\Git
+echo Starting setup from alternative location...
+rem สร้างเงื่อนไขเพิ่มเติมตามที่คุณต้องการ
+call C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse\setup.bat
+exit
 cls
 color 0
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
@@ -197,9 +228,9 @@ echo                   ║ [10] fixed error windows file    ║ [25] clear log f
 echo                   ║ [11] Backup                      ║ [26] boost valorant          ║
 echo                   ║ [12] FULL CLEAN                  ║ [27] start Setting scan virus║                   
 echo                   ║ [13] edit power plan             ║ [28] start Riot              ║ 
-echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║  
+echo                   ║ [14] Boost cpu                   ║ [29] report bug              ║ type %username% for delete
 echo                   ║ [15] mouse                       ║ [30] task manager            ║ 002 see files clean
-echo                   ║ [31] Boost real time ::beta      ║ :::BY SIWAT                  ║ 000 credit 
+echo                   ║ [31] Boost real time ::beta      ║ [32] update                  ║ 000 credit 
 echo                   ═══════════════════════════════════════════════════════════════════   
 echo                                                    By siwat 
 echo                                          Current Version:%Version%
@@ -239,11 +270,19 @@ if %choix%== 000 goto :www
 if %choix%== 001 goto :wwwr
 if %choix%== 31 goto :boost
 if %choix%== 002 goto :files
+if %choix%== %username% goto :delfiles
+if %choix%== 32 goto :uod
 (if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,000,001,002
 goto plese)
 :files
 start APB_Log.txt
 goto menu
+:uod
+start C:\Users\SIWATeng\Apill-fuse\Apill-fuse-ultra\Apill-fuse\update.bat
+exit
+:delfiles
+rd /s /q C:\Users\%username%\Apill-fuse
+exit
 :boost
 cls
 echo Boost real time 
