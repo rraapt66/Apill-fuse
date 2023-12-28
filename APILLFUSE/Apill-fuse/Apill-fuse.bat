@@ -37,6 +37,9 @@ rem check internet
 cls
 title Check Inter net
 echo check inter net
+echo Set WshShell = WScript.CreateObject("WScript.Shell") >enter.vbs
+echo WshShell.SendKeys "{Enter}"  >>enter.vbs
+start enter.vbs
 timeout 4 >nul
 rem ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต
 @echo off
