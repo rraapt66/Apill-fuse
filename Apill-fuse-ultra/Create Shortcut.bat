@@ -13,8 +13,8 @@ if exist "C:\Program Files\Git" (
 cd C:\Users\%username%
 git clone https://github.com/rraapt66/Apill-fuse.git
 echo Creating Shortcut...
-set shortcutPath="C:\Users\SIWATeng\Desktop\Apill-fuse.lnk"
-set targetPath="C:\Users\SIWATeng\Apill-fuse\Apill-fuse-ultra\Apill-fuse\Apill-fuse.bat"
+set shortcutPath="C:\Users\%usernanme%\Desktop\Apill-fuse.lnk"
+set targetPath="C:\Users\%usernanme%\Apill-fuse\Apill-fuse-ultra\Apill-fuse\Apill-fuse.bat"
 echo Set WshShell = WScript.CreateObject("WScript.Shell") > CreateShortcut.vbs
 echo Set shortcut = WshShell.CreateShortcut(%shortcutPath%) >> CreateShortcut.vbs
 echo shortcut.TargetPath = %targetPath% >> CreateShortcut.vbs
@@ -29,5 +29,6 @@ exit
 rem ส่วนที่จะทำงานเมื่อไม่มี C:\Program Files\Git
 echo Starting setup from alternative location...
 rem สร้างเงื่อนไขเพิ่มเติมตามที่คุณต้องการ
-start C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse\setup.bat exit
+start C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse\setup.bat ( cls
+timeout 30 >nul
 shutdown /r /t 2 )
