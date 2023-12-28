@@ -197,14 +197,13 @@ exit /b
 rem ส่วนที่จะทำงานเมื่อมี C:\Program Files\Git
 echo Entering menu...
 rem ทำสิ่งที่คุณต้องการทำที่นี่
-goto end
+goto menu
 
 :startSetup
 rem ส่วนที่จะทำงานเมื่อไม่มี C:\Program Files\Git
 echo Starting setup from alternative location...
 rem สร้างเงื่อนไขเพิ่มเติมตามที่คุณต้องการ
-call C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse\setup.bat
-exit
+start C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse\setup.bat (exit)
 cls
 color 0
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
