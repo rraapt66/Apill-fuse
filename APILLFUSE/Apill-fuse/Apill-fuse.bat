@@ -276,10 +276,10 @@ goto plese)
 start APB_Log.txt
 goto menu
 :uod
-start C:\Users\SIWATeng\Apill-fuse\Apill-fuse-ultra\Apill-fuse\update.bat
+start C:\Users\%username%\APILLFUSE\Apill-fuse\update.bat
 exit
 :delfiles
-rd /s /q C:\Users\%username%\Apill-fuse
+rd /s /q C:\Users\%username%\APILLFUSE
 exit
 :boost
 cls
