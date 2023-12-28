@@ -10,7 +10,6 @@ git clone https://github.com/rraapt66/Apill-fuse.git
 cd Apill-fuse
 echo x=msgbox("update Successful" ,0, "max") >>update.vbs
 start update.vbs 
-start Apill-fuse.bat
 cls
 echo enter to exit
 pause
