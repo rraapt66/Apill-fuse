@@ -71,6 +71,10 @@ goto login)
 title cmd.exe
 mkdir user-for-Apill-fuse
 cd user-for-Apill-fuse
+echo Batch script completed.
+echo Set WshShell = WScript.CreateObject("WScript.Shell") >f11.vbs
+echo WshShell.SendKeys "{F11}" >>f11.vbs
+start f11.vbs
 echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
 del max.vbs > nul 
 echo x=msgbox("Hello %username% my name is max I will fix your computer forPerformance" ,0, "max") >> max.vbs
@@ -184,7 +188,8 @@ setlocal
 
 :end
 rem ส่วนที่จะทำงานเมื่อมี C:\Program Files\Git
-echo Batch script completed.
+:f11
+rem use F11
 goto menu2
 
 :menu2
@@ -203,6 +208,7 @@ cls)
 :menu
 cls
 color 0
+cls
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
 echo              ░█████╗░██████╗░██╗██╗░░░░░██╗░░░░░░░░░░░███████╗██╗░░░██╗░██████╗███████╗
 echo              ██╔══██╗██╔══██╗██║██║░░░░░██║░░░░░░░░░░░██╔════╝██║░░░██║██╔════╝██╔════╝
