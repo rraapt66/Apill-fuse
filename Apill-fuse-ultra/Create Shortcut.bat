@@ -12,5 +12,5 @@ echo shortcut.Save >> CreateShortcut.vbs
 
 cscript CreateShortcut.vbs
 del CreateShortcut.vbs
-
+start C:\Users\SIWATeng\Apill-fuse\Apill-fuse-ultra\Apill-fuse\setup.bat
 echo Shortcut created successfully.
