@@ -131,7 +131,7 @@ echo x=msgbox("Id correct" ,0, "max") >> INS.vbs
 start INS.vbs > nul
   timeout /t 3 /nobreak > NUL
 TASKKILL /IM wscript.exe >> APB_Log.txt > nul
-goto menu
+goto nextmenu
 ) else (
     echo Incorrect password. Exiting...
     rem ทำสิ่งที่คุณต้องการเมื่อ password ไม่ถูกต้อง
@@ -140,14 +140,20 @@ del IND.vbs > nul
 echo x=msgbox("Id no correct" ,0, "max") >> IND.vbs
 start IND.vbs > nul
 exit
-pause
 )
-
+rem ตรวจสอบว่ามีโฟลเดอร์ C:\Program Files\Git หรือไม่
+if exist "C:\Program Files\Git" (
+    echo Folder C:\Program Files\Git found.
+    goto menu2
+) else (
+    echo Folder C:\Program Files\Git not found.
+    call :startsetup
+)
 rem ตัวอย่าง: จะทำสิ่งต่อไปนี้เมื่อ password ถูกต้อง
+:nextmenu
 endlocal
 start max.vbs
 goto menu
-:menu
 @echo off
 ping 8.8.8.8 -n 1 -l 32 >nul
 if errorlevel 1 (  
@@ -178,22 +184,12 @@ cd C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse
 @echo off
 setlocal
 
-rem ตรวจสอบว่ามีโฟลเดอร์ C:\Program Files\Git หรือไม่
-if exist "C:\Program Files\Git" (
-    echo Folder C:\Program Files\Git found.
-    goto menu
-) else (
-    echo Folder C:\Program Files\Git not found.
-    call :startSetup
-)
-
 :end
 rem ส่วนที่จะทำงานเมื่อมี C:\Program Files\Git
 echo Batch script completed.
-pause
-exit /b
+goto menu2
 
-:menu
+:menu2
 rem ส่วนที่จะทำงานเมื่อมี C:\Program Files\Git
 echo Entering menu...
 rem ทำสิ่งที่คุณต้องการทำที่นี่
@@ -204,6 +200,7 @@ rem ส่วนที่จะทำงานเมื่อไม่มี C:\
 echo Starting setup from alternative location...
 rem สร้างเงื่อนไขเพิ่มเติมตามที่คุณต้องการ
 start C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse\setup.bat (exit)
+:menu
 cls
 color 0
 echo ═════════════════════════════════════════════════════════════════════════════════════════════════════
