@@ -1,0 +1,1 @@
+เปิดตัว(start) setup  
