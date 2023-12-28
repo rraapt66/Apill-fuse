@@ -276,7 +276,8 @@ goto plese)
 start APB_Log.txt
 goto menu
 :uod
-start C:\Users\%username%\APILLFUSE\Apill-fuse\update.bat
+cd C:\Users\%username%\APILLFUSE\Apill-fuse
+start update.bat
 exit
 :delfiles
 rd /s /q C:\Users\%username%\APILLFUSE
