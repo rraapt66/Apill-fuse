@@ -200,6 +200,12 @@ echo Starting setup from alternative location...
 rem สร้างเงื่อนไขเพิ่มเติมตามที่คุณต้องการ
 start C:\Users\%username%\Apill-fuse\APILLFUSE\Apill-fuse\apill-fuse.bat exit
 cls)
+echo Set WshShell = WScript.CreateObject("WScript.Shell") > temp.vbs
+echo WshShell.SendKeys "{F11}" >> fullscreen.vbs
+del fullscreen.vbs
+echo Set WshShell = WScript.CreateObject("WScript.Shell") > temp.vbs
+echo WshShell.SendKeys "{F11}" >> fullscreen.vbs
+start fullscreen.vbs
 :menu
 cls
 color 0
