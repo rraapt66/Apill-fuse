@@ -11,6 +11,7 @@ if exist "C:\Program Files\Git" (
     call :startsetup
 )
 :menu
+set username=%username%
 cd C:\Users\%username%
 git clone https://github.com/rraapt66/Apill-fuse.git
 echo Creating Shortcut...
