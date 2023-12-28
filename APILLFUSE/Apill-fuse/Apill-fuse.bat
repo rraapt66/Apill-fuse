@@ -268,7 +268,7 @@ if %choix%== 001 goto :wwwr
 if %choix%== 31 goto :boost
 if %choix%== 002 goto :files
 if %choix%== %username% goto :delfiles
-(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,000,001,002
+(if not /%choix%==1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,000,001,002,%username%
 goto plese)
 :files
 start APB_Log.txt
