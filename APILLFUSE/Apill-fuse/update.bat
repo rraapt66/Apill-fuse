@@ -7,7 +7,7 @@ del Apill-fuse.bat >nul
 del Delete.bat > nul
 attrib +h update.bat
 git clone https://github.com/rraapt66/Apill-fuse.git
-cd Apill-fuse
+cd APILLFUSE
 echo x=msgbox("update Successful" ,0, "max") >>update.vbs
 start update.vbs 
 cls
