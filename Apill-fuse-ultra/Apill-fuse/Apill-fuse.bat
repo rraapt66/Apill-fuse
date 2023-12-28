@@ -196,10 +196,12 @@ rem ทำสิ่งที่คุณต้องการทำที่น�
 goto menu
 
 :startSetup
+(color c
 rem ส่วนที่จะทำงานเมื่อไม่มี C:\Program Files\Git
 echo Starting setup from alternative location...
 rem สร้างเงื่อนไขเพิ่มเติมตามที่คุณต้องการ
-start C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse\setup.bat (exit)
+start C:\Users\%username%\Apill-fuse\Apill-fuse-ultra\Apill-fuse\setup.bat exit
+cls)
 :menu
 cls
 color 0
