@@ -176,7 +176,6 @@ rem menu
 set getcolor=color 0
 set Version=1.4
 set choix=bysiwat
-set website=https://github.com/rraapt66
 title Apill-fuse Fusion ZERZAX ZERZAX is old version 
 color 0
 cls
@@ -286,7 +285,7 @@ goto yes
 :no
 goto menu
 :www
-start %website%
+start https://github.com/rraapt66
 goto menu
 :task
 @echo off
