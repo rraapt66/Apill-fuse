@@ -1197,7 +1197,7 @@ goto menu
 :roblox3
 @echo off
 :erp
-color c0
+echo Please close roblox
 :checkRunning
 @echo off
 tasklist | find /i "RobloxPlayerBeta.exe" > nul
