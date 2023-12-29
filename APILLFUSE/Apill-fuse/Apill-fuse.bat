@@ -1197,7 +1197,7 @@ goto menu
 :roblox3
 @echo off
 :erp
-color %random%
+color c0
 :checkRunning
 @echo off
 tasklist | find /i "RobloxPlayerBeta.exe" > nul
