@@ -2073,11 +2073,11 @@ goto menu
 
 :Notebook
 cls
+cd C:\Users\%username%\BACKUP
+cls
 echo x=msgbox("Successful" ,0, "max") >> Successful.vbs
 del Successful.vbs
 echo x=msgbox("BACKUP Successful" ,0, "max") >> Successful.vbs
-cd C:\Users\%username%\BACKUP
-cls
 start HKEY_USERS.reg
 start Successful.vbs
 start HKEY_LOCAL_MACHINE.reg
