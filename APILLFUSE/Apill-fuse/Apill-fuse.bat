@@ -24,14 +24,14 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 	endlocal
-Reg.exe add "HKLM\SOFTWARE\Atheros\Apill-fuse" /ve /t REG_SZ /d "C:\Users\%username%\Apill-fuse\APILLFUSE\Apill-fuse" /f
-Reg.exe add "HKLM\SOFTWARE\Atheros\Apill-fuse" /v "run" /t REG_SZ /d "C:\Users\%username%\Apill-fuse\APILLFUSE\Apill-fuse\Apill-fuse.bat" /f
-Reg.exe add "HKLM\SOFTWARE\Atheros\Apill-fuse" /v "Fullscreen" /t REG_DWORD /d "1" /f
-Reg.exe add "HKLM\SOFTWARE\Atheros\Apill-fuse" /v "net" /t REG_SZ /d "REG_QWORD setnetwork" /f
-Reg.exe add "HKLM\SOFTWARE\Atheros\Apill-fuse" /v "setnetwork" /t REG_SZ /d "set locallow set host 191.168.1.3" /f
-Reg.exe add "HKLM\SOFTWARE\Atheros\Apill-fuse\Delete" /v "Delete" /t REG_SZ /d "C:\Users\%username%\Apill-fuse" /f
-Reg.exe add "HKLM\SOFTWARE\Atheros\Apill-fuse\Delete" /v "run" /t REG_SZ /d "REG_QWORD Delete" /f
-Reg.exe add "HKLM\SOFTWARE\Atheros\Apill-fuse\Delete" /ve /t REG_SZ /d "C:\Users\%username%\Apill-fuse\APILLFUSE\Apill-fuse\Delete.bat" /f
+Reg.exe add "HKLM\SOFTWARE\Apill-fuse" /ve /t REG_SZ /d "C:\Users\%username%\Apill-fuse\APILLFUSE\Apill-fuse" /f
+Reg.exe add "HKLM\SOFTWARE\Apill-fuse" /v "run" /t REG_SZ /d "C:\Users\%username%\Apill-fuse\APILLFUSE\Apill-fuse\Apill-fuse.bat" /f
+Reg.exe add "HKLM\SOFTWARE\Apill-fuse" /v "Fullscreen" /t REG_DWORD /d "1" /f
+Reg.exe add "HKLM\SOFTWARE\Apill-fuse" /v "net" /t REG_SZ /d "REG_QWORD setnetwork" /f
+Reg.exe add "HKLM\SOFTWARE\Apill-fuse" /v "setnetwork" /t REG_SZ /d "set locallow set host 191.168.1.3" /f
+Reg.exe add "HKLM\SOFTWARE\Apill-fuse\Delete" /v "Delete" /t REG_SZ /d "C:\Users\%username%\Apill-fuse" /f
+Reg.exe add "HKLM\SOFTWARE\Apill-fuse\Delete" /v "run" /t REG_SZ /d "REG_QWORD Delete" /f
+Reg.exe add "HKLM\SOFTWARE\Apill-fuse\Delete" /ve /t REG_SZ /d "C:\Users\%username%\Apill-fuse\APILLFUSE\Apill-fuse\Delete.bat" /f
 :--------------------------------------
 @echo off
 Mode 109 19
