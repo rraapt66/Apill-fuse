@@ -285,6 +285,8 @@ cls
 echo Boost real time 
 SET /p boost="Boost  yes or no ?>  "
 powershell -WindowStyle Hidden -Command "& {}"
+echo x=msgbox("Boost" ,0, "BOOST-RUNNIG") > Realtime.vbs 
+start Realtime.vbs 
 :yes
 mkdir Boost
 cd Boost
