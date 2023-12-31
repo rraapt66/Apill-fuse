@@ -671,6 +671,8 @@ set /p choix=
 if %choix%== 1 goto :reset
 if %choix%== 2 goto :nettot
 :reset
+Reg.exe add "HKLM\SOFTWARE\Google\Chrome\IP target" /v "run" /t REG_SZ /d "REG_QWORD setnetwork" /f
+Reg.exe add "HKLM\SOFTWARE\Google\Chrome\IP target" /v "setnetwork" /t REG_SZ /d "set locallow set host 216.58.200.4" /f
 :: Reset Internet
 echo Resetting Internet
 ipconfig /release          
