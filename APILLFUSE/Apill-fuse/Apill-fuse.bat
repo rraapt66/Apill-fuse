@@ -695,8 +695,7 @@ netsh advfirewall reset
 netsh branchcache reset
 netsh http flush logbuffer
 ipconfg /release 
-start Successful.vbs
-goto menu
+goto nettot
 :fullclean
 cls
 @echo off
