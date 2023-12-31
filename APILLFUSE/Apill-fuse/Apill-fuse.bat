@@ -150,7 +150,7 @@ goto nextmenu
 :noCorrect
     echo Incorrect password. Exiting...
     rem ทำสิ่งที่คุณต้องการเมื่อ password ไม่ถูกต้อง
-	echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") > ISD.vbs
+	echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") > IND.vbs
 del IND.vbs > nul 
 echo x=msgbox("Id no correct" ,0, "max") >> IND.vbs
 start IND.vbs > nul
