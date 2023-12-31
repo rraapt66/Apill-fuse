@@ -127,14 +127,16 @@ set password=%id%
 cls
 rem กำหนดข้อความที่จะแสดงให้ผู้ใช้ป้อน password
 set /p "user_input=Please enter the id: "
-(if not /%user_input%==%id%
-goto noCorrect)
-goto correct
-rem เปรียบเทียบ password ที่ผู้ใช้ป้อน
+(else
+if %user_input%==%id% call :nextmenu 
+if not /%user_input%==%id% call :noCorrect
+cls)
+:checkID
+	rem เปรียบเทียบ password ที่ผู้ใช้ป้อน
 if "%user_input%"=="%id%" (
     echo Password is correct.
     rem ทำสิ่งที่คุณต้องการเมื่อ password ถูกต้อง
-	goto correct (else
+	cls(else
 	goto  noCorrect )
 	:correct
 	echo x=msgbox("Hello my name is max I will fix your computer forPerformance" ,0, "max") >> ISN.vbs
