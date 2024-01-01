@@ -694,7 +694,7 @@ netsh winsock reset
 netsh advfirewall reset
 netsh branchcache reset
 netsh http flush logbuffer
-ipconfg /release 
+ipconfig /release 
 goto nettot
 :fullclean
 cls
